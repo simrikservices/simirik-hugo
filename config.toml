@@ -1,0 +1,4 @@
+baseURL = 'https://simrikservice.com/'
+languageCode = 'en-us'
+title = 'Simrik Services'
+theme = 'sone'
