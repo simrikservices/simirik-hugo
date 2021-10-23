@@ -1,0 +1,170 @@
+hugo server -D (to display draft files also)
+hugo server --disableFastRender
+(for live reload them main index.html file must have closing body tag)
+
+
+Content Management
+=================
+create conent in content folder content folder.
+
+hugo new <filename>
+hugo new a.md 
+hugo new dirname/filename.md
+
+Hugo have 3 types of contents
+- Single Pages
+- List Pages
+- Home Page (defaults to list page)
+
+Within the content folder Hugo by default recognizes all the files. 
+
+But Hugo by default does not create list files for the directories which are more than ONE level deep. (/content/dir1/xxxx/)
+
+In order to instruct Hugo to make list file for those lower level directories is just to create '_index.md' in that directory. 
+The content added to this file is shows up in the list file. You can also use this trick to create additional content for root
+level directories inside content folder
+
+
+Front Matter
+============
+--- YMAL, +++ TOML, {} JSON 
+custom front matter variable any number
+  author: 'Mike'
+
+Arch Types 
+==========
+default.md => default front matter content template when creating new content file using hugo new command;
+can be created for sepecific directory
+  just create directoryname.md and create template 
+
+Short Codes
+===========
+A predefined chunks of html, that you can insert into markdown files.
+  predefined:  {{<shortcode-name param1> }} example: youtube, 
+  user defined shortcodes cand be created
+
+Taxonomy
+========
+
+How we group content together to organize large amount of content. 
+Default two taxonomies: tags and categories
+tag pages(list) automatically created.
+
+using front matter
+---
+...
+tags: ['tag1', 'tag3']
+categories: ['c1', 'c2']
+moods:['cool', 'hot']
+---
+
+custom taxonomies:
+in config.toml file
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  mood = "moods"
+
+when you define a new taxonomy, you have to add tag and category as well.
+restart hugo server after modifying config.toml file.
+
+Templates
+=========
+themes/name/layouts/_default/baseof.html (higher level template)
+themes/name/layouts/_default/list.html
+themes/name/layouts/_default/single.html
+themes/name/layouts/index.html
+themes/name/layouts/<directoryname>/single.html (section template)
+
+
+
+list page = _index.md in content
+
+Variables
+=========
+{{ .Content }}
+
+{{ range .Pages }}
+  {{.Title}} {{.URL}}<br/>
+{{ end }}
+//front matter
+{{ .Title }}
+{{ .Date }}
+{{ .Params.author}}
+
+//multile blocks can be defined
+{{ block "main" . }}
+  //default content of this block, can be override
+{{ end }}
+
+{{ define "main" }}
+  //sepecific content
+{{ end}}
+
+{{ $currentPage := . }}
+{{ $currentPage := 888 }}
+{{ $currentPage = 777 }}
+
+{{ if and (lt $v1 $v2) (lt $v1 $v3) }}
+{{ else }}
+{{ end }}
+
+Data
+====
+mini database
+json, yaml, toml
+
+{{ range .Site.Data.filename}}
+{{ end }}
+
+Partial
+=======
+/layout/partials/
+
+to include partial in other files
+
+{{ partial "header" . }}
+. entire scope of variables
+
+Shortcodes
+==========
+  shortcodes can be used in content. 
+  they are like partials but used in content
+
+  custom shortcode in layout/shortcodes/ 
+
+  use in content md file
+
+  {{ <myshortcode>}}
+
+  passing variables 
+  {{ <shorcodename color="blue">}}
+  in short code file access it using .Get 
+  <p>{{.Get "color" }}</p>
+  <p style="color: {{.Get `color`}}">xxx</p>
+
+  positional parameter
+  {{ <shorcodename blue>}}
+  in short code file access it using .Get 
+  <p>{{.Get 0 }}/p>
+  <p style="color: {{.Get 0}}">xxx</p>
+
+  {{ <myshortcode>}}
+  this is the text inside shortcode.
+  {{ </myshortcode>}}
+
+  in shortcode file {{ .Inner }}
+
+  user % sign instead of < to render markdown inside shortcode
+
+  Building Website
+  ================
+  to build command is 
+  hugo 
+  into the public folder
+  delete public folder before rebuilding
+  
+  
+
+
