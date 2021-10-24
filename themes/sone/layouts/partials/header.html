@@ -1,0 +1,83 @@
+<header class="header position-relative z-9">
+  <nav
+    class="
+      navbar
+      navbar-expand-lg
+      navbar-transparent
+      navbar-dark
+      navbar-theme-primary
+      fixed-top
+      headroom
+    "
+  >
+    <div class="container position-relative">
+      <a class="navbar-brand mr-lg-3" href="index.html">
+        <img
+          class="navbar-brand-dark"
+          src="images/logo-color.png"
+          style="height: 100px"
+          alt="menuimage"
+        />
+      </a>
+      <div class="navbar-collapse collapse" id="navbar-default-primary">
+        <div class="navbar-collapse-header">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a href="#">
+                <img src="images/logo-color.png" alt="menuimage" />
+              </a>
+            </div>
+            <div class="col-6 collapse-close">
+              <i
+                class="fas fa-times"
+                data-toggle="collapse"
+                role="button"
+                data-target="#navbar-default-primary"
+                aria-controls="navbar-default-primary"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar-nav navbar-nav-hover ml-auto">
+          {{ range .Site.Menus.main }} {{ if .HasChildren }}
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" title="{{.Title}}">
+              <span class="nav-link-inner-text">{{ .Name }}</span>
+              <i class="fas fa-angle-down nav-link-arrow ml-1"></i>
+            </a>
+            <ul class="sub-menu dropdown-menu">
+              {{ range .Children }}
+              <li class="dropdown-item">
+                <a href="{{ .URL }}" title="{{.Title}}">{{ .Name }}</a>
+              </li>
+              {{ end }}
+            </ul>
+          </li>
+
+          {{ else }}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ .URL }}" title="{{.Title}}">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }} {{ end }}
+        </ul>
+      </div>
+      <div class="d-flex align-items-center">
+        <button
+          class="navbar-toggler ml-2"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-default-primary"
+          aria-controls="navbar-default-primary"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>

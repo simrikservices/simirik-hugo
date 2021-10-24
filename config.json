@@ -1,0 +1,117 @@
+{
+  "baseURL": "https://simrikservice.netlify.app/",
+  "languageCode": "en-us",
+  "title": "Simrik Services",
+  "theme": "sone",
+  "menu": {
+    "main": [
+      {
+        "identifier": "home",
+        "name": "Home Page",
+        "title": "homepage",
+        "url": "/",
+        "weight": -33
+      },
+      {
+        "identifier": "about",
+        "name": "About Us",
+        "title": "about us",
+        "url": "/about/",
+        "weight": -4
+      },
+      {
+        "identifier": "ssgf",
+        "parent": "about",
+        "name": "Simrik Security Gurkha Force",
+        "title": "Simrik Security Gurkha Force",
+        "url": "/about/simrik-security-gurkha-force",
+        "weight": -6
+      },
+      {
+        "identifier": "scel",
+        "parent": "about",
+        "name": "Simrik Construction Engineering Limited",
+        "title": "Simrik Construction Engineering Limited",
+        "url": "/about/simrik-construction-engineering-limited",
+        "weight": -5
+      },
+      {
+        "identifier": "construction",
+        "name": "Construction",
+        "title": "construction",
+        "url": "/about/",
+        "weight": -4
+      },
+      {
+        "identifier": "construction services",
+        "parent": "construction",
+        "name": "Services",
+        "title": "construction services",
+        "url": "/construction/services",
+        "weight": -4
+      },
+      {
+        "identifier": "construction projets",
+        "parent": "construction",
+        "name": "Projects",
+        "title": "construction projects",
+        "url": "/construction/projects",
+        "weight": -3
+      },
+      {
+        "identifier": "security",
+        "name": "Security",
+        "title": "Security",
+        "url": "/about/",
+        "weight": -4
+      },
+      {
+        "identifier": "Security services",
+        "parent": "security",
+        "name": "Services",
+        "title": "Security services",
+        "url": "/Security/services",
+        "weight": -4
+      },
+      {
+        "identifier": "Security projets",
+        "parent": "security",
+        "name": "Projects",
+        "title": "Security services",
+        "url": "/Security/services",
+        "weight": -3
+      },
+      {
+        "identifier": "team",
+        "name": "Nepal Team",
+        "title": "Nepal Team",
+        "url": "/team/nepal",
+        "weight": -4
+      },
+      {
+        "identifier": "nepalteam",
+        "parent": "team",
+        "name": "Nepal Team",
+        "title": "Security services",
+        "url": "/Security/services",
+        "weight": -4
+      },
+      {
+        "identifier": "Security projets",
+        "parent": "team",
+        "name": "Projects",
+        "title": "Security services",
+        "url": "/Security/services",
+        "weight": -3
+      },
+      {
+        "identifier": "get in touch",
+        "name": "Get in Touch",
+        "title": "Get in Touch",
+        "url": "/about/get-in-touch",
+        "weight": -1
+      }
+      
+    ]
+  }
+}

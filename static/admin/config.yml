@@ -5,10 +5,12 @@ media_folder: static/img
 public_folder: /img
 collections:
   - name: 'blog'
-    label: 'Blog'
+    label: 'Blogs'
+    label_singular: 'Blog'
     folder: 'content/blog'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    description: 'My Cool Blogs'
     editor:
       preview: false
     fields:
@@ -16,3 +18,31 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'Pages'
+    files: 
+      - label: "About Page"
+        name: "about"
+        file: "site/content/about.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Position, name: position, widget: string}
+              - {label: Photo, name: photo, widget: image}
+      - label: "Locations Page"
+        name: "locations"
+        file: "site/content/locations.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Locations
+            name: locations
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Address, name: address, widget: string} 

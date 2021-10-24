@@ -1,0 +1,43 @@
+{
+  "menu": {
+    "main": [
+      {
+        "identifier": "home",
+        "name": "Home Page",
+        "title": "homepage",
+        "url": "/",
+        "weight": -3
+      },
+      {
+        "identifier": "about",
+        "name": "About Us",
+        "title": "about us",
+        "url": "/about/",
+        "weight": -4
+      },
+      {
+        "identifier": "ssgf",
+        "parent": "about",
+        "name": "Simrik Security Gurkha Force",
+        "title": "Simrik Security Gurkha Force",
+        "url": "/about/simrik-security-gurkha-force",
+        "weight": -5
+      },
+      {
+        "identifier": "scel",
+        "parent": "about",
+        "name": "Simrik Construction Engineering Limited",
+        "title": "Simrik Construction Engineering Limited",
+        "url": "/about/simrik-construction-engineering-limited",
+        "weight": -6
+      },
+      {
+        "identifier": "get in touch",
+        "name": "Get in Touch",
+        "title": "Get in Touch",
+        "url": "/about/get-in-touch",
+        "weight": -6
+      }
+    ]
+  }
+}
