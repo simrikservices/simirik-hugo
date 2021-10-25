@@ -17,7 +17,7 @@
         "name": "About Us",
         "title": "about us",
         "url": "/about/",
-        "weight": -4
+        "weight": -32
       },
       {
         "identifier": "ssgf",
@@ -40,7 +40,7 @@
         "name": "Construction",
         "title": "construction",
         "url": "/about/",
-        "weight": -4
+        "weight": -31
       },
       {
         "identifier": "construction services",
@@ -63,22 +63,22 @@
         "name": "Security",
         "title": "Security",
         "url": "/about/",
-        "weight": -4
+        "weight": -30
       },
       {
         "identifier": "Security services",
         "parent": "security",
         "name": "Services",
         "title": "Security services",
-        "url": "/Security/services",
+        "url": "/security/services",
         "weight": -4
       },
       {
-        "identifier": "Security projets",
+        "identifier": "securityclients",
         "parent": "security",
-        "name": "Projects",
-        "title": "Security services",
-        "url": "/Security/services",
+        "name": "Our Clients",
+        "title": "Our Clients",
+        "url": "/security/clients",
         "weight": -3
       },
       {
@@ -86,7 +86,7 @@
         "name": "Nepal Team",
         "title": "Nepal Team",
         "url": "/team/nepal",
-        "weight": -4
+        "weight": -29
       },
       {
         "identifier": "nepalteam",
@@ -109,7 +109,7 @@
         "name": "Get in Touch",
         "title": "Get in Touch",
         "url": "/about/get-in-touch",
-        "weight": -1
+        "weight": -28
       }
       
     ]

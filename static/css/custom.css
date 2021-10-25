@@ -1,0 +1,5 @@
+.fixed-top.affix img {
+  height: 50px !important;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}

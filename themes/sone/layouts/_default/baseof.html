@@ -6,23 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!--favicon icon-->
     <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
-
-    <!--title-->
     <title>Corporx - Corporate and Business HTML Template</title>
-
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-    <!--build:css-->
     <link rel="stylesheet" href="css/main.css">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
-
-    <!--preloader start-->
     <div id="preloader">
         <div class="loader1">
             <span></span>
@@ -32,18 +23,15 @@
             <span></span>
         </div>
     </div>
-    <!--preloader end-->
-    <!--header section start-->
-        {{ partial "header" . }}
-    <!--header section end-->
+
+    {{ partial "header" . }}
 
     {{ block "main" . }}{{ end }}
 
-    <!--footer section end-->
-    <!--scroll bottom to top button start-->
     <button class="scroll-top scroll-to-target" data-target="html">
         <span class="fas fa-hand-point-up"></span>
     </button>
+    {{ partial "footer" . }}
     <!--scroll bottom to top button end-->
     <script src="js/vendors/jquery-3.5.1.min.js"></script>
     <script src="js/vendors/popper.min.js"></script>

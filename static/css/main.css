@@ -7680,7 +7680,7 @@ readers do not read off random characters that represent icons */
   --gray: #7E8299;
   --gray-dark: #3F4254;
   --primary: #1A2C79;
-  --secondary: #e80566;
+  --secondary: #ab000b;
   --success: #05A677;
   --info: #1E90FF;
   --warning: #f5b759;
@@ -11597,8 +11597,8 @@ fieldset:disabled a.btn {
 /* line 66, src/assets/scss/bootstrap/_buttons.scss */
 .btn-secondary {
   color: #ffffff;
-  background-color: #e80566;
-  border-color: #e80566;
+  background-color: #ab000b;
+  border-color: #ab000b;
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(24, 28, 50, 0.07);
           box-shadow: 0 0.125rem 0.25rem rgba(24, 28, 50, 0.07);
 }
@@ -11622,8 +11622,8 @@ fieldset:disabled a.btn {
 /* line 32, src/assets/scss/bootstrap/mixins/_buttons.scss */
 .btn-secondary.disabled, .btn-secondary:disabled {
   color: #ffffff;
-  background-color: #e80566;
-  border-color: #e80566;
+  background-color: #ab000b;
+  border-color: #ab000b;
 }
 
 /* line 43, src/assets/scss/bootstrap/mixins/_buttons.scss */
@@ -12952,15 +12952,15 @@ fieldset:disabled a.btn {
 
 /* line 72, src/assets/scss/bootstrap/_buttons.scss */
 .btn-outline-secondary {
-  color: #e80566;
-  border-color: #e80566;
+  color: #ab000b;
+  border-color: #ab000b;
 }
 
 /* line 13, src/assets/scss/bootstrap/mixins/_hover.scss */
 .btn-outline-secondary:hover {
   color: #ffffff;
-  background-color: #e80566;
-  border-color: #e80566;
+  background-color: #ab000b;
+  border-color: #ab000b;
 }
 
 /* line 74, src/assets/scss/bootstrap/mixins/_buttons.scss */
@@ -12971,7 +12971,7 @@ fieldset:disabled a.btn {
 
 /* line 79, src/assets/scss/bootstrap/mixins/_buttons.scss */
 .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
-  color: #e80566;
+  color: #ab000b;
   background-color: transparent;
 }
 
@@ -12979,8 +12979,8 @@ fieldset:disabled a.btn {
 .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-secondary.dropdown-toggle {
   color: #ffffff;
-  background-color: #e80566;
-  border-color: #e80566;
+  background-color: #ab000b;
+  border-color: #ab000b;
 }
 
 /* line 92, src/assets/scss/bootstrap/mixins/_buttons.scss */
@@ -14884,9 +14884,9 @@ input[type="button"].btn-block {
 
 /* line 32, src/assets/scss/bootstrap/_custom-forms.scss */
 .custom-control-input:checked ~ .custom-control-label::before {
-  color: #e80566;
-  border-color: #e80566;
-  background-color: #e80566;
+  color: #ab000b;
+  border-color: #ab000b;
+  background-color: #ab000b;
   -webkit-box-shadow:;
           box-shadow:;
 }
@@ -14976,7 +14976,7 @@ input[type="button"].btn-block {
 
 /* line 133, src/assets/scss/bootstrap/_custom-forms.scss */
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3e%3cpath stroke='%23e80566' d='M0 2h4'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3e%3cpath stroke='%23ab000b' d='M0 2h4'/%3e%3c/svg%3e");
 }
 
 /* line 139, src/assets/scss/bootstrap/_custom-forms.scss */
@@ -14996,7 +14996,7 @@ input[type="button"].btn-block {
 
 /* line 159, src/assets/scss/bootstrap/_custom-forms.scss */
 .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23e80566'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23ab000b'/%3e%3c/svg%3e");
 }
 
 /* line 165, src/assets/scss/bootstrap/_custom-forms.scss */
@@ -16588,7 +16588,7 @@ a.badge-primary:focus, a.badge-primary.focus {
 /* line 51, src/assets/scss/bootstrap/_badge.scss */
 .badge-secondary {
   color: #ffffff;
-  background-color: #e80566;
+  background-color: #ab000b;
 }
 
 /* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
@@ -17832,8 +17832,8 @@ a.badge-gray-800:focus, a.badge-gray-800.focus {
 .list-group-item.active {
   z-index: 2;
   color: #ffffff;
-  background-color: #e80566;
-  border-color: #e80566;
+  background-color: #ab000b;
+  border-color: #ab000b;
 }
 
 /* line 77, src/assets/scss/bootstrap/_list-group.scss */
@@ -19659,7 +19659,7 @@ button.bg-primary:focus {
 
 /* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
 .bg-secondary {
-  background-color: #e80566 !important;
+  background-color: #ab000b !important;
 }
 
 /* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
@@ -20060,7 +20060,7 @@ button.bg-gray-800:focus {
 
 /* line 20, src/assets/scss/bootstrap/utilities/_borders.scss */
 .border-secondary {
-  border-color: #e80566 !important;
+  border-color: #ab000b !important;
 }
 
 /* line 20, src/assets/scss/bootstrap/utilities/_borders.scss */
@@ -28801,7 +28801,7 @@ a.text-primary:hover, a.text-primary:focus {
 
 /* line 6, src/assets/scss/bootstrap/mixins/_text-emphasis.scss */
 .text-secondary {
-  color: #e80566 !important;
+  color: #ab000b !important;
 }
 
 /* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
@@ -34704,7 +34704,7 @@ a.text-gray-800:hover, a.text-gray-800:focus {
 
 /* line 21, src/assets/scss/vendor/_headroom.scss */
 .headroom--not-top.navbar-theme-secondary {
-  background-color: #e80566;
+  background-color: #ab000b;
 }
 
 /* line 24, src/assets/scss/vendor/_headroom.scss */
@@ -36067,7 +36067,7 @@ button.bg-gray-dark:focus {
 .overlay-secondary:before {
   position: absolute;
   content: "";
-  background: #e80566;
+  background: #ab000b;
   width: 100%;
   height: 100%;
   top: 0;
@@ -36093,7 +36093,7 @@ button.bg-gray-dark:focus {
 .overlay-soft-secondary:before {
   position: absolute;
   content: "";
-  background: #e80566;
+  background: #ab000b;
   width: 100%;
   height: 100%;
   top: 0;
@@ -37169,7 +37169,7 @@ button.section-primary:focus {
 
 /* line 3, src/assets/scss/mixins/_background-variant.scss */
 .section-secondary {
-  background-color: #e80566 !important;
+  background-color: #ab000b !important;
 }
 
 /* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
@@ -41670,12 +41670,12 @@ button.section-gray-800:focus {
 
 /* line 132, src/assets/scss/layout/_navbar.scss */
 .navbar-theme-secondary:not(.headroom) {
-  background-color: #e80566;
+  background-color: #ab000b;
 }
 
 /* line 135, src/assets/scss/layout/_navbar.scss */
 .navbar-theme-secondary:not(.navbar-transparent) {
-  background-color: #e80566;
+  background-color: #ab000b;
 }
 
 /* line 142, src/assets/scss/layout/_navbar.scss */
@@ -41729,7 +41729,7 @@ button.section-gray-800:focus {
   .navbar-theme-secondary .navbar-nav .list-group-item:focus,
   .navbar-theme-secondary .navbar-nav .list-group-item.active,
   .navbar-theme-secondary .navbar-nav .list-group-item:hover {
-    color: #e80566;
+    color: #ab000b;
     background: transparent;
   }
   /* line 181, src/assets/scss/layout/_navbar.scss */
@@ -44917,7 +44917,7 @@ button.section-gray-800:focus {
 
 /* line 467, src/assets/scss/layout/_section.scss */
 .index-icon-illustrations:hover {
-  color: #e80566;
+  color: #ab000b;
 }
 
 /**
@@ -45030,7 +45030,7 @@ button.section-gray-800:focus {
 
 /* line 93, src/assets/scss/layout/_footer.scss */
 .footer .footer-brand img {
-  height: 35px;
+  height: 70px;
 }
 
 /* line 96, src/assets/scss/layout/_footer.scss */
@@ -45193,7 +45193,7 @@ button.section-gray-800:focus {
 
 /* line 44, src/assets/scss/components/_accordions.scss */
 .accordion-panel-header[aria-expanded="true"] > *, .accordion-panel-header:hover > * {
-  color: #e80566;
+  color: #ab000b;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -45210,7 +45210,7 @@ button.section-gray-800:focus {
 .accordion-panel-header[aria-expanded="true"] > * i, .accordion-panel-header:hover > * i {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  fill: #e80566;
+  fill: #ab000b;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -45333,8 +45333,8 @@ button.section-gray-800:focus {
 /* line 83, src/assets/scss/components/_alerts.scss */
 .alert-secondary {
   color: #ffffff;
-  background-color: #e80566;
-  border-color: #e80566;
+  background-color: #ab000b;
+  border-color: #ab000b;
 }
 
 /* line 6, src/assets/scss/mixins/_alert.scss */
@@ -47013,7 +47013,7 @@ button.section-gray-800:focus {
 
 /* line 37, src/assets/scss/components/_breadcrumb.scss */
 .breadcrumb-secondary {
-  background: #e80566;
+  background: #ab000b;
 }
 
 /* line 40, src/assets/scss/components/_breadcrumb.scss */
@@ -47028,7 +47028,7 @@ button.section-gray-800:focus {
 
 /* line 47, src/assets/scss/components/_breadcrumb.scss */
 .breadcrumb-secondary.breadcrumb-transparent .breadcrumb-item.active {
-  color: #e80566;
+  color: #ab000b;
 }
 
 /* line 37, src/assets/scss/components/_breadcrumb.scss */
@@ -47615,7 +47615,7 @@ button.section-gray-800:focus {
 
 /* line 28, src/assets/scss/components/_blog-cards.scss */
 .blog-card .avatar-sm-custom img {
-  border: 0.125rem solid #e80566;
+  border: 0.125rem solid #ab000b;
   padding: .25rem;
   width: 50px;
   height: 50px;
@@ -47956,8 +47956,8 @@ button.section-gray-800:focus {
 
 /* line 7, src/assets/scss/components/_colors.scss */
 .bg-gradient {
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #1A2C79), to(#e80566)) !important;
-  background: linear-gradient(to right, #1A2C79 10%, #e80566) !important;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #1A2C79), to(#ab000b)) !important;
+  background: linear-gradient(to right, #1A2C79 10%, #ab000b) !important;
 }
 
 /* line 14, src/assets/scss/components/_colors.scss */
@@ -48910,7 +48910,7 @@ textarea[resize="horizontal"] {
 
 /* line 351, src/assets/scss/components/_forms.scss */
 .custom-toggle input:checked + .custom-toggle-slider {
-  background-color: #e80566;
+  background-color: #ab000b;
 }
 
 /* line 353, src/assets/scss/components/_forms.scss */
@@ -49207,13 +49207,13 @@ textarea[resize="horizontal"] {
 
 /* line 152, src/assets/scss/components/_icon-box.scss */
 .icon-shape-secondary {
-  color: #e80566;
+  color: #ab000b;
   background-color: rgba(232, 5, 102, 0.2);
 }
 
 /* line 155, src/assets/scss/components/_icon-box.scss */
 .icon-secondary {
-  color: #e80566;
+  color: #ab000b;
 }
 
 /* line 152, src/assets/scss/components/_icon-box.scss */
@@ -49872,8 +49872,8 @@ textarea[resize="horizontal"] {
 .list-group-item.active {
   z-index: 2;
   color: #ffffff;
-  background-color: #e80566;
-  border-color: #e80566;
+  background-color: #ab000b;
+  border-color: #ab000b;
 }
 
 /* line 24, src/assets/scss/components/_list-group.scss */
@@ -50033,7 +50033,7 @@ textarea[resize="horizontal"] {
 
 /* line 9, src/assets/scss/mixins/_modals.scss */
 .modal-secondary .modal-content {
-  background-color: #e80566;
+  background-color: #ab000b;
   color: #ffffff;
 }
 
@@ -51700,7 +51700,7 @@ textarea[resize="horizontal"] {
 
 /* line 252, src/assets/scss/components/_profile-cards.scss */
 .profile-card-image .card .card-body h6 {
-  color: #e80566;
+  color: #ab000b;
 }
 
 /* line 258, src/assets/scss/components/_profile-cards.scss */
@@ -51957,12 +51957,12 @@ textarea[resize="horizontal"] {
 
 /* line 26, src/assets/scss/components/_popover.scss */
 .popover-secondary {
-  background-color: #e80566;
+  background-color: #ab000b;
 }
 
 /* line 5, src/assets/scss/mixins/_popover.scss */
 .popover-secondary .popover-header {
-  background-color: #e80566;
+  background-color: #ab000b;
   color: #ffffff;
 }
 
@@ -51978,22 +51978,22 @@ textarea[resize="horizontal"] {
 
 /* line 17, src/assets/scss/mixins/_popover.scss */
 .popover-secondary.bs-popover-top .arrow::after, .popover-secondary.bs-popover-auto[x-placement^="top"] .arrow::after {
-  border-top-color: #e80566;
+  border-top-color: #ab000b;
 }
 
 /* line 22, src/assets/scss/mixins/_popover.scss */
 .popover-secondary.bs-popover-right .arrow::after, .popover-secondary.bs-popover-auto[x-placement^="right"] .arrow::after {
-  border-right-color: #e80566;
+  border-right-color: #ab000b;
 }
 
 /* line 27, src/assets/scss/mixins/_popover.scss */
 .popover-secondary.bs-popover-bottom .arrow::after, .popover-secondary.bs-popover-auto[x-placement^="bottom"] .arrow::after {
-  border-bottom-color: #e80566;
+  border-bottom-color: #ab000b;
 }
 
 /* line 32, src/assets/scss/mixins/_popover.scss */
 .popover-secondary.bs-popover-left .arrow::after, .popover-secondary.bs-popover-auto[x-placement^="left"] .arrow::after {
-  border-left-color: #e80566;
+  border-left-color: #ab000b;
 }
 
 /* line 26, src/assets/scss/components/_popover.scss */
@@ -53242,7 +53242,7 @@ textarea[resize="horizontal"] {
 
 /* line 112, src/assets/scss/components/_progress.scss */
 .progress-info .bg-secondary::after {
-  border-top-color: #e80566;
+  border-top-color: #ab000b;
 }
 
 /* line 112, src/assets/scss/components/_progress.scss */
@@ -53647,12 +53647,12 @@ textarea[resize="horizontal"] {
 
 /* line 88, src/assets/scss/components/_shapes.scss */
 .fill-secondary {
-  fill: #e80566;
+  fill: #ab000b;
 }
 
 /* line 92, src/assets/scss/components/_shapes.scss */
 .stroke-secondary {
-  stroke: #e80566;
+  stroke: #ab000b;
 }
 
 /* line 88, src/assets/scss/components/_shapes.scss */
@@ -53937,12 +53937,12 @@ textarea[resize="horizontal"] {
 
 /* line 99, src/assets/scss/components/_shapes.scss */
 .shape-secondary {
-  background-color: #e80566;
+  background-color: #ab000b;
 }
 
 /* line 101, src/assets/scss/components/_shapes.scss */
 .shape-secondary .step-number {
-  background-color: #e80566;
+  background-color: #ab000b;
 }
 
 /* line 99, src/assets/scss/components/_shapes.scss */
@@ -54408,12 +54408,12 @@ svg.bg-primary [fill]:not([fill="none"]) {
 
 /* line 28, src/assets/scss/mixins/_background-variant.scss */
 svg.bg-secondary [stroke]:not([stroke="none"]) {
-  stroke: #e80566;
+  stroke: #ab000b;
 }
 
 /* line 31, src/assets/scss/mixins/_background-variant.scss */
 svg.bg-secondary [fill]:not([fill="none"]) {
-  fill: #e80566;
+  fill: #ab000b;
 }
 
 /* line 28, src/assets/scss/mixins/_background-variant.scss */
@@ -54906,12 +54906,12 @@ code[class*="language-"], pre[class*="language-"] {
 
 /* line 162, src/assets/scss/components/_type.scss */
 .text-secondary, .text-secondary:hover {
-  color: #e80566 !important;
+  color: #ab000b !important;
 }
 
 /* line 166, src/assets/scss/components/_type.scss */
 .text-secondary a:not(.btn), .text-secondary h1, .text-secondary h2, .text-secondary h3, .text-secondary h4, .text-secondary h5, .text-secondary h6, .text-secondary .h1, .text-secondary .h2, .text-secondary .h3, .text-secondary .h4, .text-secondary .h5, .text-secondary .h6, .text-secondary .display-1, .text-secondary .display-2, .text-secondary .display-3, .text-secondary .display-4 {
-  color: #e80566;
+  color: #ab000b;
 }
 
 /* line 169, src/assets/scss/components/_type.scss */
@@ -55939,7 +55939,7 @@ article .h1, article .h2, article .h3, article .h4, article .h5, article .h6 {
   display: block;
   width: 9px;
   height: 9px;
-  background: #e80566;
+  background: #ab000b;
   border-radius: 50%;
   position: absolute;
   left: 1px;
@@ -56506,7 +56506,7 @@ img.flex-fill {
 
 /* line 5, src/assets/scss/corporx/_header.scss */
 .navbar-theme-secondary.affix {
-  background-color: #e80566;
+  background-color: #ab000b;
 }
 
 /* line 5, src/assets/scss/corporx/_header.scss */
@@ -56716,7 +56716,7 @@ img.flex-fill {
 
 /* line 12, src/assets/scss/corporx/_hero.scss */
 .custom-indicators li.active button {
-  background: #e80566;
+  background: #ab000b;
   color: #ffffff;
 }
 
@@ -56793,7 +56793,7 @@ button.scroll-top:focus {
   color: #ffffff;
   text-align: center;
   cursor: pointer;
-  background: #e80566;
+  background: #ab000b;
   -webkit-transition: 1s ease;
   transition: 1s ease;
   border: none;
@@ -57004,7 +57004,7 @@ button.scroll-top:focus {
 .promo-services-single:hover {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background: linear-gradient(75deg, #1A2C79 10%, #e80566);
+  background: linear-gradient(75deg, #1A2C79 10%, #ab000b);
   color: #ffffff;
 }
 
@@ -57064,8 +57064,8 @@ button.scroll-top:focus {
 /* line 30, src/assets/scss/corporx/_portfolio.scss */
 .portfolio-wrapper .content-overlay {
   background: #1A2C79;
-  background: -webkit-gradient(linear, left top, right top, color-stop(2%, #1A2C79), color-stop(82%, #e80566));
-  background: linear-gradient(to right, #1A2C79 2%, #e80566 82%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(2%, #1A2C79), color-stop(82%, #ab000b));
+  background: linear-gradient(to right, #1A2C79 2%, #ab000b 82%);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -57231,12 +57231,12 @@ button.scroll-top:focus {
 
 /* line 37, src/assets/scss/corporx/_slider-indicator.scss */
 .custom-dot.owl-theme .owl-dots button.owl-dot span:hover {
-  background: #e80566;
+  background: #ab000b;
 }
 
 /* line 40, src/assets/scss/corporx/_slider-indicator.scss */
 .custom-dot.owl-theme .owl-dots button.owl-dot.active span {
-  background: #e80566;
+  background: #ab000b;
 }
 
 @media (min-width: 992px) {
@@ -57417,7 +57417,7 @@ button.scroll-top:focus {
 
 /* line 5, src/assets/scss/corporx/_services-features.scss */
 .services-single .services-content-wrap a:hover {
-  color: #e80566 !important;
+  color: #ab000b !important;
 }
 
 @media (min-width: 768px) {
@@ -57492,12 +57492,12 @@ button.scroll-top:focus {
 /* line 33, src/assets/scss/pages/_about-us.scss */
 .feature-tabs li a.active:before {
   width: 100%;
-  background: #e80566;
+  background: #ab000b;
 }
 
 /* line 37, src/assets/scss/pages/_about-us.scss */
 .feature-tabs li a.active {
-  color: #e80566 !important;
+  color: #ab000b !important;
 }
 
 /* line 41, src/assets/scss/pages/_about-us.scss */
@@ -57543,7 +57543,7 @@ button.scroll-top:focus {
 
 /* line 14, src/assets/scss/pages/_blog.scss */
 .post-content blockquote:hover {
-  border-color: #e80566;
+  border-color: #ab000b;
 }
 
 /* line 18, src/assets/scss/pages/_blog.scss */
@@ -57605,7 +57605,7 @@ button.scroll-top:focus {
 
 /* line 60, src/assets/scss/pages/_blog.scss */
 .comment-meta-date a:hover, .comment-meta-date a:focus, .comment-meta-date-shop a:hover, .comment-meta-date-shop a:focus {
-  color: #e80566;
+  color: #ab000b;
   opacity: 1;
 }
 
@@ -57628,7 +57628,7 @@ button.scroll-top:focus {
 
 /* line 79, src/assets/scss/pages/_blog.scss */
 .comment-reply > a:hover, .comment-reply > a:focus, .comment-reply-shop > a:hover, .comment-reply-shop > a:focus {
-  background: #e80566;
+  background: #ab000b;
   color: #ffffff;
 }
 
