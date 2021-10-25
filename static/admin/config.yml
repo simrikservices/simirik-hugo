@@ -6,7 +6,7 @@ public_folder: /img
 collections:
   - name: categories
     label: Categories
-    folder: data/categories/
+    folder: content/categories/
     create: true
     slug: "{{name}}"
     identifier_field: name
