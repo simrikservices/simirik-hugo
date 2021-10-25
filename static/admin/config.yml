@@ -20,7 +20,34 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'pages'
     label: 'Pages'
-    files: 
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "site/content/home.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - label: "Slider Texts"
+            name: slidertext
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: "Sub Text", name: subtext, widget: string}
+              - {label: More, name: more, widget: string} 
+          - label: "Main Texts"
+            name: maintexts
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: "Sub Text", name: subtext, widget: string}
+          - label: "About Texts"
+            name: abouttexts
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: "Sub Text", name: subtext, widget: string}
+              - {label: "Icon", name: iconname, widget: string}
+          - {label: 'About PNG Image', name: aboutimage, widget: image}
+          - {label: "Footer Slogan", name: subtext, widget: string}
       - label: "About Page"
         name: "about"
         file: "site/content/about.yml"
