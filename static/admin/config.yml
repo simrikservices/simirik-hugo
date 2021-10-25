@@ -4,26 +4,42 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'blog'
-    label: 'Blogs'
-    label_singular: 'Blog'
-    folder: 'content/blog'
+  - name: categories
+    label: Categories
+    folder: data/categories/
+    create: true
+    slug: "{{name}}"
+    identifier_field: name
+    fields: 
+      - {name: name, label: Name}
+  - name: 'posts'
+    label: 'Posts'
+    label_singular: 'Post'
+    folder: 'content/post'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    description: 'My Cool Blogs'
-    editor:
-      preview: false
+    description: 'Simrik Services website content.'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - name: categories
+        label: Categories
+        widget: relation
+        collection: "categories"
+        searchFields: ["name"]
+        valueField: "name"
+        displayFields: ["name"]
+        multiple: true
   - name: 'pages'
     label: 'Pages'
+    editor:
+      preview: false
     files:
       - label: "Home Page"
         name: "home"
-        file: "site/content/home.yml"
+        file: "content/home.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - label: "Slider Texts"
@@ -32,7 +48,7 @@ collections:
             fields:
               - {label: Title, name: title, widget: string}
               - {label: "Sub Text", name: subtext, widget: string}
-              - {label: More, name: more, widget: string} 
+              - {label: More, name: more, widget: markdown} 
           - label: "Main Texts"
             name: maintexts
             widget: list
@@ -41,16 +57,12 @@ collections:
               - {label: "Sub Text", name: subtext, widget: string}
           - label: "About Texts"
             name: abouttexts
-            widget: list
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: "Sub Text", name: subtext, widget: string}
-              - {label: "Icon", name: iconname, widget: string}
+            widget: 'markdown'
           - {label: 'About PNG Image', name: aboutimage, widget: image}
           - {label: "Footer Slogan", name: subtext, widget: string}
       - label: "About Page"
         name: "about"
-        file: "site/content/about.yml"
+        file: "content/about.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
@@ -61,9 +73,9 @@ collections:
               - {label: Name, name: name, widget: string}
               - {label: Position, name: position, widget: string}
               - {label: Photo, name: photo, widget: image}
-      - label: "Locations Page"
+      - label: "Contacts"
         name: "locations"
-        file: "site/content/locations.yml"
+        file: "content/contacts.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
@@ -73,3 +85,4 @@ collections:
             fields:
               - {label: Name, name: name, widget: string}
               - {label: Address, name: address, widget: string} 
+              - {label: Location, name: map: widget: map}
