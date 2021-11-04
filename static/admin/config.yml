@@ -32,7 +32,7 @@ collections:
         valueField: "name"
         displayFields: ["name"]
         multiple: true
-       - {label: "Draft", name: "draft", widget: "boolean", required: false, default: true}
+      - {label: "Draft", name: "draft", widget: "boolean", required: false, default: true}
   - name: 'testimonials'
     label: 'Testimonials'
     label_singular: 'Testimonial'
