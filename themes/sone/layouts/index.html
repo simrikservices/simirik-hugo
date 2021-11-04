@@ -89,13 +89,13 @@
         <div class="row justify-content-center justify-content-lg-start">
             <div class="col-lg-6 col-md-8">
                 <div class="section-heading">
-                    <h2>Control Everything & <br>all Solution Made for you</h2>
+                    <h2>{{ .Site.Data.home.title | markdownify }}</h2>
                 </div>
             </div>
         </div>
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-7 col-md-10 order-2 order-lg-1">
-                <div class="row justify-content-center">
+                <!-- <div class="row justify-content-center">
                     <div class="col-12 col-lg-6 col-md-6 mt-4">
                         <div class="feature-card text-md-center text-lg-left">
                             <div>
@@ -140,11 +140,12 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
+                {{ .Site.Data.home.abouttexts | markdownify }}
             </div>
             <div class="col-lg-5 col-md-7 order-1 order-lg-2">
                 <div class="image-box fancy-radius p-2 bg-primary-alt">
-                    <img class="fancy-radius img-fluid" src="images/download.png" alt="modern desk">
+                    <img class="fancy-radius img-fluid" src="{{ .Site.Data.home.aboutimage }}" alt="modern desk">
                 </div>
             </div>
         </div>
@@ -247,7 +248,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="section-heading text-center mb-5">
-                    <h2>Our Latest News</h2>
+                    <h2>Our Latest Projects</h2>
                     <p class="lead">Dynamically pursue reliable convergence rather than 24/7 process improvements
                         develop end-to-end customer service.</p>
                 </div>
