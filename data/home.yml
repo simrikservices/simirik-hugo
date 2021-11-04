@@ -19,10 +19,13 @@ slidertext:
 maintexts:
   - subtext: Simrik Construction & Engineering Ltd.
     title: SCEL
+    link: /scel
   - title: SSGF
     subtext: Simrik Security Gurkha Force
+    link: /ssgf
   - title: Quick Contact
     subtext: +977 9812345678 / +852 9876543216
+    link: /contats
 abouttexts: >-
   Simrik Security Gurkha Force & Simrik Construction Engineering Limited (SSGF &
   SCEL) offers a multi range of security and construction services to customers
