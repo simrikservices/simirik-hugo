@@ -17,13 +17,35 @@ collections:
     label_singular: 'Post'
     folder: 'content/post'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     description: 'Simrik Services website content.'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - name: categories
+        label: Categories
+        widget: relation
+        collection: "categories"
+        searchFields: ["name"]
+        valueField: "name"
+        displayFields: ["name"]
+        multiple: true
+      - {label: “Save as Draft”, name: “draft”, required: false, widget: “boolean”, default: true}
+  - name: 'testimonials'
+    label: 'Testimonials'
+    label_singular: 'Testimonial'
+    folder: 'content/testimonial'
+    create: true
+    slug: '{{slug}}'
+    text1: 'What Our Clients Are Saying'
+    text2: 'DON’T JUST TAKE OUR WORD FOR IT'
+    fields:
+      - { label: 'Name', name: 'title', widget: 'string' }
+      - { label: 'Position', name: 'position', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Rating', name: 'rating', widget: 'number' }
       - name: categories
         label: Categories
         widget: relation
@@ -62,6 +84,10 @@ collections:
             widget: 'markdown'
           - {label: 'About PNG Image', name: aboutimage, widget: image}
           - {label: "Footer Slogan", name: subtext, widget: string}
+          - {label: "Countries", name: countries, widget: number}
+          - {label: "Since", name: since, widget: number}
+          - {label: "Construction Projects", name: projectsno, widget: number}
+          - {label: "Security Clients", name: clientsno, widget: number}
       - label: "About Page"
         name: "about"
         file: "data/about.yml"
