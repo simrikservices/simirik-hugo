@@ -337,8 +337,7 @@
                 <div class="section-heading mb-5 text-center ">
                     <h2>What Clients Say About Us</h2>
                     <p class="lead">
-                        Rapidiously morph transparent internal or "organic" sources whereas resource sucking
-                        e-business innovate compelling internal.
+                        DON’T JUST TAKE OUR WORD FOR IT
                     </p>
                 </div>
             </div>
@@ -347,6 +346,10 @@
         <div class="row">
             <div class="col-12 col-lg-12">
                 <div class="owl-carousel owl-theme client-testimonial custom-dot">
+                    {{ range .Pages }}
+                     {{ . }}
+                    {{ end }}
+                    {{ range where .Site.Pages "Section" "categories"}}
                     <div class="item">
                         <div class="testimonial-single shadow-sm bg-white rounded-custom p-5">
                             <div class="quotation mb-4">
@@ -357,7 +360,7 @@
                             </blockquote>
                             <div class="d-flex justify-content-md-between justify-content-lg-between align-items-center pt-3">
                                 <div class="media align-items-center">
-                                    <img src="images/team/team-4.jpg" alt="team" class="avatar avatar-sm mr-3">
+                                    <!-- <img src="images/team/team-4.jpg" alt="team" class="avatar avatar-sm mr-3"> -->
                                     <div class="media-body">
                                         <h6 class="mb-0">Kyan Boards</h6>
                                         <small>CEO, ThemeTags</small>
@@ -376,93 +379,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="testimonial-single shadow-sm bg-white rounded-custom p-5">
-                            <div class="quotation mb-4">
-                                <span class="icon icon-md icon-lg  icon-light "><i class="fas fa-quote-left"></i></span>
-                            </div>
-                            <blockquote class="blockquote">
-                                Intrinsicly facilitate functional imperatives without next-generation services. Compellingly revolutionize worldwide users enterprise best practices.
-                            </blockquote>
-                            <div class="d-flex justify-content-md-between justify-content-lg-between align-items-center pt-3">
-                                <div class="media align-items-center">
-                                    <img src="images/team/team-1.jpg" alt="team" class="avatar avatar-sm mr-3">
-                                    <div class="media-body">
-                                        <h6 class="mb-0">Pirtle Karol</h6>
-                                        <small>Team Leader, ThemeTags</small>
-                                    </div>
-                                </div>
-                                <div class="client-ratting d-none d-md-block d-lg-block">
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
-                                        <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
-                                        <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
-                                        <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
-                                        <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
-                                    </ul>
-                                    <span class="font-weight-bold small">5.0 <span class="font-weight-lighter">Out of 5</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimonial-single shadow-sm bg-white rounded-custom p-5">
-                            <div class="quotation mb-4">
-                                <span class="icon icon-md icon-lg  icon-light "><i class="fas fa-quote-left"></i></span>
-                            </div>
-                            <blockquote class="blockquote">
-                                Assertively procrastinate distributed relationships whereas equity invested intellectual capital everything energistically underwhelm proactive.
-                            </blockquote>
-                            <div class="d-flex justify-content-md-between justify-content-lg-between align-items-center pt-3">
-                                <div class="media align-items-center">
-                                    <img src="images/team/team-2.jpg" alt="team" class="avatar avatar-sm mr-3">
-                                    <div class="media-body">
-                                        <h6 class="mb-0">Kyan Boards</h6>
-                                        <small>CEO, ThemeTags</small>
-                                    </div>
-                                </div>
-                                <div class="client-ratting d-none d-md-block d-lg-block">
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
-                                        <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
-                                        <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star-half ratting-color"></i></span></li>
-                                        <!-- <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
-                                        <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li> -->
-                                    </ul>
-                                    <span class="font-weight-bold small">5.0 <span class="font-weight-lighter">Out of 5</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimonial-single shadow-sm bg-white rounded-custom p-5">
-                            <div class="quotation mb-4">
-                                <span class="icon icon-md icon-lg  icon-light "><i class="fas fa-quote-left"></i></span>
-                            </div>
-                            <blockquote class="blockquote">
-                                Intrinsicly facilitate functional imperatives without next-generation services. Compellingly revolutionize worldwide users enterprise best practices.
-                            </blockquote>
-                            <div class="d-flex justify-content-md-between justify-content-lg-between align-items-center pt-3">
-                                <div class="media align-items-center">
-                                    <img src="images/team/team-6.jpg" alt="team" class="avatar avatar-sm mr-3">
-                                    <div class="media-body">
-                                        <h6 class="mb-0">Pirtle Karol</h6>
-                                        <small>Team Leader, ThemeTags</small>
-                                    </div>
-                                </div>
-                                <div class="client-ratting d-none d-md-block d-lg-block">
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
-                                        <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
-                                        <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
-                                        <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
-                                        <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
-                                    </ul>
-                                    <span class="font-weight-bold small">5.0 <span class="font-weight-lighter">Out of 5</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {{ end }}
+
                 </div>
             </div>
         </div>
