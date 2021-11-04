@@ -56,6 +56,7 @@ collections:
             fields:
               - {label: Title, name: title, widget: string}
               - {label: "Sub Text", name: subtext, widget: string}
+              - {label: "Link", name: link, widget: string}
           - label: "About Texts"
             name: abouttexts
             widget: 'markdown'

@@ -3,3 +3,11 @@
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
+
+.mycontent {
+  color: #cccccc !important;
+}
+.mycontent a {
+  color: yellow !important;
+  font-weight: bold;
+}
