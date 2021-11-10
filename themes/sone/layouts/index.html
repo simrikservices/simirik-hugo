@@ -249,8 +249,7 @@
             <div class="col-lg-8">
                 <div class="section-heading text-center mb-5">
                     <h2>Our Latest Projects</h2>
-                    <p class="lead">Dynamically pursue reliable convergence rather than 24/7 process improvements
-                        develop end-to-end customer service.</p>
+                    <p class="lead">Our Latest Construction Projects.</p>
                 </div>
             </div>
         </div>
@@ -342,39 +341,50 @@
                 </div>
             </div>
         </div>
+        
+        
 
         <div class="row">
             <div class="col-12 col-lg-12">
                 <div class="owl-carousel owl-theme client-testimonial custom-dot">
-                    {{ range .Pages }}
-                     {{ . }}
-                    {{ end }}
-                    {{ range where .Site.Pages "Section" "categories"}}
+
+                    {{ range (where .Site.RegularPages "Section" "testimonial") }}
+
                     <div class="item">
                         <div class="testimonial-single shadow-sm bg-white rounded-custom p-5">
                             <div class="quotation mb-4">
                                 <span class="icon icon-md icon-lg  icon-light "><i class="fas fa-quote-left"></i></span>
                             </div>
                             <blockquote class="blockquote">
-                                Assertively procrastinate distributed relationships whereas equity invested intellectual capital everything energistically underwhelm proactive.
+                                {{.Description}}
                             </blockquote>
                             <div class="d-flex justify-content-md-between justify-content-lg-between align-items-center pt-3">
                                 <div class="media align-items-center">
-                                    <!-- <img src="images/team/team-4.jpg" alt="team" class="avatar avatar-sm mr-3"> -->
+                                    <img src="images/team/team-4.jpg" alt="team" class="avatar avatar-sm mr-3">
                                     <div class="media-body">
-                                        <h6 class="mb-0">Kyan Boards</h6>
-                                        <small>CEO, ThemeTags</small>
+                                        <h6 class="mb-0">{{.Title}}</h6>
+                                        <small>{{.Params.position}}</small>
                                     </div>
                                 </div>
                                 <div class="client-ratting d-none d-md-block d-lg-block">
                                     <ul class="list-inline mb-0">
+                                        {{ if ge .Params.rating  1 }}
                                         <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
+                                        {{ end }}
+                                        {{ if ge .Params.rating  2 }}
                                         <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
+                                        {{ end }}
+                                        {{ if ge .Params.rating  3 }}
                                         <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
+                                        {{ end }}
+                                        {{ if ge .Params.rating  4 }}
                                         <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
+                                        {{ end }}
+                                        {{ if ge .Params.rating  5 }}
                                         <li class="list-inline-item mr-0"><span class="icon icon-xs font-small text-warning"><i class="fas fa-star ratting-color"></i></span></li>
+                                        {{ end }}
                                     </ul>
-                                    <span class="font-weight-bold small">5.0 <span class="font-weight-lighter">Out of 5</span></span>
+                                    <span class="font-weight-bold small">{{.Params.rating}}.0 <span class="font-weight-lighter">Out of 5</span></span>
                                 </div>
                             </div>
                         </div>

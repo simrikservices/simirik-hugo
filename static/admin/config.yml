@@ -47,6 +47,22 @@ collections:
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Rating', name: 'rating', widget: 'number' }
       - {label: "Draft", name: "draft", widget: "boolean", required: false, default: true}
+  - name: 'projects'
+    label: 'Projects'
+    label_singular: 'Project'
+    folder: 'content/project'
+    create: true
+    slug: '{{slug}}'
+    text1: 'Our Latest Projects'
+    text2: 'Our Latest Construction Projects'
+    fields:
+      - { label: 'Name', name: 'title', widget: 'string' }
+      - { label: 'Keyword', name: 'keyword', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Main Image', name: mainimage, widget: image, media_library: { config: { multiple: false}} }
+      - { label: 'Other Images', name: otherimages, widget: image, media_library: { config: { multiple: true}} }
+      - { label: "Draft", name: "draft", widget: "boolean", required: false, default: true}
   - name: 'pages'
     label: 'Pages'
     editor:
