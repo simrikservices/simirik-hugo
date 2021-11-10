@@ -62,11 +62,11 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Main Image', name: mainimage, widget: image, allow_multiple: false }
       - label: 'Multiple Images'
-            name: 'multipleimages'
-            widget: list
-            fields:
-              - {label: Caption, name: title, widget: string}
-              - {label: Photo, name: photo, widget: image}
+          name: 'multipleimages'
+          widget: list
+          fields:
+            - {label: Caption, name: title, widget: string}
+            - {label: Photo, name: photo, widget: image}
       - { label: "Draft", name: "draft", widget: "boolean", required: false, default: false}
   - name: 'pages'
     label: 'Pages'
