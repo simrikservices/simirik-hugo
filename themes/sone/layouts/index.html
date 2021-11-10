@@ -254,14 +254,15 @@
             </div>
         </div>
         <div class="row">
+            {{ range (where .Site.RegularPages "Section" "project") }}
             <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 mb-lg-0 mb-4">
                 <div class="card bg-white border-variant-soft shadow-soft">
                     <div class="blog-img position-relative">
-                        <img src="images/blog/4.jpg" class="card-img-top rounded-top" alt="themetags office">
-                        <a href="#" class="position-absolute category-text small badge badge-secondary">SEO, Analytics</a>
+                        <img src="{{.Params.mainimage}}" class="card-img-top rounded-top" alt="themetags office">
+                        <a href="#" class="position-absolute category-text small badge badge-secondary">{{.Params.keyword}}</a>
                     </div>
                     <div class="card-body">
-                        <div class="media d-flex align-items-center justify-content-between">
+                        <!-- <div class="media d-flex align-items-center justify-content-between">
                             <div class="post-group">
                                 <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
                                     <img class="avatar avatar-xs mr-2 img-fluid rounded-circle border border-variant-primary p-1" src="images/clients/client-1.jpg" alt="admin"> <span class="small">Admin</span>
@@ -270,59 +271,14 @@
                             <div class="d-flex align-items-center">
                                 <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
                             </div>
-                        </div>
-                        <h3 class="h5 card-title mt-3"><a href="#">Holisticly promote enabled</a></h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="services-details.html" class="link-with-icon text-default font-small font-weight-bold" target="_blank">Read more <span> <i class="fas fa-angle-right"></i></span></a>
+                        </div> -->
+                        <h3 class="h5 card-title mt-3"><a href="#">{{.Title}}</a></h3>
+                        <p class="card-text">{{.Description}}</p>
+                        <a href="" class="link-with-icon text-default font-small font-weight-bold" target="_blank">Read more <span> <i class="fas fa-angle-right"></i></span></a>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 mb-lg-0 mb-4">
-                <div class="card bg-white border-variant-soft shadow-soft">
-                    <div class="blog-img position-relative">
-                        <img src="images/blog/2.jpg" class="card-img-top rounded-top" alt="themetags office">
-                        <a href="#" class="position-absolute category-text small badge badge-secondary">Marketing</a>
-                    </div>
-                    <div class="card-body">
-                        <div class="media d-flex align-items-center justify-content-between">
-                            <div class="post-group">
-                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
-                                    <img class="avatar avatar-xs mr-2 img-fluid rounded-circle border border-variant-primary p-1" src="images/clients/client-2.jpg" alt="admin"> <span class="small">Writer</span>
-                                </a>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
-                            </div>
-                        </div>
-                        <h3 class="h5 card-title mt-3"><a href="#">Authoritatively unleash fully</a></h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="services-details.html" class="link-with-icon text-default font-small font-weight-bold" target="_blank">Read more <span> <i class="fas fa-angle-right"></i></span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 mb-lg-0 mb-4">
-                <div class="card bg-white border-variant-soft shadow-soft">
-                    <div class="blog-img position-relative">
-                        <img src="images/blog/1.jpg" class="card-img-top rounded-top" alt="themetags office">
-                        <a href="#" class="position-absolute category-text small badge badge-secondary">Business</a>
-                    </div>
-                    <div class="card-body">
-                        <div class="media d-flex align-items-center justify-content-between">
-                            <div class="post-group">
-                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
-                                    <img class="avatar avatar-xs mr-2 img-fluid rounded-circle border border-variant-primary p-1" src="images/clients/client-5.jpg" alt="admin"> <span class="small">Joe B</span>
-                                </a>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
-                            </div>
-                        </div>
-                        <h3 class="h5 card-title mt-3"><a href="#">We partnered up with Google</a></h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="services-details.html" class="link-with-icon text-default font-small font-weight-bold" target="_blank">Read more <span> <i class="fas fa-angle-right"></i></span></a>
-                    </div>
-                </div>
-            </div>
+            {{ end }}
         </div>
     </div>
 </section>
