@@ -4,8 +4,6 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  editor:
-    preview: false
   - name: categories
     label: Categories
     folder: content/categories/

@@ -3,6 +3,9 @@
   "languageCode": "en-us",
   "title": "Simrik Services",
   "theme": "sone",
+  "editor": {
+    "preview": false
+  },
   "menu": {
     "main": [
       {
