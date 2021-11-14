@@ -1,4 +1,4 @@
-title: Namaste ! Welcome to our website. zzzzzzz
+title: Namaste ! Welcome to our website.
 slidertext:
   - title: SCEL
     subtext: We have the Ability.
@@ -14,7 +14,7 @@ slidertext:
     title: SCGF
   - title: Lets Get in Touch
     subtext: Please feel free to contact us if you have any query.
-    more: You can contact Us in Nepal Office and [Hong Kong
+    more: You can contact Us in [Nepal Office](/nepal) and [Hong Kong
       Office.](contact/hongkong)
 maintexts:
   - subtext: Simrik Construction & Engineering Ltd.
