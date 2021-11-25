@@ -23,93 +23,104 @@
         "weight": -32
       },
       {
-        "identifier": "ssgf",
+        "identifier": "introduction",
         "parent": "about",
-        "name": "Simrik Security Gurkha Force",
-        "title": "Simrik Security Gurkha Force",
-        "url": "/about/simrik-security-gurkha-force",
-        "weight": -6
+        "name": "Introduction",
+        "title": "Introduction",
+        "url": "/about/introduction",
+        "weight": -100
       },
       {
-        "identifier": "scel",
+        "identifier": "scope",
         "parent": "about",
-        "name": "Simrik Construction Engineering Limited",
-        "title": "Simrik Construction Engineering Limited",
-        "url": "/about/simrik-construction-engineering-limited",
-        "weight": -5
+        "name": "Scope of SSGF",
+        "title": "Scope of Simrik Security Gurkha Force",
+        "url": "/about/scope-of-ssgf",
+        "weight": -99
       },
       {
-        "identifier": "construction",
-        "name": "Construction",
-        "title": "construction",
-        "url": "/about/",
-        "weight": -31
-      },
-      {
-        "identifier": "construction services",
-        "parent": "construction",
-        "name": "Services",
-        "title": "construction services",
-        "url": "/post/2021-10-25-construction-services/",
-        "weight": -4
-      },
-      {
-        "identifier": "construction projets",
-        "parent": "construction",
-        "name": "Projects",
-        "title": "construction projects",
-        "url": "/construction/projects",
-        "weight": -3
+        "identifier": "background",
+        "parent": "about",
+        "name": "Company Background",
+        "title": "Background of Simrik Security Gurkha Force",
+        "url": "/about/company-background",
+        "weight": -98
       },
       {
         "identifier": "security",
-        "name": "Security",
-        "title": "Security",
-        "url": "/about/",
-        "weight": -30
+        "parent": "about",
+        "name": "Security Personnel",
+        "title": "Security Personnel",
+        "url": "/about/security-personnel",
+        "weight": -97
       },
       {
-        "identifier": "Security services",
-        "parent": "security",
-        "name": "Services",
-        "title": "Security services",
-        "url": "/security/services",
-        "weight": -4
+        "identifier": "management",
+        "parent": "about",
+        "name": "Management",
+        "title": "Management",
+        "url": "/about/management",
+        "weight": -96
       },
       {
-        "identifier": "securityclients",
-        "parent": "security",
-        "name": "Our Clients",
-        "title": "Our Clients",
-        "url": "/security/clients",
-        "weight": -3
+        "identifier": "hk",
+        "parent": "management",
+        "name": "Hong Kong Team",
+        "title": "Hong Kong Team",
+        "url": "/about/management/hong-kong-team",
+        "weight": -100
       },
       {
-        "identifier": "team",
-        "name": "Nepal Team",
-        "title": "Nepal Team",
-        "url": "/team/nepal",
-        "weight": -29
+        "identifier": "nepal",
+        "parent": "management",
+        "name": "Company Background",
+        "title": "Background of Simrik Security Gurkha Force",
+        "url": "/about/management/nepal-team",
+        "weight": -99
       },
       {
-        "identifier": "nepalteam",
-        "parent": "team",
-        "name": "Nepal Team",
-        "title": "Security services",
-        "url": "/Security/services",
-        "weight": -4
+        "identifier": "trainning",
+        "name": "Trainning Programs",
+        "title": "Training Programs",
+        "url": "/trainings/",
+        "weight": -31
       },
       {
-        "identifier": "Security projets",
-        "parent": "team",
-        "name": "Projects",
-        "title": "Security services",
-        "url": "/Security/services",
-        "weight": -3
+        "identifier": "60days",
+        "parent": "trainning",
+        "name": "60 Days Bodyguard Training",
+        "title": "Training Programs",
+        "url": "/trainings/",
+        "weight": -100
       },
+      {
+        "identifier": "24days",
+        "parent": "trainning",
+        "name": "24 Days Security Training",
+        "title": "Training Programs",
+        "url": "/trainings/",
+        "weight": -99
+      },
+      {
+        "identifier": "12days",
+        "parent": "trainning",
+        "name": "12 Days Security Training",
+        "title": "Training Programs",
+        "url": "/trainings/",
+        "weight": -98
+      },
+      {
+        "identifier": "5days",
+        "parent": "trainning",
+        "name": "5 Days Security Training",
+        "title": "Training Programs",
+        "url": "/trainings/",
+        "weight": -97
+      },
+
       {
         "identifier": "get in touch",
-        "name": "Get in Touch",
+        "name": "Let's Get in Touch",
         "title": "Get in Touch",
         "url": "/about/get-in-touch",
         "weight": -28

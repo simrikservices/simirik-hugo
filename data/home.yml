@@ -1,31 +1,25 @@
 title: Namaste ! Welcome to our website.
 slidertext:
-  - title: SCEL
-    subtext: We have the Ability.
-    more: SIMRIK CONSTRUCTION & ENGINEERING LTD. We supply  highly skilled and
-      experienced workers with the latest training in site safety along with
-      task specific safety training cards to Construction Main Contractors and
-      Sub-contractors.
-  - more: SIMRIK SECURITY GURKHA FORCE. We are a Hong Kong based Gurkha security
-      company providing a quality and comprehensive security service composed of
-      highly trained and motivated ex British/Indian professional army trained
-      Gurkhas and Chinese security officers.
-    subtext: We have the Experience.
-    title: SCGF
+  - title: Ability
+    subtext: Scope of SSGF Security Guarding Services.
+    more: In house and On site Refresher Training. During emergency, special event or ad-hok, SSGF Commitment for additional manpower Incident and Emergency procedure.
+  - more: Our Company, SSGF is a dynamic and inovative company. We established base in Hong Kong, Nepal and United Kingdom in 2019, holder of Security License Company registered under Chapter 460 of Security and Guarding Ordinance in Hong Kong.
+    subtext: Company Background
+    title: Experience
   - title: Lets Get in Touch
     subtext: Please feel free to contact us if you have any query.
     more: You can contact Us in [Nepal Office](/nepal) and [Hong Kong
       Office.](contact/hongkong)
 maintexts:
-  - subtext: Simrik Construction & Engineering Ltd.
-    title: SCEL
-    link: /scel
-  - title: SSGF
-    subtext: Simrik Security Gurkha Force
-    link: /ssgf
-  - title: Quick Contact
-    subtext: +977 9812345678 / +852 9876543216
-    link: /contats
+  - subtext: hk@simrikservices.com / +852 8852154785
+    title: Hong Kong
+    link: /about/management/hong-kong
+  - title: Nepal
+    subtext: np@simrikservices.com / 977 9851035411
+    link: /about/management/nepal
+  - title: United Kingdom
+    subtext: uk@simrikservices.com / +44 521548954
+    link: /about/management/uk
 abouttexts: >-
   Simrik Security Gurkha Force & Simrik Construction Engineering Limited (SSGF &
   SCEL) offers a multi range of security and construction services to customers
