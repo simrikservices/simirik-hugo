@@ -15,36 +15,32 @@
                           <button class="btn btn-icon-only btn-pill btn-facebook mr-2 icon icon-xs icon-shape" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="50k Like">
                               <span aria-hidden="true" class="fab fa-facebook-f"></span>
                           </button>
-                          <button class="btn btn-icon-only btn-pill btn-youtube mr-2 icon icon-xs icon-shape" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="25k Subscribe">
-                              <span aria-hidden="true" class="fab fa-youtube"></span>
-                          </button>
-                          <button class="btn btn-icon-only btn-pill btn-dribbble icon icon-xs icon-shape" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="2k Project">
-                              <span aria-hidden="true" class="fab fa-dribbble"></span>
+
                           </button>
                       </div>
                   </div>
-                  <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                      <h5 class="mb-4">Company</h5>
+                  <div class="col-sm-6 col-lg-2 mb-4 mb-lg-0">
+                      <h5 class="mb-4">Quick Links</h5>
                       <ul class="links-vertical">
-                          <li><a target="_blank" href="#">About Us</a></li>
-                          <li><a target="_blank" href="#">Customers</a></li>
+                        {{ range .Site.Menus.main }} 
+                          <li><a target="_blank" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>
+                          {{ end }}
                       </ul>
                   </div>
                   <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                      <h5 class="mb-4">Address</h5>
-                      Unit C1 9/F Mai On Industrial Building
-                            No. 17-21 Kung Yip Street
-                            Kwai Chung NT, Hong Kong SAR, China
+                      <h5 class="mb-4">HK Address</h5>
+                      <p class="my-4"> Unit C1 9/F Mai On Industrial Building<br/>
+                            No. 17-21 Kung Yip Street<br/>
+                            Kwai Chung NT, Hong Kong SAR, China</p>
+                            <a href="/contact/hk" style="color: #7eccf0">Contact Us</a>
                   </div>
-                  <div class="col-sm-6 col-lg-2">
-                      <h5 class="mb-4">Support</h5>
-                      <ul class="links-vertical">
-                          <li><a target="_blank" href="#">Help</a></li>
-                          <li><a target="_blank" href="#">Tech Support</a></li>
-                          <!-- <li><a target="_blank" href="#">Network Status</a></li> -->
-                          <li><a target="_blank" href="#">Contact Support</a></li>
-                      </ul>
-                  </div>
+                  <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="mb-4">Nepal Address</h5>
+                    <p class="my-4">Gari Dhara<br/>
+                          Sampada Marga<br/>
+                          Kathmandu, Nepal</p>
+                          <a href="/contact/nepal" style="color: #7eccf0">Contact Us</a>
+                </div>
               </div>
           </div>
       </div>
