@@ -11,15 +11,18 @@ slidertext:
     more: You can contact Us in [Nepal Office](/nepal) and [Hong Kong
       Office.](contact/hongkong)
 maintexts:
-  - subtext: hk@simrikservices.com / +852 8852154785
+  - email: hk@simrikservices.com 
+    phone: +852 8852154785
     title: Hong Kong
     link: /about/management/hong-kong
   - title: Nepal
-    subtext: np@simrikservices.com / 977 9851035411
+    email: np@simrikservices.com
     link: /about/management/nepal
+    phone:  977 9851035411
   - title: United Kingdom
-    subtext: uk@simrikservices.com / +44 521548954
+    email: uk@simrikservices.com
     link: /about/management/uk
+    phone: +44 521548954
 abouttexts: >-
   Simrik Security Gurkha Force & Simrik Construction Engineering Limited (SSGF &
   SCEL) offers a multi range of security and construction services to customers
