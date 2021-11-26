@@ -10,15 +10,15 @@
     "main": [
       {
         "identifier": "home",
-        "name": "Home Page",
-        "title": "homepage",
+        "name": "Home",
+        "title": "Home Page",
         "url": "/",
         "weight": -33
       },
       {
         "identifier": "about",
-        "name": "About Us",
-        "title": "about us",
+        "name": "About",
+        "title": "About us",
         "url": "/about/",
         "weight": -32
       },
@@ -73,17 +73,24 @@
       {
         "identifier": "nepal",
         "parent": "management",
-        "name": "Company Background",
-        "title": "Background of Simrik Security Gurkha Force",
+        "name": "Nepal Team",
+        "title": "Nepal Team",
         "url": "/about/management/nepal-team",
         "weight": -99
       },
       {
+        "identifier": "services",
+        "name": "Services",
+        "title": "Security Services",
+        "url": "/services/",
+        "weight": -31
+      },
+      {
         "identifier": "trainning",
-        "name": "Trainning Programs",
+        "name": "Trainnings",
         "title": "Training Programs",
         "url": "/trainings/",
-        "weight": -31
+        "weight": -30
       },
       {
         "identifier": "60days",
@@ -116,6 +123,14 @@
         "title": "Training Programs",
         "url": "/trainings/",
         "weight": -97
+      },
+
+      {
+        "identifier": "blog",
+        "name": "News & Events",
+        "title": "News & Blog",
+        "url": "/blog/",
+        "weight": -29
       },
 
       {
