@@ -136,12 +136,12 @@ jQuery(function ($) {
   }); // 10. hero slider two
 
   $('.hero-content-slider').owlCarousel({
-    loop: false,
+    loop: true,
     autoplay: true,
     dots: true,
     autoplayHoverPause: true,
     items: 1,
-    smartSpeed: 1000,
+    smartSpeed: 3000,
     animateOut: "slideOutUp",
     animateIn: "slideInDown"
   });
@@ -149,7 +149,7 @@ jQuery(function ($) {
     items: 1,
     nav: false,
     dots: true,
-    smartSpeed: 1000,
+    smartSpeed: 4000,
     animateOut: "slideOutUp",
     animateIn: "slideInDown",
     dotsContainer: '#carousel-custom-indicator'
