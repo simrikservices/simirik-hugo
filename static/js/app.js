@@ -54,7 +54,7 @@ jQuery(function ($) {
     e.stopPropagation();
   });
   $('.dropdown-submenu > .dropdown-toggle').click(function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     $(this).parent('.dropdown-submenu').toggleClass('show');
   }); // 3. back to top
 

@@ -27,7 +27,7 @@
         "parent": "about",
         "name": "Introduction",
         "title": "Introduction",
-        "url": "/about/introduction",
+        "url": "/about/introduction/",
         "weight": -100
       },
       {
@@ -35,7 +35,7 @@
         "parent": "about",
         "name": "Scope of SSGF",
         "title": "Scope of Simrik Security Gurkha Force",
-        "url": "/about/scope-of-ssgf",
+        "url": "/about/scope-of-ssgf/",
         "weight": -99
       },
       {
@@ -43,7 +43,7 @@
         "parent": "about",
         "name": "Company Background",
         "title": "Background of Simrik Security Gurkha Force",
-        "url": "/about/company-background",
+        "url": "/about/company-background/",
         "weight": -98
       },
       {
@@ -51,7 +51,7 @@
         "parent": "about",
         "name": "Security Personnel",
         "title": "Security Personnel",
-        "url": "/about/security-personnel",
+        "url": "/about/security-personnel/",
         "weight": -97
       },
       {
@@ -59,7 +59,7 @@
         "parent": "about",
         "name": "Management",
         "title": "Management",
-        "url": "/about/management",
+        "url": "#",
         "weight": -96
       },
       {
@@ -67,7 +67,7 @@
         "parent": "management",
         "name": "Hong Kong Team",
         "title": "Hong Kong Team",
-        "url": "/about/management/hong-kong-team",
+        "url": "/about/management/hong-kong-team/",
         "weight": -100
       },
       {
@@ -75,7 +75,7 @@
         "parent": "management",
         "name": "Nepal Team",
         "title": "Nepal Team",
-        "url": "/about/management/nepal-team",
+        "url": "/about/management/nepal-team/",
         "weight": -99
       },
       {
@@ -87,7 +87,7 @@
       },
       {
         "identifier": "trainning",
-        "name": "Trainnings",
+        "name": "Trainings",
         "title": "Training Programs",
         "url": "/trainings/",
         "weight": -30
@@ -97,7 +97,7 @@
         "parent": "trainning",
         "name": "60 Days Bodyguard Training",
         "title": "Training Programs",
-        "url": "/trainings/",
+        "url": "/trainings/60-days-bodyguard-training/",
         "weight": -100
       },
       {
@@ -105,7 +105,7 @@
         "parent": "trainning",
         "name": "24 Days Security Training",
         "title": "Training Programs",
-        "url": "/trainings/",
+        "url": "/trainings/20-days-security-training/",
         "weight": -99
       },
       {
@@ -113,7 +113,7 @@
         "parent": "trainning",
         "name": "12 Days Security Training",
         "title": "Training Programs",
-        "url": "/trainings/",
+        "url": "/trainings/12-days-security-training/",
         "weight": -98
       },
       {
@@ -121,7 +121,7 @@
         "parent": "trainning",
         "name": "5 Days Security Training",
         "title": "Training Programs",
-        "url": "/trainings/",
+        "url": "/trainings/5-days-security-training/",
         "weight": -97
       },
 

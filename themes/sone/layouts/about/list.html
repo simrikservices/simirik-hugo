@@ -1,46 +1,7 @@
 {{ define "main" }}
 <div class="main">
-   <section class="" style="background: url('/images/slider-img-5.jpg')no-repeat center center / cover">
-            <div class="section-lg bg-gradient-primary text-white section-header">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 col-lg-7">
-                            <div class="page-header-content text-center">
-                                <h1>Contact US</h1>
-                                <nav aria-label="breadcrumb" class="d-flex justify-content-center">
-                                    <ol class="breadcrumb breadcrumb-transparent breadcrumb-text-light">
-                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Contact US</li>
-                                    </ol>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-  <section class="section">
-    <div class="container">
-        <div class="row justify-content-center justify-content-lg-start">
-            <div class="col-lg-12 col-md-18">
-                <div class="section-heading">
-                    <h2>{{ .Site.Data.home.title | markdownify }}</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-center justify-content-center">
-            <div class="col-lg-7 col-md-10 order-2 order-lg-1">
-                
-                {{ .Site.Data.home.abouttexts | markdownify }}
-            </div>
-            <div class="col-lg-5 col-md-7 order-1 order-lg-2">
-                <div class="image-box fancy-radius p-2 bg-primary-alt">
-                    <img class="fancy-radius img-fluid" src="{{ .Site.Data.home.aboutimage }}" alt="SSGF">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+  {{ partial "pageheader" (dict "cat" "" "catLink" "" "pageTitle" "About") }}
+
+  {{ partial "about" .}}
 </div>
 {{ end }}
