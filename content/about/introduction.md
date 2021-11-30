@@ -4,7 +4,7 @@ date: 2021-11-28T04:31:55.495Z
 categories:
   - about
 draft: false
-aboutimage: /images/about.jpg
+img: /images/about.jpg
 ---
 Simrik Security Gurkha Force & Simrik Construction Engineering Limited (SSGF & SCEL) offers a multi range of security and construction services to customers in Hong Kong. Our mission is to deliver our services consistently that exceeds expectations and build a long-term relationship with our clients in the security and construction industry.
 

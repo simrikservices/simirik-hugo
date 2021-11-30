@@ -7,19 +7,19 @@
       <div class="row justify-content-center justify-content-lg-start">
         <div class="col-lg-12 col-md-18">
           <div class="section-heading">
-            <h2>{{ .Site.Data.home.title | markdownify }}</h2>
+            <h2>{{ .Title }}</h2>
           </div>
         </div>
       </div>
       <div class="row align-items-center justify-content-center">
         <div class="col-lg-7 col-md-10 order-2 order-lg-1">
-          {{ .Site.Data.home.abouttexts | markdownify }}
+          {{ .Content}}
         </div>
         <div class="col-lg-5 col-md-7 order-1 order-lg-2">
           <div class="image-box fancy-radius p-2 bg-primary-alt">
             <img
               class="fancy-radius img-fluid"
-              src="{{ .Site.Data.home.aboutimage }}"
+              src="{{ .Params.img }}"
               alt="SSGF"
             />
           </div>

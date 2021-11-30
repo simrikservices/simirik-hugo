@@ -2,6 +2,8 @@
 <div class="main">
   {{ partial "pageheader" (dict "cat" "" "catLink" "" "pageTitle" "About") }}
 
+  {{ partial "howitworks" . }}
   {{ partial "about" .}}
+  {{ partial "whatclientsay" . }}
 </div>
 {{ end }}
