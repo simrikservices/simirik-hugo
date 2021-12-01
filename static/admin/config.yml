@@ -111,22 +111,22 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Hong Kong Email, name: hkemail, widget: string}
           - {label: Hong Kong Phone, name: hkphone, widget: string}
-          - {label: Nepal Email, name: hkemail, widget: string}
-          - {label: Nepal Phone, name: hkphone, widget: string}
-          - {label: UK Email, name: hkemail, widget: string}
-          - {label: UK Phone, name: hkphone, widget: string}
+          - {label: Nepal Email, name: nepalemail, widget: string}
+          - {label: Nepal Phone, name: nepalphone, widget: string}
+          - {label: UK Email, name: ukemail, widget: string}
+          - {label: UK Phone, name: ukphone, widget: string}
           - {label: Service Subtext, name: servicesubtext, widget: markdown}
           - {label: Testimonial subtext, name: testimonialsubtext, widget: markdown }
           - {label: News Subtext, name: newssubtext, widget: markdown}
-          - {label: 'About PNG Image', name: aboutimage, widget: image}
+          - {label: 'Social Image', name: socialimage, widget: image}
           - {label: "Footer Slogan", name: subtext, widget: string}
           - {label: "Countries", name: countries, widget: number}
           - {label: "Since", name: since, widget: number}
           - {label: "Projects Completed", name: projectsno, widget: number}
           - {label: "No of Clients", name: clientsno, widget: number}
-          - {label: Nepal Contact, name: nepalcontact, widget: markdown}
           - {label: Hongkong Contact, name: hkcontact, widget: markdown}
+          - {label: Nepal Contact, name: nepalcontact, widget: markdown}
           - {label: UK Contact, name: ukcontact, widget: markdown}
-          - {label: Nepal Location, name: nepalmap, widget: map}
           - {label: Hongkong Location, name: hkmap, widget: map}
+          - {label: Nepal Location, name: nepalmap, widget: map}
           - {label: UK Location, name: ukmap, widget: map}
