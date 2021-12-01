@@ -13,7 +13,9 @@ collections:
     fields: 
       - {label: Title, name: title, widget: string}
       - {label: "Sub Text", name: subtext, widget: string}
-      - {label: Content, name: content, widget: markdown} 
+      - {label: Body, name: body, widget: markdown}
+      - { label: 'Display Order', name: 'order', widget: number } 
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
   - name: about
     label: About
     folder: content/about/
@@ -22,9 +24,11 @@ collections:
     fields: 
       - {label: Title, name: title, widget: string}
       - {label: "Sub Text", name: subtext, widget: markdown}
-      - {label: Content, name: content, widget: markdown}
+      - {label: Body, name: body, widget: markdown}
       - {label: 'Heading Image', name: headingimage, widget: image} 
-      - {label: 'Main Image', name: mainimage, widget: image, required: false} 
+      - {label: 'Main Image', name: mainimage, widget: image, required: false}
+      - { label: 'Display Order', name: 'order', widget: number } 
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
   - name: 'services'
     label: 'Services'
     label_singular: 'Service'
@@ -35,12 +39,13 @@ collections:
     sortable_fields: ['order', 'title']
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Order', name: 'order', widget: 'number'}
       - { label: 'Description', name: 'description', widget: 'markdown' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Icon Name', name: 'iconname', widget: 'string' }
-      - {label: 'Heading Image', name: headingimage, widget: image, required: false} 
-      - {label: 'Main Image', name: mainimage, widget: image, required: false} 
+      - { label: 'Heading Image', name: headingimage, widget: image, required: false } 
+      - { label: 'Main Image', name: mainimage, widget: image, required: false }
+      - { label: 'Display Order', name: 'order', widget: number } 
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
   - name: 'teams'
     label: 'Teams'
     label_singular: 'Team'
@@ -51,11 +56,12 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Position', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Order', name: 'order', widget: number}
       - { label: 'Photo', name: photo, widget: image } 
       - { label: 'Facebook', name: facebook, widget: string, required: false } 
       - { label: 'Twitter', name: twitter, widget: string, required: false } 
       - { label: 'Instagram', name: instagram, widget: string, required: false }
+      - { label: 'Display Order', name: 'order', widget: number }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
   - name: trainings
     label: Trainings
     folder: content/trainings/
@@ -64,9 +70,11 @@ collections:
     fields: 
       - {label: Title, name: title, widget: string}
       - {label: "Sub Text", name: subtext, widget: markdown}
-      - {label: Content, name: content, widget: markdown}
+      - {label: Body, name: body, widget: markdown}
       - {label: 'Heading Image', name: headingimage, widget: image, required: false} 
       - {label: 'Main Image', name: mainimage, widget: image, required: false} 
+      - { label: 'Display Order', name: 'order', widget: number }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
   - name: 'testimonials'
     label: 'Testimonials'
     label_singular: 'Testimonial'
@@ -78,6 +86,8 @@ collections:
       - { label: 'Position', name: 'position', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Rating', name: 'rating', widget: 'number' }
+      - { label: 'Display Order', name: 'order', widget: number }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
   - name: 'newsevents'
     label: 'News & Events'
     label_singular: 'News / Event'
@@ -97,6 +107,7 @@ collections:
         fields:
           - {label: Caption, name: title, widget: string}
           - {label: Photo, name: photo, widget: image}
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
   - name: 'settings'
     label: 'Settings'
     editor:
