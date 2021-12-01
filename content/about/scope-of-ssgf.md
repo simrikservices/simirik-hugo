@@ -1,3 +1,0 @@
----
-title: Scope of SSGF
----
