@@ -15,7 +15,7 @@ collections:
       - {label: "Sub Text", name: subtext, widget: string}
       - {label: Body, name: body, widget: markdown}
       - { label: 'Display Order', name: 'order', widget: number } 
-      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
   - name: about
     label: About
     folder: content/about/
@@ -28,7 +28,7 @@ collections:
       - {label: 'Heading Image', name: headingimage, widget: image} 
       - {label: 'Main Image', name: mainimage, widget: image, required: false}
       - { label: 'Display Order', name: 'order', widget: number } 
-      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
   - name: 'services'
     label: 'Services'
     label_singular: 'Service'
@@ -45,7 +45,7 @@ collections:
       - { label: 'Heading Image', name: headingimage, widget: image, required: false } 
       - { label: 'Main Image', name: mainimage, widget: image, required: false }
       - { label: 'Display Order', name: 'order', widget: number } 
-      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
   - name: 'teams'
     label: 'Teams'
     label_singular: 'Team'
@@ -61,7 +61,7 @@ collections:
       - { label: 'Twitter', name: twitter, widget: string, required: false } 
       - { label: 'Instagram', name: instagram, widget: string, required: false }
       - { label: 'Display Order', name: 'order', widget: number }
-      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
   - name: trainings
     label: Trainings
     folder: content/trainings/
@@ -74,7 +74,7 @@ collections:
       - {label: 'Heading Image', name: headingimage, widget: image, required: false} 
       - {label: 'Main Image', name: mainimage, widget: image, required: false} 
       - { label: 'Display Order', name: 'order', widget: number }
-      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
   - name: 'testimonials'
     label: 'Testimonials'
     label_singular: 'Testimonial'
@@ -87,7 +87,7 @@ collections:
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Rating', name: 'rating', widget: 'number' }
       - { label: 'Display Order', name: 'order', widget: number }
-      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
   - name: 'newsevents'
     label: 'News & Events'
     label_singular: 'News / Event'
@@ -107,7 +107,7 @@ collections:
         fields:
           - {label: Caption, name: title, widget: string}
           - {label: Photo, name: photo, widget: image}
-      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
   - name: 'settings'
     label: 'Settings'
     editor:
