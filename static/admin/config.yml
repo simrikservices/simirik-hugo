@@ -13,7 +13,7 @@ collections:
     fields: 
       - {label: Title, name: title, widget: string}
       - {label: "Sub Text", name: subtext, widget: string}
-      - {label: More, name: more, widget: markdown} 
+      - {label: Content, name: content, widget: markdown} 
   - name: about
     label: About
     folder: content/about/
@@ -22,7 +22,7 @@ collections:
     fields: 
       - {label: Title, name: title, widget: string}
       - {label: "Sub Text", name: subtext, widget: markdown}
-      - {label: More, name: more, widget: markdown}
+      - {label: Content, name: content, widget: markdown}
       - {label: 'Heading Image', name: headingimage, widget: image} 
       - {label: 'Main Image', name: mainimage, widget: image, required: false} 
   - name: 'services'
@@ -64,7 +64,7 @@ collections:
     fields: 
       - {label: Title, name: title, widget: string}
       - {label: "Sub Text", name: subtext, widget: markdown}
-      - {label: More, name: more, widget: markdown}
+      - {label: Content, name: content, widget: markdown}
       - {label: 'Heading Image', name: headingimage, widget: image, required: false} 
       - {label: 'Main Image', name: mainimage, widget: image, required: false} 
   - name: 'testimonials'
