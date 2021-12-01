@@ -1,5 +1,7 @@
 ---
-title: dsfds
-subtext: sdfds
-more: dsfdsfds
+title: Ability
+subtext: Scope of SSGF Security Guard Services.
+more: In house and On site Refresher Training. During emergency, special event
+  or ad-hoc, SSGF Commitment for additional manpower Incident and Emergency
+  procedure.
 ---
