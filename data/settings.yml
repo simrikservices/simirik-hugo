@@ -1,0 +1,39 @@
+title: Simrik Services
+hkemail: hk@simrikservices.com
+hkphone: +852 1478523690
+nepalemail: nepal@simrikservices.com
+nepalphone: +977 9876543210
+ukemail: uk@simrikservices.com
+ukphone: +44 1234567890
+servicesubtext: >-
+  ## Security Services
+
+
+  Security service composed of highly trained and motivated ex British/Indian professional army trained Gurkhas and Chinese security officers
+testimonialsubtext: |-
+  ## What Clients Say About Us
+
+  DON’T JUST TAKE OUR WORD FOR IT
+newssubtext: |-
+  ## Our Latest News
+
+  News and Blogs to inform you about our events and activities.
+socialimage: /img/wcb_photo_01.jpeg
+subtext: We are committed to our values and work ethics established within our
+  company that are found upon “Honesty and Integrity”.
+countries: 3
+since: 2014
+projectsno: 20
+clientsno: 101
+hkcontact: |-
+  Unit C1 9/F Mai On Industrial Building\
+  No. 17-21 Kung Yip Street\
+  Kwai Chung NT, Hong Kong SAR, China
+nepalcontact: |-
+  Gari Dhara\
+  Sampada Marga\
+  Kathmandu, Nepal
+ukcontact: Uk Contact
+hkmap: '{"type":"Point","coordinates":[107.4188232,13.6686727]}'
+nepalmap: '{"type":"Point","coordinates":[83.747406,28.1761388]}'
+ukmap: '{"type":"Point","coordinates":[-1.4798118,53.0201052]}'
