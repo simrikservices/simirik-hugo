@@ -4,35 +4,70 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: categories
-    label: Categories
-    folder: content/categories/
+  - name: homepagesliders
+    label: Home Page Sliders
+    label_singular: Home Page Slider
+    folder: content/homepagesliders/
     create: true
     slug: "{{name}}"
     identifier_field: name
     fields: 
-      - {name: name, label: Name}
-  - name: 'posts'
-    label: 'Posts'
-    label_singular: 'Post'
-    folder: 'content/post'
+      - {label: Title, name: title, widget: string}
+      - {label: "Sub Text", name: subtext, widget: string}
+      - {label: More, name: more, widget: markdown} 
+  - name: about
+    label: About
+    folder: content/about/
+    create: true
+    slug: "{{name}}"
+    identifier_field: name
+    fields: 
+      - {label: Title, name: title, widget: string}
+      - {label: "Sub Text", name: subtext, widget: markdown}
+      - {label: More, name: more, widget: markdown}
+      - {label: 'Heading Image', name: headingimage, widget: image} 
+      - {label: 'Main Image', name: mainimage, widget: image} 
+  - name: 'services'
+    label: 'Services'
+    label_singular: 'Service'
+    folder: 'content/services'
     create: true
     slug: '{{slug}}'
-    description: 'Simrik Services website content.'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - name: categories
-        label: Categories
-        widget: relation
-        collection: "categories"
-        searchFields: ["name"]
-        valueField: "name"
-        displayFields: ["name"]
-        multiple: true
-      - {label: "Draft", name: "draft", widget: "boolean", required: false, default: false}
+      - { label: 'Order', name: 'order', widget: 'number'}
+      - { label: 'Icon Name', name: 'iconname', widget: 'string' }
+      - {label: 'Heading Image', name: headingimage, widget: image} 
+      - {label: 'Main Image', name: mainimage, widget: image} 
+  - name: 'teams'
+    label: 'Teams'
+    label_singular: 'Team'
+    folder: 'content/about/management'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Position', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Order', name: 'order', widget: number}
+      - { label: 'Photo', name: photo, widget: image } 
+      - { label: 'Facebook', name: facebook, widget: string } 
+      - { label: 'Twitter', name: twitter, widget: string } 
+      - { label: 'Instagram', name: instagram, widget: string }
+  - name: trainings
+    label: Trainings
+    folder: content/trainings/
+    create: true
+    slug: "{{name}}"
+    identifier_field: name
+    fields: 
+      - {label: Title, name: title, widget: string}
+      - {label: "Sub Text", name: subtext, widget: markdown}
+      - {label: More, name: more, widget: markdown}
+      - {label: 'Heading Image', name: headingimage, widget: image} 
+      - {label: 'Main Image', name: mainimage, widget: image} 
   - name: 'testimonials'
     label: 'Testimonials'
     label_singular: 'Testimonial'
@@ -46,15 +81,12 @@ collections:
       - { label: 'Position', name: 'position', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Rating', name: 'rating', widget: 'number' }
-      - {label: "Draft", name: "draft", widget: "boolean", required: false, default: false}
-  - name: 'projects'
-    label: 'Projects'
-    label_singular: 'Project'
-    folder: 'content/project'
+  - name: 'newsevents'
+    label: 'News & Events'
+    label_singular: 'News / Event'
+    folder: 'content/newsevents'
     create: true
     slug: '{{slug}}'
-    text1: 'Our Latest Projects'
-    text2: 'Our Latest Construction Projects'
     fields:
       - { label: 'Name', name: 'title', widget: 'string' }
       - { label: 'Keyword', name: 'keyword', widget: 'string' }
@@ -67,63 +99,34 @@ collections:
         fields:
           - {label: Caption, name: title, widget: string}
           - {label: Photo, name: photo, widget: image}
-      - { label: "Draft", name: "draft", widget: "boolean", required: false, default: false}
   - name: 'pages'
     label: 'Pages'
     editor:
       preview: false
     files:
-      - label: "Home Page"
-        name: "home"
-        file: "data/home.yml"
+      - label: "Settings"
+        name: "settings"
+        file: "data/settings.yml"
         fields:
           - {label: Title, name: title, widget: string}
-          - label: "Slider Texts"
-            name: slidertext
-            widget: list
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: "Sub Text", name: subtext, widget: string}
-              - {label: More, name: more, widget: markdown} 
-          - label: "Main Texts"
-            name: maintexts
-            widget: list
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: "Sub Text", name: subtext, widget: string}
-              - {label: "Link", name: link, widget: string}
-          - label: "About Texts"
-            name: abouttexts
-            widget: 'markdown'
+          - {label: Hong Kong Email, name: hkemail, widget: string}
+          - {label: Hong Kong Phone, name: hkphone, widget: string}
+          - {label: Nepal Email, name: hkemail, widget: string}
+          - {label: Nepal Phone, name: hkphone, widget: string}
+          - {label: UK Email, name: hkemail, widget: string}
+          - {label: UK Phone, name: hkphone, widget: string}
+          - {label: Service Subtext, name: servicesubtext, widget: markdown}
+          - {label: Testimonial subtext, name: testimonialsubtext, widget: markdown }
+          - {label: News Subtext, name: newssubtext, widget: markdown}
           - {label: 'About PNG Image', name: aboutimage, widget: image}
           - {label: "Footer Slogan", name: subtext, widget: string}
           - {label: "Countries", name: countries, widget: number}
           - {label: "Since", name: since, widget: number}
-          - {label: "Construction Projects", name: projectsno, widget: number}
-          - {label: "Security Clients", name: clientsno, widget: number}
-      - label: "About Page"
-        name: "about"
-        file: "data/about.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
-      - label: "Contacts"
-        name: "locations"
-        file: "data/contacts.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Locations
-            name: locations
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string} 
-              - {label: Location, name: map, widget: map}
+          - {label: "Projects Completed", name: projectsno, widget: number}
+          - {label: "No of Clients", name: clientsno, widget: number}
+          - {label: Nepal Contact, name: nepalcontact, widget: markdown}
+          - {label: Hongkong Contact, name: hkcontact, widget: markdown}
+          - {label: UK Contact, name: ukcontact, widget: markdown}
+          - {label: Nepal Location, name: nepalmap, widget: map}
+          - {label: Hongkong Location, name: hkmap, widget: map}
+          - {label: UK Location, name: ukmap, widget: map}
