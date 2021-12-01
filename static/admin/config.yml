@@ -31,11 +31,12 @@ collections:
     folder: 'content/services'
     create: true
     slug: '{{slug}}'
+    summary: '{{title}} -- ({{order}})'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Order', name: 'order', widget: 'number'}
       - { label: 'Description', name: 'description', widget: 'markdown' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Order', name: 'order', widget: 'number'}
       - { label: 'Icon Name', name: 'iconname', widget: 'string' }
       - {label: 'Heading Image', name: headingimage, widget: image, required: false} 
       - {label: 'Main Image', name: mainimage, widget: image, required: false} 
