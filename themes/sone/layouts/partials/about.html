@@ -10,8 +10,13 @@
         </div>
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-7 col-md-10 order-2 order-lg-1">
-                xxx{{ .Content }}
+                {{ .Content }}
+                <div class="action-btns pt-3">
+                    <a href="/about/management" class="btn btn-secondary mr-3">Management</a>
+                    <a href="/about/organization-chart" class="btn btn-outline-primary">Oraganization Chart</a>
+                </div> 
             </div>
+            
             <div class="col-lg-5 col-md-7 order-1 order-lg-2">
                 <div class="image-box fancy-radius p-2 bg-primary-alt">
                     <img class="fancy-radius img-fluid" src="{{ .Params.mainimage }}" alt="SSGF">
