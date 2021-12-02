@@ -3,7 +3,10 @@ title: Introduction
 subtext: Simrik Security Gurkha Force (SSGF) offers a multi range of security
   and construction services to customers in Hong Kong. Our mission is to deliver
   our services consistently that exceeds expectations and build a long-term
-  relationship with our clients in the security and construction industry.
+  relationship with our clients in the security and construction industry.Our
+  Company, SSGF is a dynamic and inovative company. We established base in Hong
+  Kong, Nepal and United Kingdom in 2019, holder of Security License Company
+  registered under Chapter 460 of Security and Guarding Ordinance in Hong Kong.
 more: >-
   Simrik Security Gurkha Force (SSGF) offers a multi range of security and
   construction services to customers in Hong Kong. Our mission is to deliver our
@@ -21,6 +24,6 @@ headingimage: /img/event-photo.jpg
 mainimage: /img/about.jpg
 order: 1
 ---
-Simrik Security Gurkha Force (SSGF) offers a multi range of security and construction services to customers in Hong Kong. Our mission is to deliver our services consistently that exceeds expectations and build a long-term relationship with our clients in the security and construction industry.
+Our Company, SSGF is a dynamic and inovative company. We established base in Hong Kong, Nepal and United Kingdom in 2019, holder of Security License Company registered under Chapter 460 of Security and Guarding Ordinance in Hong Kong.
 
-Simrik Security staff are fully trained and licensed to meet Hong Kong Cap 460, Security and Guarding Services standards, so you are assured with professionals and dedicated manned guarding team at all times in any circumstances.
+We pride ourselves on the excellent experience in our management team and the quality of our people and your feedback. SSGF committed to provide highly professional, reliable and cost-effective manned security guarding service to our corporate client, government, public sector and industrial organization.
