@@ -131,7 +131,7 @@ collections:
           - {label: "Footer Slogan", name: subtext, widget: string}
           - {label: "Countries", name: countries, widget: number}
           - {label: "Since", name: since, widget: number}
-          - {label: "Projects Completed", name: projectsno, widget: number}
+          - {label: "Service Scope", name: projectsno, widget: number}
           - {label: "No of Clients", name: clientsno, widget: number}
           - {label: Hongkong Contact, name: hkcontact, widget: markdown}
           - {label: Nepal Contact, name: nepalcontact, widget: markdown}

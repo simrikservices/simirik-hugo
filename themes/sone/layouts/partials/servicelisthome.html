@@ -1,0 +1,50 @@
+
+<section class="section" style="padding-top: 0px;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="section-heading text-center mb-5">
+                    {{ .Site.Data.settings.servicesubtext | markdownify  }}
+                </div>
+            </div>
+        </div>
+    <div class="row">
+
+        {{ $servicepages := where site.RegularPages "Section" "services" }}
+        {{ range ($servicepages.ByParam "order") }}
+
+
+        {{ $bg := "bg-default" }}
+        {{ if or (eq .Params.order 1) (eq .Params.order 5) (eq .Params.order 9) (eq .Params.order 10) (eq .Params.order 14)}}
+        {{ $bg = "bg-default "}}
+        {{ else if or (eq .Params.order 2) (eq .Params.order 6) (eq .Params.order 7) (eq .Params.order 11) (eq .Params.order 15)}}
+        {{ $bg = "bg-secondary "}}
+        {{ else }}
+        {{ $bg = "bg-success "}}
+        {{ end }}
+        <div class="col-6 col-lg-4 col-md-4 mt-4">
+            <div class="feature-card text-md-center text-lg-left">
+                <div>
+                    <div class="mb-4 p-3 p-md-4 icon icon-shape icon-md rounded-circle {{ $bg }} text-white">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h5>{{.Title}}</h5>
+                    <p>
+                        Security Guards, 
+                        Gatemen, 
+                        Key Holding, 
+                        Stewarding, 
+                        Door Supervising, 
+                        Access Control, 
+                        CCTV Monitoring, 
+                        Patrolling of premises</p>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+        
+
+        
+    </div>
+</div>
+</section>
