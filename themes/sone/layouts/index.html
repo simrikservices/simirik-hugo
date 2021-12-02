@@ -2,7 +2,8 @@
 <div class="main">
 
   <!--hero section start-->
-  <section class="section section-xl pt-9 pb-9 section-header text-white gradient-overly-right-color" style="background-image: url('images/home1.jpg')">
+  {{ $rand := index (seq 2 | shuffle) 1 }}
+  <section class="section section-xl pt-9 pb-9 section-header text-white gradient-overly-right-color" style="background-image: url('images/home{{$rand}}.jpg')">
       <div class="container">
           <div class="row">
 
