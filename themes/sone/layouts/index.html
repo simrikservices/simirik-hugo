@@ -7,18 +7,21 @@
           <div class="row">
 
               <div class="owl-carousel owl-theme hero-content-slider custom-dot custom-dot-2">
+                {{ $pages := where site.RegularPages "Section" "homepagesliders" }}
+                {{ range ($pages.ByParam "order") }}
 
-                {{ range $.Site.Data.home.slidertext }}  
                   <div class="item">
                       <div class="col-md-8 col-lg-7 col-12">
                           <div class="hero-content-wrap">
-                              <h1 class="display-2">{{ .title }}</h1>
-                              <p class="lead">{{ .subtext }}</p>
-                              <p class="mycontent">{{ .more | markdownify}}</p>
-                              <!-- <div class="action-btns pt-3">
-                                  <a href="#" class="btn btn-secondary mr-3">Check Prices</a>
-                                  <a href="#" class="btn btn-outline-light">Learn More</a>
-                              </div> -->
+                              <h1 class="display-2">{{ .Title }}</h1>
+                              <p class="lead">{{ .Params.subtext }}</p>
+                              <p class="mycontent">{{ .Content }}</p>
+                              {{ if eq .Params.order 3 }}
+                              <div class="action-btns pt-3">
+                                  <a href="#" class="btn btn-secondary mr-3">Let's Get In Touch</a>
+                                  <a href="#" class="btn btn-outline-light">Management Teams</a>
+                              </div> 
+                              {{ end }}
                           </div>
                       </div>
                   </div>
@@ -35,40 +38,34 @@
         <div class="row justify-content-center">
             <div class="col-12">
                 <div class="row text-white shadow-lg">
-                    {{ range $index, $el_val := $.Site.Data.home.maintexts }}
-
-                        {{ if eq $index 0 }}
                         <div class="col-12 col-md-4 px-md-0 mb-4 mb-lg-0">
-                          <a href="{{.link}}">
+                          <a href="/contact">
                           <div class="card-body text-center bg-default border-right border-variant-primary py-5">
-                              <h2 class="font-weight-bold"><span class="h4 mr-2">{{ .title }}</span></h2>
-                              <p class="mb-0">{{ .email }}<br/>{{.phone}}</p>
+                              <h2 class="font-weight-bold"><span class="h4 mr-2">HongKong</span></h2>
+                              <p class="mb-0">{{ .Site.Data.settings.hkemail  }}<br/>{{.Site.Data.settings.hkphone}}</p>
                           </div>
                         </a>
                       </div>
-                      {{ end }}
-                      {{ if eq $index 1 }}
                       <div class="col-12 col-md-4 px-md-0 mb-4 mb-lg-0">
-                        <a href="{{.link}}">
+                        <a href="/contact">
                           <div class="card-body text-center bg-secondary border-right border-variant-primary py-5">
-                              <h2 class="font-weight-bold"><span class="h4 mr-2">{{ .title }}</span></h2>
-                              <p class="mb-0">{{ .email }}<br/>{{.phone}}</p>
+                              <h2 class="font-weight-bold"><span class="h4 mr-2">Nepal</span></h2>
+                              <p class="mb-0">{{ .Site.Data.settings.nepalemail  }}<br/>{{.Site.Data.settings.nepalphone}}</p>
                           </div>
                         </a>
                       </div>
-                      {{ end }}
-                      {{ if eq $index 2 }}
+
                       <div class="col-12 col-md-4 px-md-0">
-                        <a href="{{.link}}">
+                        <a href="/contact">
                           <div class="card-body text-center bg-primary py-5">
-                              <h2 class="font-weight-bold"><span class="h4 mr-2">{{ .title }}</span></h2>
-                              <p class="mb-0">{{ .email }}<br/>{{.phone}}</p>
+                              <h2 class="font-weight-bold"><span class="h4 mr-2">United Kingdom</span></h2>
+                              <p class="mb-0">{{ .Site.Data.settings.ukemail  }}<br/>{{.Site.Data.settings.ukphone}}</p>
                           </div>
                         </a>
                       </div>
-                      {{ end }}
+
                     </a>
-                    {{ end }}
+
                     
                 </div>
             </div>

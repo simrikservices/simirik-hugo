@@ -1,0 +1,45 @@
+<section class="section section-sm pb-0 z-3">
+    <div class="container mt-n8">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="row text-white shadow-lg">
+                    {{ range $index, $el_val := $.Site.Data.settings.maintexts }}
+
+                        {{ if eq $index 0 }}
+                        <div class="col-12 col-md-4 px-md-0 mb-4 mb-lg-0">
+                          <a href="{{.link}}">
+                          <div class="card-body text-center bg-default border-right border-variant-primary py-5">
+                              <h2 class="font-weight-bold"><span class="h4 mr-2">{{ .title }}</span></h2>
+                              <p class="mb-0">{{ .email }}<br/>{{.phone}}</p>
+                          </div>
+                        </a>
+                      </div>
+                      {{ end }}
+                      {{ if eq $index 1 }}
+                      <div class="col-12 col-md-4 px-md-0 mb-4 mb-lg-0">
+                        <a href="{{.link}}">
+                          <div class="card-body text-center bg-secondary border-right border-variant-primary py-5">
+                              <h2 class="font-weight-bold"><span class="h4 mr-2">{{ .title }}</span></h2>
+                              <p class="mb-0">{{ .email }}<br/>{{.phone}}</p>
+                          </div>
+                        </a>
+                      </div>
+                      {{ end }}
+                      {{ if eq $index 2 }}
+                      <div class="col-12 col-md-4 px-md-0">
+                        <a href="{{.link}}">
+                          <div class="card-body text-center bg-primary py-5">
+                              <h2 class="font-weight-bold"><span class="h4 mr-2">{{ .title }}</span></h2>
+                              <p class="mb-0">{{ .email }}<br/>{{.phone}}</p>
+                          </div>
+                        </a>
+                      </div>
+                      {{ end }}
+                    </a>
+                    {{ end }}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
