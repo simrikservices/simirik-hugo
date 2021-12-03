@@ -23,7 +23,7 @@ subtext: We are committed to our values and work ethics established within our
   company that are found upon “Honesty and Integrity”.
 countries: 3
 since: 2014
-projectsno: 20
+scopes: 20
 clientsno: 101
 hkcontact: |-
   Unit C1 9/F Mai On Industrial Building\
@@ -35,5 +35,6 @@ nepalcontact: |-
   Kathmandu, Nepal
 ukcontact: Uk Contact
 hkmap: '{"type":"Point","coordinates":[107.4188232,13.6686727]}'
-nepalmap: '{"type":"Point","coordinates":[83.747406,28.1761388]}'
+nepalmap: '{"type":"Point","coordinates":[85.3463543,27.6992906]}'
 ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
+projectsno: 20
