@@ -1,6 +1,9 @@
 ---
 title: 60 Days Security Training
-subtext: x
+subtext: |-
+  Focused on security of VIP premises.
+
+  Includes mock training for various
 content: ggg
 order: 1
 ---
