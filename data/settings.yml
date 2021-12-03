@@ -26,7 +26,7 @@ since: 2014
 clientsno: 101
 ukcontact: Uk Contact
 hkmap: '{"type":"Point","coordinates":[107.4188232,13.6686727]}'
-nepalmap: '{"type":"Point","coordinates":[85.3463543,27.6992906]}'
+nepalmap: '{"type":"Point","coordinates":[85.3455439,27.6993883]}'
 ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
 projectsno: 20
 scopes: 20
@@ -35,6 +35,6 @@ hkcontact: |-
   No. 17-21 Kung Yip Street\
   Kwai Chung NT, Hong Kong SAR, China
 nepalcontact: |-
-  Gari Dhara\
-  Sampada Marga\
+  Bhimsengola 09, Old Baneshwor
+
   Kathmandu, Nepal
