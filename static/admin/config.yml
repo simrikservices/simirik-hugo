@@ -10,6 +10,8 @@ collections:
     folder: content/homepagesliders/
     create: true
     slug: "{{slug}}"
+    summary: '{{title}} -- ({{order}})'
+    sortable_fields: ['order', 'title']
     fields: 
       - {label: Title, name: title, widget: string}
       - {label: "Sub Text", name: subtext, widget: string}
@@ -21,6 +23,8 @@ collections:
     folder: content/about/
     create: true
     slug: "{{slug}}"
+    summary: '{{title}} -- ({{order}})'
+    sortable_fields: ['order', 'title']
     fields: 
       - {label: Title, name: title, widget: string}
       - {label: "Sub Text", name: subtext, widget: markdown}
@@ -52,6 +56,8 @@ collections:
     folder: 'content/about/management'
     create: true
     slug: '{{slug}}'
+    summary: '{{title}} -- ({{order}})'
+    sortable_fields: ['order', 'title']
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Position', name: 'description', widget: 'string' }
@@ -67,6 +73,8 @@ collections:
     folder: content/trainings/
     create: true
     slug: "{{slug}}"
+    summary: '{{title}} -- ({{order}})'
+    sortable_fields: ['order', 'title']
     fields: 
       - {label: Title, name: title, widget: string}
       - {label: "Sub Text", name: subtext, widget: markdown}
@@ -81,6 +89,8 @@ collections:
     folder: 'content/testimonial'
     create: true
     slug: '{{slug}}'
+    summary: '{{title}} -- ({{order}})'
+    sortable_fields: ['order', 'title']
     fields:
       - { label: 'Name', name: 'title', widget: 'string' }
       - { label: 'Position', name: 'position', widget: 'string' }
@@ -94,7 +104,10 @@ collections:
     folder: 'content/newsevents'
     create: true
     slug: '{{slug}}'
+    summary: '{{title}} -- ({{order}})'
+    sortable_fields: ['order', 'title', 'writer']
     fields:
+      - { label: 'Name', name: 'wroter', widget: 'string', default: 'SSGF' }
       - { label: 'Name', name: 'title', widget: 'string' }
       - { label: 'Keyword', name: 'keyword', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
@@ -131,7 +144,7 @@ collections:
           - {label: "Footer Slogan", name: subtext, widget: string}
           - {label: "Countries", name: countries, widget: number}
           - {label: "Since", name: since, widget: number}
-          - {label: "Service Scope", name: projectsno, widget: number}
+          - {label: "Service Scope", name: scopes, widget: number}
           - {label: "No of Clients", name: clientsno, widget: number}
           - {label: Hongkong Contact, name: hkcontact, widget: markdown}
           - {label: Nepal Contact, name: nepalcontact, widget: markdown}

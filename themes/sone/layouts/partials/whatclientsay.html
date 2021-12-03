@@ -17,7 +17,8 @@
           <div class="col-12 col-lg-12">
               <div class="owl-carousel owl-theme client-testimonial custom-dot">
 
-                  {{ range (where .Site.RegularPages "Section" "testimonial") }}
+                {{ $tpages := where site.RegularPages "Section" "testimonial" }}
+                {{ range ($tpages.ByParam "order") }}
 
                   <div class="item">
                       <div class="testimonial-single shadow-sm bg-white rounded-custom p-5">
