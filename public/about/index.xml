@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Simrik Services</title>
+    <link>https://simrikservice.netlify.app/about/</link>
+    <description>Recent content in Abouts on Simrik Services</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://simrikservice.netlify.app/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Company Background</title>
+      <link>https://simrikservice.netlify.app/about/company-background/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://simrikservice.netlify.app/about/company-background/</guid>
+      <description>cb</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>https://simrikservice.netlify.app/about/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://simrikservice.netlify.app/about/introduction/</guid>
+      <description>Simrik Security Gurkha Force (SSGF) offers a multi range of security and construction services to customers in Hong Kong. Our mission is to deliver our services consistently that exceeds expectations and build a long-term relationship with our clients in the security and construction industry.Our Company, SSGF is a dynamic and innovative company.
+We established base in Hong Kong, Nepal and United Kingdom in 2019, holder of Security License Company registered under Chapter 460 of Security and Guarding Ordinance in Hong Kong.</description>
+    </item>
+    
+    <item>
+      <title>Organization Chart</title>
+      <link>https://simrikservice.netlify.app/about/organization-chart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://simrikservice.netlify.app/about/organization-chart/</guid>
+      <description>Chart Image here coming soon.</description>
+    </item>
+    
+    <item>
+      <title>Scope of SSGF</title>
+      <link>https://simrikservice.netlify.app/about/scope-of-ssgf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://simrikservice.netlify.app/about/scope-of-ssgf/</guid>
+      <description>c</description>
+    </item>
+    
+    <item>
+      <title>Security Personnel</title>
+      <link>https://simrikservice.netlify.app/about/security-personnel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://simrikservice.netlify.app/about/security-personnel/</guid>
+      <description>c</description>
+    </item>
+    
+  </channel>
+</rss>
