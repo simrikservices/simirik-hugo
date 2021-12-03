@@ -74,4 +74,6 @@ more: >-
   SSGF will ensure that the Company is in capacity of appropriate number of Security Personnel with appropriate training and certificate during the whole contract Period to meet the ad hoc deployment of manpower.
 headingimage: /img/event-photo.jpg
 mainimage: /img/about.jpg
+order: 3
 ---
+c
