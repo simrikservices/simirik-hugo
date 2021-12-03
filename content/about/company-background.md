@@ -6,4 +6,4 @@ headingimage: /img/event-photo.jpg
 mainimage: /img/home_about.jpeg
 order: 2
 ---
-cb
+Hong Kong based company with Nepalis and foreigners working together for a secured lifestyle.
