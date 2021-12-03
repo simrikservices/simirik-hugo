@@ -127,7 +127,7 @@ collections:
         fields:
           - {label: Caption, name: title, widget: string}
           - {label: Photo, name: photo, widget: image}
-      - { label: 'Name', name: 'writer', widget: 'string', default: 'SSGF' }
+      - { label: 'Writer Name', name: 'writer', widget: 'string', default: 'SSGF' }
       - { label: 'Writer Photo', name: writerphoto, widget: image, allow_multiple: false, required: false }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
 
