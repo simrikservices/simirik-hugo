@@ -5,5 +5,6 @@ description: Intrinsicly facilitate functional imperatives without
   next-generation services. Compellingly revolutionize worldwide users
   enterprise best practices.
 rating: 4
+order: 3
 draft: false
 ---
