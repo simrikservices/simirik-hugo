@@ -3,10 +3,7 @@
       <div class="row justify-content-center">
           <div class="col-md-9 col-lg-8">
               <div class="section-heading mb-5 text-center ">
-                  <h2>What Clients Say About Us</h2>
-                  <p class="lead">
-                      DON’T JUST TAKE OUR WORD FOR IT
-                  </p>
+                {{ .Site.Data.settings.testimonialsubtext | markdownify  }}
               </div>
           </div>
       </div>

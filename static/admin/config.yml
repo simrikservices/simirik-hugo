@@ -10,7 +10,7 @@ collections:
     folder: content/homepagesliders/
     create: true
     slug: "{{slug}}"
-    summary: '{{title}} -- ({{order}})'
+    summary: '{{order}}. {{title}}'
     sortable_fields: ['order', 'title']
     fields: 
       - {label: Title, name: title, widget: string}
@@ -23,7 +23,7 @@ collections:
     folder: content/about/
     create: true
     slug: "{{slug}}"
-    summary: '{{title}} -- ({{order}})'
+    summary: '{{order}}. {{title}}'
     sortable_fields: ['order', 'title']
     fields: 
       - {label: Title, name: title, widget: string}
@@ -39,7 +39,7 @@ collections:
     folder: 'content/services'
     create: true
     slug: '{{slug}}'
-    summary: '{{title}} -- ({{order}})'
+    summary: '{{order}}. {{title}}'
     sortable_fields: ['order', 'title']
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -56,7 +56,7 @@ collections:
     folder: 'content/about/management'
     create: true
     slug: '{{slug}}'
-    summary: '{{title}} -- ({{order}})'
+    summary: '{{order}}. {{title}}'
     sortable_fields: ['order', 'title']
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -73,7 +73,7 @@ collections:
     folder: content/trainings/
     create: true
     slug: "{{slug}}"
-    summary: '{{title}} -- ({{order}})'
+    summary: '{{order}}. {{title}}'
     sortable_fields: ['order', 'title']
     fields: 
       - {label: Title, name: title, widget: string}
@@ -89,7 +89,7 @@ collections:
     folder: 'content/testimonial'
     create: true
     slug: '{{slug}}'
-    summary: '{{title}} -- ({{order}})'
+    summary: '{{order}}. {{title}}'
     sortable_fields: ['order', 'title']
     fields:
       - { label: 'Name', name: 'title', widget: 'string' }
@@ -104,10 +104,9 @@ collections:
     folder: 'content/newsevents'
     create: true
     slug: '{{slug}}'
-    summary: '{{title}} -- ({{order}})'
+    summary: '{{order}}. {{title}} - {{writer}}'
     sortable_fields: ['order', 'title', 'writer']
     fields:
-      - { label: 'Name', name: 'wroter', widget: 'string', default: 'SSGF' }
       - { label: 'Name', name: 'title', widget: 'string' }
       - { label: 'Keyword', name: 'keyword', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
@@ -120,7 +119,10 @@ collections:
         fields:
           - {label: Caption, name: title, widget: string}
           - {label: Photo, name: photo, widget: image}
+      - { label: 'Name', name: 'writer', widget: 'string', default: 'SSGF' }
+      - { label: 'Writer Photo', name: writerphoto, widget: image, allow_multiple: false, required: false }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
+
   - name: 'settings'
     label: 'Settings'
     editor:
