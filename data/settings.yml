@@ -2,7 +2,7 @@ title: Simrik Services
 hkemail: hk@simrikservices.com
 hkphone: +852 1478523693
 nepalemail: nepal@simrikservices.com
-nepalphone: +977 9876543210
+nepalphone: +977 014496838, 9851035411, 9841362202, 9869248093
 ukemail: uk@simrikservices.com
 ukphone: +44 1234567890
 servicesubtext: >-
@@ -23,8 +23,13 @@ subtext: We are committed to our values and work ethics established within our
   company that are found upon “Honesty and Integrity”.
 countries: 3
 since: 2014
-scopes: 20
 clientsno: 101
+ukcontact: Uk Contact
+hkmap: '{"type":"Point","coordinates":[107.4188232,13.6686727]}'
+nepalmap: '{"type":"Point","coordinates":[85.3463543,27.6992906]}'
+ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
+projectsno: 20
+scopes: 20
 hkcontact: |-
   Unit C1 9/F Mai On Industrial Building\
   No. 17-21 Kung Yip Street\
@@ -33,8 +38,3 @@ nepalcontact: |-
   Gari Dhara\
   Sampada Marga\
   Kathmandu, Nepal
-ukcontact: Uk Contact
-hkmap: '{"type":"Point","coordinates":[107.4188232,13.6686727]}'
-nepalmap: '{"type":"Point","coordinates":[85.3463543,27.6992906]}'
-ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
-projectsno: 20
