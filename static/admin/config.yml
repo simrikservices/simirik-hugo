@@ -104,7 +104,7 @@ collections:
     folder: 'content/newsevents'
     create: true
     slug: '{{slug}}'
-    summary: '{{order}}. {{title}} - {{writer}}'
+    summary: '{{date}} {{title}} - ({{writer}})'
     sortable_fields: ['order', 'title', 'writer']
     fields:
       - {
