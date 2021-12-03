@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="main">
+  {{ partial "pageheader" (dict "cat" "" "catLink" "" "pageTitle" "Download  App" "bg" "/images/download_top_bg.jpg") }}
+
+  {{ partial "app" . }}
+
+  {{ partial "whatclientsay" . }}
+  {{ partial "blog" . }}
+</div>
+{{ end }}

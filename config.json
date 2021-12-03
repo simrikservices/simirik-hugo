@@ -139,6 +139,14 @@
         "title": "Get in Touch",
         "url": "/contact",
         "weight": -28
+      },
+
+      {
+        "identifier": "app",
+        "name": "Mobile App",
+        "title": "Download Mobile App",
+        "url": "/downloadapp",
+        "weight": -28
       }
       
     ]

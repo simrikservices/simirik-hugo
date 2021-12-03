@@ -1,6 +1,6 @@
 {{ define "main" }}
-<div class="main">
-  {{ partial "pageheader" (dict "cat" "About" "catLink" "/about/" "pageTitle" .Title) }}
+
+  {{ partial "pageheader" (dict "cat" "About" "catLink" "/about/" "pageTitle" .Title "bg" .Params.headingimage) }}
 
   <section class="section">
     <div class="container">
@@ -19,7 +19,7 @@
           <div class="image-box fancy-radius p-2 bg-primary-alt">
             <img
               class="fancy-radius img-fluid"
-              src="{{ .Params.img }}"
+              src="{{ .Params.mainimage }}"
               alt="SSGF"
             />
           </div>
