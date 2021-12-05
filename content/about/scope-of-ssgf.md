@@ -1,13 +1,6 @@
 ---
 title: Scope of SSGF
-subtext: >-
-  * Best and Cost-Effective Professional Services
-
-  * In house and On site Refresher Training
-
-  * During emergency, special event or ad-hoc, SSGF commitment for additional manpower
-
-  * Incident and Emergency procedure
+subtext: A wide range of Security Services are offered
 more: >-
   **Best and Cost-Effective Professional Services**
 
@@ -76,4 +69,10 @@ headingimage: /img/event-photo.jpg
 mainimage: /img/about.jpg
 order: 3
 ---
-chhhh
+* Body Guards
+* In house and On site Security
+* Emergency, special event or ad-hoc situations
+* Housing & Apartments
+* Hotels & Resorts
+* Vital Installations like Banks and Corporate Offices
+* Others
