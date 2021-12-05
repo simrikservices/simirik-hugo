@@ -1,6 +1,15 @@
 ---
-title: Lets Get in Touch
-subtext: Please feel free to contact us if you have any query.
+title: How may we secure you and your environment?
+subtext: Please feel free to Contact us if you have any query. You can contact
+  Us in our Nepal Office & Hong Kong Office
 order: 3
 ---
-You can contact Us in our Nepal Office, Hong Kong Office or UK Office.
+Nepal Office:
+
+ssgf2077@gmail.com
+
+01- 4496838 (Office)
+
+9869248093 (Operations Director)
+
+9851035411 (Managing Director)
