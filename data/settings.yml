@@ -1,30 +1,28 @@
 title: Simrik Services
 hkemail: hk@simrikservices.com
-hkphone: +852 1478523693
+hkphone: +852 6993 7354, +852 90941246, +852 9583 1027
 nepalemail: nepal@simrikservices.com
 nepalphone: 9851035411, 9841362202, 9869248093
 ukemail: uk@simrikservices.com
 ukphone: +44 1234567890
-servicesubtext: >-
+servicesubtext: |-
   ## Security Services
 
-
-  Security service composed of highly trained and motivated ex British/Indian professional army trained Gurkhas and Chinese security officers
+  A wide range of securiuty services are offered by Simrik Security Gurkha Force
 testimonialsubtext: |-
   ## What Clients Say About Us
 
-  DON’T JUST TAKE OUR WORD FOR IT
+  DON’T JUST TAKE OUR WORDS FOR IT
 newssubtext: |-
   ## Our Latest News
 
   News and Blogs to inform you about our events and activities.
-socialimage: /img/wcb_photo_01.jpeg
-subtext: We are committed to our values and work ethics established within our
-  company that are found upon “Honesty and Integrity”.
-countries: 3
+socialimage: /img/ktmairport.jpg
+subtext: We are committed to our values and work ethics “Honesty and Integrity”.
+countries: 2
 since: 2014
 clientsno: 101
-ukcontact: Uk Contact
+ukcontact: UK
 hkmap: '{"type":"Point","coordinates":[107.4188232,13.6686727]}'
 nepalmap: '{"type":"Point","coordinates":[85.3455439,27.6993883]}'
 ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
@@ -36,5 +34,7 @@ hkcontact: |-
   Kwai Chung NT, Hong Kong SAR, China
 nepalcontact: |-
   Bhimsengola 09, Old Baneshwor
+
+  9869248093
 
   Kathmandu, Nepal
