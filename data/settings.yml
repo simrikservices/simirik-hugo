@@ -1,27 +1,25 @@
 title: Simrik Services
 hkemail: hk@simrikservices.com
-hkphone: +852 1478523693
+hkphone: +852 6993 7354, +852 90941246,\ +852 9583 1027
 nepalemail: nepal@simrikservices.com
-nepalphone: +977 9876543210
+nepalphone: + 977 9851035411, + 977 9841362202,\ +9779869248093
 ukemail: uk@simrikservices.com
-ukphone: +44 1234567890
-servicesubtext: >-
+ukphone: +44 1234567891\
+servicesubtext: |-
   ## Security Services
 
-
-  Security service composed of highly trained and motivated ex British/Indian professional army trained Gurkhas and Chinese security officers
+  A wide range of securiuty services are offered by Simrik Security Gurkha Force
 testimonialsubtext: |-
   ## What Clients Say About Us
 
-  DON’T JUST TAKE OUR WORD FOR IT
+  DON’T JUST TAKE OUR WORDS FOR IT
 newssubtext: |-
   ## Our Latest News
 
   News and Blogs to inform you about our events and activities.
-socialimage: /img/wcb_photo_01.jpeg
-subtext: We are committed to our values and work ethics established within our
-  company that are found upon “Honesty and Integrity”.
-countries: 3
+socialimage: /img/ktmairport.jpg
+subtext: We are committed to our values and work ethics “Honesty and Integrity”.
+countries: 2
 since: 2014
 scopes: 20
 clientsno: 101
@@ -30,11 +28,13 @@ hkcontact: |-
   No. 17-21 Kung Yip Street\
   Kwai Chung NT, Hong Kong SAR, China
 nepalcontact: |-
-  Gari Dhara\
-  Sampada Marga\
+  Bhimsengola 09, Old Baneshwor
+
+  9869248093
+
   Kathmandu, Nepal
-ukcontact: Uk Contact
+ukcontact: UK
 hkmap: '{"type":"Point","coordinates":[107.4188232,13.6686727]}'
-nepalmap: '{"type":"Point","coordinates":[85.3463543,27.6992906]}'
+nepalmap: '{"type":"Point","coordinates":[85.3455439,27.6993883]}'
 ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
 projectsno: 20
