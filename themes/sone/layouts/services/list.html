@@ -1,0 +1,40 @@
+{{ define "main" }}
+<div class="main">
+    {{ partial "pageheader" (dict "cat" "" "catLink" "" "pageTitle" "Our Services" "bg" "/images/services_bg.jpg") }}
+  
+  
+    <section class="section services-section ptb-100 bg-soft">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-8">
+                  <div class="section-heading text-center mb-5">
+                    {{ .Site.Data.settings.servicesubtext | markdownify  }}
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+            {{ $servicepages := where site.RegularPages "Section" "services" }}
+            {{ range ($servicepages.ByParam "order") }}
+              <div class="col-lg-6 col-md-6 col-sm-6 mb-4 mb-md-4">
+                  <div class="services-single d-flex p-5 shadow-sm bg-white rounded">
+                      <div class="icon icon-lg mr-4 text-secondary">
+                          <i class="{{.Params.iconname}}"></i>
+                      </div>
+                      <div class="services-content-wrap">
+                          <h3 class="h6">{{.Title}}</h3>
+                          <p>{{.Params.description}}</p>
+                          <a href="{{.URL}}" class="link-with-icon text-default font-small font-weight-bold" >Read more <span> <i class="fas fa-angle-right"></i></span></a>
+                      </div>
+                  </div>
+              </div>
+              {{ end }}
+
+          </div>
+      </div>
+  </section>
+  
+    {{ partial "whatclientsay" . }}
+  
+  
+  </div>
+{{ end }}
