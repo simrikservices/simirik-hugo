@@ -50,10 +50,43 @@ collections:
       - { label: 'Main Image', name: mainimage, widget: image, required: false }
       - { label: 'Display Order', name: 'order', widget: number } 
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
-  - name: 'teams'
-    label: 'Teams'
-    label_singular: 'Team'
-    folder: 'content/about/management'
+  - name: 'teamnepal'
+    label: 'Team Nepal'
+    folder: 'content/about/nepal'
+    create: true
+    slug: '{{slug}}'
+    summary: '{{order}}. {{title}}'
+    sortable_fields: ['order', 'title']
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Position', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Photo', name: photo, widget: image } 
+      - { label: 'Facebook', name: facebook, widget: string, required: false } 
+      - { label: 'Twitter', name: twitter, widget: string, required: false } 
+      - { label: 'Instagram', name: instagram, widget: string, required: false }
+      - { label: 'Display Order', name: 'order', widget: number }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
+  - name: 'teamhk'
+    label: 'Team HK'
+    folder: 'content/about/hk'
+    create: true
+    slug: '{{slug}}'
+    summary: '{{order}}. {{title}}'
+    sortable_fields: ['order', 'title']
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Position', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Photo', name: photo, widget: image } 
+      - { label: 'Facebook', name: facebook, widget: string, required: false } 
+      - { label: 'Twitter', name: twitter, widget: string, required: false } 
+      - { label: 'Instagram', name: instagram, widget: string, required: false }
+      - { label: 'Display Order', name: 'order', widget: number }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
+  - name: 'teamuk'
+    label: 'Team UK'
+    folder: 'content/about/uk'
     create: true
     slug: '{{slug}}'
     summary: '{{order}}. {{title}}'
