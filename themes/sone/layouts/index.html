@@ -43,7 +43,7 @@
                           <a href="/contact">
                           <div class="card-body text-center bg-default border-right border-variant-primary py-5">
                               <h2 class="font-weight-bold"><span class="h4 mr-2">HongKong</span></h2>
-                              <p class="mb-0">{{ .Site.Data.settings.hkemail  }}<br/>{{.Site.Data.settings.hkphone}}</p>
+                              <p class="mb-0">{{ .Site.Data.settings.hkemail  }}<br/>{{.Site.Data.settings.hkphone | safeHTML}}</p>
                           </div>
                         </a>
                       </div>
@@ -51,7 +51,7 @@
                         <a href="/contact">
                           <div class="card-body text-center bg-secondary border-right border-variant-primary py-5">
                               <h2 class="font-weight-bold"><span class="h4 mr-2">Nepal</span></h2>
-                              <p class="mb-0">{{ .Site.Data.settings.nepalemail  }}<br/>{{.Site.Data.settings.nepalphone}}</p>
+                              <p class="mb-0">{{ .Site.Data.settings.nepalemail  }}<br/>{{.Site.Data.settings.nepalphone | safeHTML}}</p>
                           </div>
                         </a>
                       </div>
@@ -60,7 +60,7 @@
                         <a href="/contact">
                           <div class="card-body text-center bg-primary py-5">
                               <h2 class="font-weight-bold"><span class="h4 mr-2">United Kingdom</span></h2>
-                              <p class="mb-0">{{ .Site.Data.settings.ukemail  }}<br/>{{.Site.Data.settings.ukphone}}</p>
+                              <p class="mb-0">{{ .Site.Data.settings.ukemail  }}<br/>{{.Site.Data.settings.ukphone | safeHTML}}</p>
                           </div>
                         </a>
                       </div>
