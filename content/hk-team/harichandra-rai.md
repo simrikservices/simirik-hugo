@@ -1,5 +1,5 @@
 ---
-title: Harichandra Rai
+title: Mr. Harichandra Rai
 description: Chief Advisor
 photo: /img/hari.jpg
 order: 1
