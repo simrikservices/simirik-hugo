@@ -52,7 +52,7 @@ collections:
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
   - name: 'teamnepal'
     label: 'Team Nepal'
-    folder: 'content/about/nepal'
+    folder: 'content/nepal-team'
     create: true
     slug: '{{slug}}'
     summary: '{{order}}. {{title}}'
@@ -69,7 +69,7 @@ collections:
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
   - name: 'teamhk'
     label: 'Team HK'
-    folder: 'content/about/hk'
+    folder: 'content/hk-team'
     create: true
     slug: '{{slug}}'
     summary: '{{order}}. {{title}}'
@@ -86,7 +86,7 @@ collections:
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
   - name: 'teamuk'
     label: 'Team UK'
-    folder: 'content/about/uk'
+    folder: 'content/uk-team'
     create: true
     slug: '{{slug}}'
     summary: '{{order}}. {{title}}'

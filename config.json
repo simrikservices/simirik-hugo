@@ -67,7 +67,7 @@
         "parent": "management",
         "name": "Hong Kong Team",
         "title": "Hong Kong Team",
-        "url": "/about/management/hk/",
+        "url": "/ht-team/",
         "weight": -100
       },
       {
@@ -75,7 +75,7 @@
         "parent": "management",
         "name": "Nepal Team",
         "title": "Nepal Team",
-        "url": "/about/management/nepal/",
+        "url": "/nepal-team/",
         "weight": -99
       },
       {
@@ -83,7 +83,7 @@
         "parent": "management",
         "name": "UK Team",
         "title": "UK Team",
-        "url": "/about/management/uk/",
+        "url": "/uk-team/",
         "weight": -98
       },
       {
