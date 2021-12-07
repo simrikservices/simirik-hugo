@@ -11,7 +11,7 @@
     <div class="row">
 
         {{ $servicepages := where site.RegularPages "Section" "services" }}
-        {{ range ($servicepages.ByParam "order") }}
+        {{ range first 2 ($servicepages.ByParam "order") }}
 
 
         {{ $bg := "bg-default" }}
