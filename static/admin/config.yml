@@ -61,7 +61,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Position', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Photo', name: photo, widget: image } 
+      - { label: 'Photo', name: photo, widget: image, required: false  } 
       - { label: 'Facebook', name: facebook, widget: string, required: false } 
       - { label: 'Twitter', name: twitter, widget: string, required: false } 
       - { label: 'Instagram', name: instagram, widget: string, required: false }
@@ -78,7 +78,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Position', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Photo', name: photo, widget: image } 
+      - { label: 'Photo', name: photo, widget: image, required: false  } 
       - { label: 'Facebook', name: facebook, widget: string, required: false } 
       - { label: 'Twitter', name: twitter, widget: string, required: false } 
       - { label: 'Instagram', name: instagram, widget: string, required: false }
@@ -95,7 +95,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Position', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Photo', name: photo, widget: image } 
+      - { label: 'Photo', name: photo, widget: image, required: false  } 
       - { label: 'Facebook', name: facebook, widget: string, required: false } 
       - { label: 'Twitter', name: twitter, widget: string, required: false } 
       - { label: 'Instagram', name: instagram, widget: string, required: false }
