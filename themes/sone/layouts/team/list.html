@@ -18,7 +18,7 @@
         </div>
         <div class="row">
             {{ $teampages := where site.RegularPages "Section" "nepal-team" }}
-                    {{ range ($teampages.ByParam "order") }}
+                    {{ range after 1 ($teampages.ByParam "order") }}
             <div class="col-12 col-md-6 col-lg-3 mb-md-4 mb-4">
                 <div class="profile-card">
                     <div class="card bg-white shadow animate-hover border-variant-soft">
