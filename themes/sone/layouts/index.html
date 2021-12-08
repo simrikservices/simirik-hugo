@@ -121,7 +121,7 @@
 {{ partial "whatclientsay" . }}
 
 
-{{ partial "blog" . }}
+{{ partial "blog" (dict "context" . "max" 3 "heading" .Site.Data.settings.newssubtext "thissection" "newsevents" ) }}
 
 <!--customer logo section start-->
 <div class="section section-sm ">

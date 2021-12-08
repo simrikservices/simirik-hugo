@@ -1,1 +1,12 @@
-list default
+{{ define "main" }}
+<div class="main">
+  {{ partial "pageheader" (dict "cat" "" "catLink" "" "pageTitle" .Params.pagetitle "bg" .Params.headingimage) }}
+
+  {{ partial "blog" (dict "context" . "max" 100 "heading" .Params.pagetitle "thissection" .Params.coll) }}
+
+  {{ partial "whatclientsay" . }}
+
+</div>
+{{ end }}
+
+
