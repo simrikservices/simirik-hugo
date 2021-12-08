@@ -1,7 +1,8 @@
 ---
-title: Our Nepal Team
-description: "[Intro]"
+title: Mr. Gurung
+description: Operations Director
+photo: /img/3515eeab-d79b-4743-93dc-c4ec4fbfde94.jpg
 order: 0
 draft: false
 ---
-In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design.
+Mr. Gurung is an experienced defence personnel who has served the National security forces as long as a decade. He has served in many positions and worked as instructor in various trainings which will be inducted in the security training of Simrik Security Gurkha Force. He is experienced in identifying threats and determining ways to mitigate it with various measures.

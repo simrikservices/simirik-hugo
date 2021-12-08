@@ -21,20 +21,22 @@ socialimage: /img/ktmairport.jpg
 subtext: We are committed to our values and work ethics “Honesty and Integrity”.
 countries: 2
 since: 2014
-scopes: 20
 clientsno: 101
+ukcontact: UK
+hkmap: '{"type":"Point","coordinates":[114.13543,22.363414]}'
+nepalmap: '{"type":"Point","coordinates":[85.3455439,27.6993883]}'
+ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
+projectsno: 20
+scopes: 20
 hkcontact: |-
-  Unit C1 9/F Mai On Industrial Building\
-  No. 17-21 Kung Yip Street\
-  Kwai Chung NT, Hong Kong SAR, China
+  Output Express Ltd
+
+  +852 6993 7354
+
+  17～21號 Kung Yip St, Kwai Chung, Hong Kong
 nepalcontact: |-
   Bhimsengola 09, Old Baneshwor
 
   9869248093
 
   Kathmandu, Nepal
-ukcontact: UK
-hkmap: '{"type":"Point","coordinates":[107.4188232,13.6686727]}'
-nepalmap: '{"type":"Point","coordinates":[85.3455439,27.6993883]}'
-ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
-projectsno: 20

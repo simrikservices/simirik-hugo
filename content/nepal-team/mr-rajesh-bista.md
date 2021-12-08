@@ -1,7 +1,7 @@
 ---
 title: Mr Rajesh Bista
 description: Managing Director
-photo: /img/3515eeab-d79b-4743-93dc-c4ec4fbfde94.jpg
+photo: /img/rajesh.jpg
 order: 3
 draft: false
 ---

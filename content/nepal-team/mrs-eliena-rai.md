@@ -1,7 +1,7 @@
 ---
-title: Mrs Eliena Rai
-description: Chairman
-photo: /img/3515eeab-d79b-4743-93dc-c4ec4fbfde94.jpg
+title: Mrs Emi Rai
+description: Chairperson
+photo: /img/chairperson1.jpg
 order: 1
 draft: false
 ---
