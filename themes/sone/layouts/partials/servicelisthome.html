@@ -11,7 +11,7 @@
     <div class="row">
 
         {{ $servicepages := where site.RegularPages "Section" "services" }}
-        {{ range first 2 ($servicepages.ByParam "order") }}
+        {{ range ($servicepages.ByParam "order") }}
 
 
         {{ $bg := "bg-default" }}
@@ -28,7 +28,7 @@
                     <div class="mb-4 p-3 p-md-4 icon icon-shape icon-md rounded-circle {{ $bg }} text-white">
                         <i class="{{.Params.iconname}}"></i>
                     </div>
-                    <h5>xxx{{.Title}}</h5>
+                    <h5>{{.Title}}</h5>
                     <p>{{.Params.description}}</p>
                     <a href="{{.URL}}" class="link-with-icon text-default font-small font-weight-bold" >Read more <span> <i class="fas fa-angle-right"></i></span></a>
                 </div>
