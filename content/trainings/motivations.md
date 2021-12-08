@@ -1,11 +1,6 @@
 ---
 title: Motivations
-subtext: |-
-  <!--StartFragment-->
-
-  Tell me and I forget, teach me and I may remember, involve me and I learn.
-
-  <!--EndFragment-->
+subtext: Tell me and I forget, teach me and I may remember, involve me and I learn.
 headingimage: /img/male-security-guard-using-portable-radio-outdoors-107465093.jpg
 mainimage: /img/hk2.jpg
 order: 4
