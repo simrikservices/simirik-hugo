@@ -1,7 +1,7 @@
 ---
 type: "team"
 headingimage: /img/event-photo.jpg
-team: "Nepal Team"
-teamtype: "nepal-team"
+team: "UK Team"
+teamtype: "uk-team"
 ---
-Our Nepal Team
+Our UK Team

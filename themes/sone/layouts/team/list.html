@@ -1,24 +1,18 @@
 {{ define "main" }}
 <div class="main">
-  {{ partial "pageheader" (dict "cat" "" "catLink" "" "pageTitle" "Nepal Team" "bg" "") }}
+  {{ partial "pageheader" (dict "cat" "" "catLink" "" "pageTitle" .Params.team "bg" .Params.headingimage) }}
   <section class="section">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="section-heading text-center mb-5">
-                    {{ $teampages := where site.RegularPages "Section" "nepal-team" }}
-                    {{ range first 1 ($teampages.ByParam "order") }}
-                    <h2>{{ .Title }}</h2>
-                     {{ .Content}}
-                    {{ end }}
-
-
+                    <h1>{{.Content}}</h1>
                 </div>
             </div>
         </div>
         <div class="row">
-            {{ $teampages := where site.RegularPages "Section" "nepal-team" }}
-                    {{ range after 1 ($teampages.ByParam "order") }}
+            {{ $teampages := where site.RegularPages "Section" .Params.teamtype }}
+                    {{ range ($teampages.ByParam "order") }}
             <div class="col-12 col-md-6 col-lg-3 mb-md-4 mb-4">
                 <div class="profile-card">
                     <div class="card bg-white shadow animate-hover border-variant-soft">
@@ -30,25 +24,21 @@
                             <span class="font-small font-weight-normal text-gray mb-3">{{.Params.description}}</span>
                             <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
                                 <li>
-                                    <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="50k Like">
+                                    <a href="{{.Params.facebook}}" target="_blank" aria-label="facebook social link" class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="">
                                         <span class="fab fa-facebook-f"></span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="40k Followers" aria-describedby="tooltip927904">
+                                    <a href="{{.Params.twitter}}" target="_blank" aria-label="twitter social link" class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="" aria-describedby="tooltip927904">
                                         <span class="fab fa-twitter"></span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank" aria-label="slack social link" class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="25k Subscribe">
-                                        <span class="fab fa-youtube"></span>
+                                    <a href="{{.Params.instagram}}" target="_blank" aria-label="intrgram social link" class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="">
+                                        <span class="fab fa-instagram"></span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="2k Project">
-                                        <span class="fab fa-dribbble"></span>
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
