@@ -33,6 +33,7 @@ collections:
       - {label: 'Main Image', name: mainimage, widget: image, required: false}
       - { label: 'Display Order', name: 'order', widget: number } 
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
+      - { label: "Type", name: "type", widget: "hidden", default: "about" }
   - name: 'services'
     label: 'Services'
     label_singular: 'Service'
@@ -50,6 +51,7 @@ collections:
       - { label: 'Main Image', name: mainimage, widget: image, required: false }
       - { label: 'Display Order', name: 'order', widget: number } 
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
+      - { label: "Type", name: "type", widget: "hidden", default: "services" }
   - name: 'teamnepal'
     label: 'Team Nepal'
     folder: 'content/nepal-team'
@@ -119,6 +121,7 @@ collections:
       - {label: 'Main Image', name: mainimage, widget: image, required: false} 
       - { label: 'Display Order', name: 'order', widget: number }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
+      - { label: "Type", name: "type", widget: "hidden", default: "trainings" }
   - name: 'testimonials'
     label: 'Testimonials'
     label_singular: 'Testimonial'
@@ -134,6 +137,7 @@ collections:
       - { label: 'Rating', name: 'rating', widget: 'number' }
       - { label: 'Display Order', name: 'order', widget: number }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
+      - { label: "Type", name: "type", widget: "hidden", default: "testimonials" }
   - name: 'newsevents'
     label: 'News & Events'
     label_singular: 'News / Event'
@@ -166,6 +170,7 @@ collections:
       - { label: 'Writer Name', name: 'writer', widget: 'string', default: 'SSGF' }
       - { label: 'Writer Photo', name: writerphoto, widget: image, allow_multiple: false, required: false }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
+      - { label: "Type", name: "type", widget: "hidden", default: "newsevents" }
 
   - name: 'settings'
     label: 'Settings'

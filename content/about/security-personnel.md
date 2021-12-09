@@ -5,6 +5,7 @@ more: please add security personnel detail using cms
 headingimage: /img/event-photo.jpg
 mainimage: /img/home_about.jpeg
 order: 4
+type: "about"
 ---
 SSGF believes in qualified leadership and competent employees. This is the founding forum where the staff members are exemplary in their respective fields of duty which helps to select perfect individual manpower from a vast pool of applying members. 
 

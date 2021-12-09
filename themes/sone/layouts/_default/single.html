@@ -1,3 +1,51 @@
-{{ .Params.description}}
-<hr/>
-{{.Content}}
+{{ define "main" }}
+<div class="main">
+    {{ $path := print "/" .Params.type}}
+    {{ $cat :=  .Params.type | title}}
+  {{ partial "pageheader" (dict "cat" $cat "catLink" $path "pageTitle" .Title "bg" .Params.headingimage) }}
+
+  
+<section class="section section-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 mb-4 mb-md-0 mb-lg-0">
+                <div class="service-details-wrap">
+                    {{ if isset .Params "mainimage"}}
+                    <img src="{{.Params.mainimage}}" alt="services" class="img-fluid rounded shadow-sm" />
+                    {{ end }}
+                    {{ if isset .Params "photo"}}
+                    <img src="{{.Params.photo}}" alt="services" class="img-fluid rounded shadow-sm" />
+                    {{ end }}
+                    <div class="services-detail-content mt-4">
+                        <h2>{{.Title}}</h2>
+                        {{.Content}}
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="sidebar-right pl-4">
+                    <!--need help-->
+                    <aside class="widget widget-categories">
+                        <div class="widget-title">
+                            <h3 class="h5">Need Help?</h3>
+                        </div>
+                        <p>We are available in 24/7 hours for dedicated support</p>
+                        <a href="/contact" class="btn btn-secondary btn-block mt-3">Cotact Us
+                        </a>
+                    </aside>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  {{ partial "whatclientsay" . }}
+
+</div>
+{{ end }}
+
+

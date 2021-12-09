@@ -7,4 +7,5 @@ description: Intrinsicly facilitate functional imperatives without
 rating: 4
 order: 3
 draft: false
+type: "testimonials"
 ---

@@ -6,5 +6,6 @@ subtext: |-
   Includes mock training for various
 content: ggg
 order: 1
+type: "trainings"
 ---
 xs

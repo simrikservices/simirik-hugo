@@ -7,6 +7,7 @@ subtext: |-
 headingimage: /img/event-photo.jpg
 mainimage: /img/about.jpg
 order: 1
+type: "about"
 ---
 Simrik Security Gurkha Force (SSGF) is a security company which offers a multi range of security services in Nepal and Security and construction services in Hong Kong. Our mission is to deliver our services cordially that meets expectations of clients and build a long-term relationship to win them as our goodwill hearsay ambassadors in the security and construction industry. SSGF is gradually growing as a dynamic and innovative company. 
 

@@ -6,4 +6,5 @@ description: Assertively procrastinate distributed relationships whereas equity
 rating: 5
 order: 2
 draft: false
+type: "testimonials"
 ---

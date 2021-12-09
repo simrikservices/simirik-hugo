@@ -12,5 +12,6 @@ subtext: |-
 headingimage: /img/event-photo.jpg
 order: 5
 draft: false
+type: "about"
 ---
 Chart Image

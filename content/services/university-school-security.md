@@ -5,5 +5,6 @@ description: Chaperone services for schools or large groups of students, CCTV
   Monitoring, Protection and safety of staff/Properties, Patrolling of premises,
   Fire evacuation/Alarms
 iconname: fas fa-school
+type: "services"
 ---
 Chaperone services for schools or large groups of students, CCTV Monitoring, Protection and safety of staff/Properties, Patrolling of premises, Fire evacuation/Alarms

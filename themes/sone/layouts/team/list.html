@@ -14,6 +14,7 @@
             {{ $teampages := where site.RegularPages "Section" .Params.teamtype }}
                     {{ range ($teampages.ByParam "order") }}
             <div class="col-12 col-md-6 col-lg-3 mb-md-4 mb-4">
+                <a href="{{.URL}}">
                 <div class="profile-card">
                     <div class="card bg-white shadow animate-hover border-variant-soft">
                         <div class="bg-soft p-2 mb-4">
@@ -43,6 +44,7 @@
                         </div>
                     </div>
                 </div>
+            </a>
             </div>
             {{ end }}
 

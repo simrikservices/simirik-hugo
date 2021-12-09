@@ -68,6 +68,7 @@ more: >-
 headingimage: /img/event-photo.jpg
 mainimage: /img/about.jpg
 order: 3
+type: "about"
 ---
 * Body Guards
 * In house and On site Security
