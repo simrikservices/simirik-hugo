@@ -117,6 +117,8 @@ collections:
       - {label: Title, name: title, widget: string}
       - {label: "Sub Text", name: subtext, widget: markdown}
       - {label: Body, name: body, widget: markdown}
+      - {label: Video ID, name: vidid, widget: string}
+      - {label: Duration, name: duration, widget: string}
       - {label: 'Heading Image', name: headingimage, widget: image, required: false} 
       - {label: 'Main Image', name: mainimage, widget: image, required: false} 
       - { label: 'Display Order', name: 'order', widget: number }
