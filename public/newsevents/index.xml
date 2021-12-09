@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Simrik Services</title>
+    <link>https://simrikservice.netlify.app/newsevents/</link>
+    <description>Recent content on Simrik Services</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://simrikservice.netlify.app/newsevents/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arrival of VIP from Abroad</title>
+      <link>https://simrikservice.netlify.app/newsevents/arrival-of-vip-from-abroad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://simrikservice.netlify.app/newsevents/arrival-of-vip-from-abroad/</guid>
+      <description>Arrival of Mr. xxx from Singapoore for 10 days visit all around Nepal, SSGF Nepal Section handled the complete protection and logistics.</description>
+    </item>
+    
+  </channel>
+</rss>
