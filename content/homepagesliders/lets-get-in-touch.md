@@ -8,8 +8,4 @@ Nepal Office:
 
 ssgf2077@gmail.com
 
-01- 4496838 (Office)
-
-9869248093 (Operations Director)
-
-9851035411 (Managing Director)
+01- 4496838 (Office), 9869248093 (Operations Director), 9851035411 (Managing Director)
