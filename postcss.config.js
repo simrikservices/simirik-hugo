@@ -25,7 +25,8 @@ module.exports = {
         'fa-home',
         'fa-hotel',
         'fa-hospital',
-        'fa-dog'
+        'fa-dog',
+        'show'
       ]
     },
     autoprefixer: {},
