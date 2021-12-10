@@ -4,6 +4,6 @@ description: Chief Advisor
 photo: /img/hari.jpg
 order: 1
 draft: false
-type: "team"
+type: team
 ---
-Practical in-depth working experience and knowledge in security industry and heading construction business sectors for several years in Hong Kong and Nepal.
+Practical in-depth working experience and knowledge in security industry and heading construction business sectors for several years in Hong Kong and Nepal. He is a visiting professor at a university in Hong Kong and has developed mutual trust between localities. This serves as an asset to upgrade the security needs of the local community thus uplifting company security mechanism.
