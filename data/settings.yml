@@ -24,7 +24,7 @@ since: 2014
 clientsno: 101
 ukcontact: UK
 hkmap: '{"type":"Point","coordinates":[114.13543,22.363414]}'
-nepalmap: '{"type":"Point","coordinates":[85.3455439,27.6993883]}'
+nepalmap: '{"type":"Point","coordinates":[85.3455355,27.6993877]}'
 ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
 projectsno: 20
 scopes: 20
