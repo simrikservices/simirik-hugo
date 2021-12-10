@@ -26,6 +26,7 @@ module.exports = {
         'fa-hotel',
         'fa-hospital',
         'fa-dog',
+        'fa-play-circle',
         'show'
       ]
     },
