@@ -21,9 +21,7 @@
                     <div class="blog-img position-relative">
                         {{ if isset .Params "vidid" }}
                         <img src="https://img.youtube.com/vi/{{.Params.vidid}}/0.jpg" class="card-img-top rounded-top" alt="{{.Title}}">
-                        <a href="{{.URL}}" class="position-absolute" style="font-size: 80px; color: white;"><i class="fas fa-play-circle"></i>
-</a>
-
+                        <a href="{{.URL}}" class="position-absolute" style="font-size: 80px; color: white;"><i class="fas fa-play-circle"></i></a>
                         {{ else }}
                         <img src="{{.Params.mainimage}}" class="card-img-top rounded-top" alt="{{.Title}}">
                         <a href="#" class="position-absolute category-text small badge badge-secondary">{{.Params.keyword}}</a>
