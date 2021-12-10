@@ -1,6 +1,6 @@
 ---
 title: Mr. Harichandra Rai
-description: Chief Advisor
+description: Managing Director
 photo: /img/hari.jpg
 order: 1
 draft: false
