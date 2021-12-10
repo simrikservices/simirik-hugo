@@ -10,8 +10,9 @@ subtext: |-
      2. Staff Members
      3. Competent Manpower
 headingimage: /img/event-photo.jpg
+mainimage: /img/organisation-chart.jpg
 order: 5
 draft: false
-type: "about"
+type: about
 ---
 Chart Image
