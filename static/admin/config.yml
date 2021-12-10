@@ -117,7 +117,7 @@ collections:
       - {label: Title, name: title, widget: string}
       - {label: "Sub Text", name: subtext, widget: markdown}
       - {label: Body, name: body, widget: markdown}
-      - {label: Video ID, name: vidid, widget: string}
+      - {label: Video ID, name: vidid, widget: string, required: false }
       - {label: Duration, name: duration, widget: string}
       - {label: 'Heading Image', name: headingimage, widget: image, required: false} 
       - {label: 'Main Image', name: mainimage, widget: image, required: false} 
@@ -161,7 +161,9 @@ collections:
       - { label: 'Keyword', name: 'keyword', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Main Image', name: mainimage, widget: image, allow_multiple: false }
+      - {label: Video ID, name: vidid, widget: string, required: false }
+      - {label: Duration, name: duration, widget: string}
+      - { label: 'Main Image', name: mainimage, widget: image, required: false }
       - label: 'Multiple Images'
         name: 'multipleimages'
         widget: list
