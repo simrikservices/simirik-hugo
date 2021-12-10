@@ -1,6 +1,9 @@
 ---
-title: Motivations
-subtext: Tell me and I forget, teach me and I may remember, involve me and I learn.
+title: Unarmed Combat Training
+subtext: When in duty, the tool of any individual is self defence after he is
+  satisfied that the cleint is safe. To acheive this, unarmed combat training is
+  inducted to individuals for special cases like body guards, corporate
+  security, residence security and in duty portfolio of close encounter.
 vidid: ERrKvwDnxxQ
 duration: 0:45
 headingimage: /img/male-security-guard-using-portable-radio-outdoors-107465093.jpg
