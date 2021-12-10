@@ -1,7 +1,7 @@
 ---
 title: Mr. Babu Kaji KC
 description: Finance Officer
-photo: /img/babu-6x66.jpg
+photo: /img/babu-66x66.jpg
 order: 4
 draft: false
 type: team
