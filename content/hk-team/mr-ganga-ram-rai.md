@@ -1,6 +1,6 @@
 ---
 title: Mr. Ganga Ram Rai
-description: Chief Advisor
+description: Operations Director
 photo: /img/ganga_ram_rai.png
 order: 2
 draft: false
