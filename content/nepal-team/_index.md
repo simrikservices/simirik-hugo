@@ -1,8 +1,8 @@
 ---
 title: Team Setting (Do Not Delete)
-coll: "trainings"
 headingimage: /img/event-photo.jpg
-pagetitle: "Nepal Team"
+team: "Nepal Team"
+teamtype: "nepal-team"
 order: -1
 ---
 Our Nepal Team

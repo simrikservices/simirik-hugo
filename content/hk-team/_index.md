@@ -1,8 +1,8 @@
 ---
 title: Team Setting (Do Not Delete)
-coll: "trainings"
 headingimage: /img/event-photo.jpg
-pagetitle: "Hong Kong Team"
+team: "Honk Kong Team"
+teamtype: "hk-team"
 order: -1
 ---
 Our Hong Kong Team
