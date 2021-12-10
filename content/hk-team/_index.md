@@ -2,7 +2,7 @@
 title: Team Setting (Do Not Delete)
 coll: "trainings"
 headingimage: /img/event-photo.jpg
-pagetitle: "UK Team"
+pagetitle: "Hong Kong Team"
 order: -1
 ---
-Our UK Team
+Our Hong Kong Team
