@@ -1,7 +1,7 @@
 ---
 title: Mr Naresh Sunuwar
 description: Advisor
-photo: /img/3515eeab-d79b-4743-93dc-c4ec4fbfde94.jpg
+photo: /img/nartesh-sunuwar.jpg
 order: 5
 draft: false
 type: team
