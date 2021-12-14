@@ -6,4 +6,4 @@ order: 3
 draft: false
 type: team
 ---
-Mr. Bista has been working as an experienced Unarmed Combat instructor in various institutions including the national armed forces. He has also magnified his abilities and extended his experiences to various trainbees in fields like personal body guards, Close VIP protection, Liasion, Installation security, and other security affairs. He has extensively worked with multiple numbers of Security firms and has garnered his personal skills both in team building and Public Relations.
+Rajesh Bista, Sensei paramount, also serves as the Chief Instructor in Aikido in Nepal as well as unarmed combat specialist. He has been serving as an Instructor for Executive Protection and unarmed combat for the Nepal Army Ranger Battalion. Well versed in Karate, he was nominated Best Fighter of Asia during the Asian Karate Championship open weight category held in Manila-the Philippines. He also became the National Champion three times in a row. A 5th Dan black belt in Aikido, he leads our team in the vetting and selecting of worthy candidates.
