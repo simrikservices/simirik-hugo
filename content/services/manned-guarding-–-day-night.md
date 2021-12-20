@@ -1,9 +1,9 @@
 ---
 title: Manned Guarding – Day/Night
-description: Security Guards, Gatemen,  Key Holding, Stewarding, Door
-  Supervising, Access Control,CCTV Monitoring,  Patrolling of premises
-order: 1
+description: Security Guards, Gate-men,  Key Holding, Door Supervising, Access
+  Control, CCTV Monitoring,  Patrolling of premises
 iconname: fas fa-user-shield
-type: "services"
+order: 1
+type: services
 ---
-Security Guards, Gatemen,  Key Holding, Stewarding, Door Supervising, Access Control,CCTV Monitoring,  Patrolling of premises
+This service is best suited for office, banks, corporate houses, housing colony, resenditial building and other places where the owner or persons present to get their services will enjoy freedom of their job category.
