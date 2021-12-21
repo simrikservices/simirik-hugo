@@ -16,7 +16,7 @@
                             <div class="form-row">
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <select class="form-select form-control" id="country" aria-label="Default select example">
+                                        <select class="form-select form-control" id="country" aria-label="ContactForm">
                                             <option selected>Where do you want to Contact ?</option>
                                             <option value="Hong Kong">HongKong</option>
                                             <option value="Nepal">Nepal</option>
@@ -55,23 +55,31 @@
 
 
 
-                          <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                            <label class="btn btn-dark">
-                              <input type="radio" name="options" id="option1" checked> Active
+                          <div class="btn-group btn-group-toggle" id="selectCountry" data-toggle="buttons">
+                            <label class="btn btn-secondary" id="hk">
+                              <input type="radio" name="options" value="Hong Kong" checked> Hong Kong
                             </label>
-                            <label class="btn btn-dark">
-                              <input type="radio" name="options" id="option2"> Radio
+                            <label class="btn btn-dark" id="np">
+                              <input type="radio" name="options" value="Nepal"> Nepal
                             </label>
-                            <label class="btn btn-dark">
-                              <input type="radio" name="options" id="option3"> Radio
+                            <label class="btn btn-dark" id="uk">
+                              <input type="radio" name="options" value="United Kingdom"> United Kingdom
                             </label>
                           </div>
 
                         <hr class="my-5">
 
-                        <h5>Our Headquarter</h5>
-                        <address>
+                        <h5>Contact Info</h5>
+                        <address id="hkaddress">
                             {{.Site.Data.settings.hkcontact | markdownify }}
+                        </address>
+
+                        <address id="npaddress">
+                            {{.Site.Data.settings.nepalcontact | markdownify }}
+                        </address>
+
+                        <address id="ukaddress">
+                            {{.Site.Data.settings.ukcontact | markdownify }}
                         </address>
 
                     </div>
@@ -81,14 +89,25 @@
     </section>
     <!--contact us section end-->
 
+    
     <!--contact map section start-->
     <div class="section py-0">
-        <div class="google-map mb-n2 opacity-9 w-100">
+        <div class="google-map mb-n2 opacity-9 w-100" id="hkmap">
             <iframe
-  height="500"
-  frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/view?key=AIzaSyAfHpaendzkB-S2wnp3nfQNtYgaX1f5e-A&center=27.7090319,85.3172917&zoom=18" allowfullscreen>
-</iframe>
+            id="hkiframe"
+            height="500"
+            frameborder="0" style="border:0"
+            src="" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="google-map mb-n2 opacity-9 w-100" id="npmap"></div>
+        <div class="google-map mb-n2 opacity-9 w-100" id="ukmap">
+            <iframe
+            id="ukiframe"
+            height="500"
+            frameborder="0" style="border:0"
+            src="" allowfullscreen>
+            </iframe>
         </div>
     </div>
 
@@ -102,7 +121,82 @@
         console.log(payload.location.country.name + ', ' + payload.location.city);
         const country = payload.location.country.name;
         document.getElementById("country").value = country;
+        setAddressAndMap(country)
+        setButtonColors(country)
+        
+        
     });
+
+    const selectCountry = document.getElementById("selectCountry");
+    selectCountry.addEventListener("click", function() {
+        
+        
+        document.getElementById("country").value = document.querySelector('input[name="options"]:checked').value;
+        setButtonColors(document.querySelector('input[name="options"]:checked').value)
+        setAddressAndMap(document.querySelector('input[name="options"]:checked').value)
+    })
+
+    function setAddressAndMap(country) {
+        document.getElementById('ukaddress').style.display = 'none'
+        document.getElementById('hkaddress').style.display = 'none'
+        document.getElementById('npaddress').style.display = 'none'
+        document.getElementById('ukmap').style.display = 'none'
+        document.getElementById('hkmap').style.display = 'none'
+        document.getElementById('npmap').style.display = 'none'
+        if (country === 'Hong Kong') {
+            document.getElementById('hkaddress').style.display = 'block'
+            document.getElementById('hkmap').style.display = 'block'
+        } else if (country === 'Nepal') {
+            document.getElementById('npaddress').style.display = 'block'
+            document.getElementById('npmap').style.display = 'block'
+        } else {
+            document.getElementById('ukaddress').style.display = 'block'
+            document.getElementById('ukmap').style.display = 'block'
+        }
+    }
+
+    function setButtonColors(country) {
+        document.getElementById('hk').classList.remove("btn-secondary")
+        document.getElementById('np').classList.remove("btn-secondary")
+        document.getElementById('uk').classList.remove("btn-secondary")
+        document.getElementById('hk').classList.remove("btn-dark")
+        document.getElementById('np').classList.remove("btn-dark")
+        document.getElementById('uk').classList.remove("btn-dark")
+
+        if (country === "Hong Kong") {
+            document.querySelector('#hk').classList.add("btn-secondary")
+            document.getElementById('np').classList.add("btn-dark")
+            document.getElementById('uk').classList.add("btn-dark")           
+        } else if (country === "Nepal") {
+            document.querySelector('#np').classList.add("btn-secondary")
+            document.getElementById('hk').classList.add("btn-dark")
+            document.getElementById('uk').classList.add("btn-dark")      
+        } else {
+            document.querySelector('#uk').classList.add("btn-secondary")
+            document.getElementById('np').classList.add("btn-dark")
+            document.getElementById('hk').classList.add("btn-dark")  
+        }
+    }
+
+
+    // var basemapsrc = "https://www.google.com/maps/embed/v1/view?key=AIzaSyAfHpaendzkB-S2wnp3nfQNtYgaX1f5e-A&zoom=18&center="
+    var basemapsrc = "https://maps.google.com/maps?z=15&output=embed&q="
+    var nepalmap = JSON.parse("{{.Site.Data.settings.nepalmap}}");
+    var nepalsrc = basemapsrc + nepalmap.coordinates[1] + "," + nepalmap.coordinates[0]
+    var npiframe = '<iframe height="500" frameborder="0" style="border:0" src="' + nepalsrc + '" allowfullscreen></iframe>'
+    document.getElementById('npmap').innerHTML = npiframe
+
+    var hkmap = JSON.parse("{{.Site.Data.settings.hkmap}}");
+    var hksrc = basemapsrc + hkmap.coordinates[1] + "," + hkmap.coordinates[0]
+    var hkiframe = '<iframe height="500" frameborder="0" style="border:0" src="' + hksrc + '" allowfullscreen></iframe>'
+    document.getElementById('hkmap').innerHTML = hkiframe
+
+    var ukmap = JSON.parse("{{.Site.Data.settings.ukmap}}");
+    var uksrc = basemapsrc + ukmap.coordinates[1] + "," + ukmap.coordinates[0]
+    var ukiframe = '<iframe height="500" frameborder="0" style="border:0" src="' + uksrc + '" allowfullscreen></iframe>'
+    document.getElementById('ukmap').innerHTML = ukiframe
+
+    
 </script>
 {{ end }}
   
