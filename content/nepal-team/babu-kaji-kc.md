@@ -1,6 +1,8 @@
 ---
 title: Mr. Babu Kaji KC
 description: Country Director
+gist: Babu Kaji K.C  a  logical, passionate, adaptable and highly motivated
+  individual has brought with himself around 8 years of service in  SOF Unit
 photo: /img/babu-66x66.jpg
 order: 4
 draft: false
