@@ -16,6 +16,16 @@
                             <div class="form-row">
                                 <div class="col-12">
                                     <div class="form-group">
+                                        <select class="form-select form-control" id="country" aria-label="Default select example">
+                                            <option selected>Where do you want to Contact ?</option>
+                                            <option value="Hong Kong">HongKong</option>
+                                            <option value="Nepal">Nepal</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
                                         <input type="text" class="form-control" name="name" placeholder="Enter name" required="required">
                                     </div>
                                 </div>
@@ -40,10 +50,22 @@
                 </div>
                 <div class="col-md-5">
                     <div class="contact-us-content">
-                        <h2>Looking for any Consultation?</h2>
-                        <p class="lead">We can provide you with professional advice and free Quote according to your requirements.</p>
+                        <h2>Where do you want to contact?</h2>
+                        <p class="lead">Click on the buttons below to choose.</p>
 
-                        <a href="#" class="btn btn-outline-secondary align-items-center">Get Directions <span class="ti-arrow-right pl-2"></span></a>
+
+
+                          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-dark">
+                              <input type="radio" name="options" id="option1" checked> Active
+                            </label>
+                            <label class="btn btn-dark">
+                              <input type="radio" name="options" id="option2"> Radio
+                            </label>
+                            <label class="btn btn-dark">
+                              <input type="radio" name="options" id="option3"> Radio
+                            </label>
+                          </div>
 
                         <hr class="my-5">
 
@@ -71,6 +93,17 @@
     </div>
 
 </div>
+<script>
+    fetch('https://api.ipregistry.co/?key=ak6eddpkgifpki2x')
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (payload) {
+        console.log(payload.location.country.name + ', ' + payload.location.city);
+        const country = payload.location.country.name;
+        document.getElementById("country").value = country;
+    });
+</script>
 {{ end }}
   
 
