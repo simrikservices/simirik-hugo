@@ -1,164 +1,85 @@
-{{ define "main" }}
-<div class="main">
+<!DOCTYPE html>
+<html lang="en">
 
-  <!--hero section start-->
-  {{ $rand := index (seq 2 | shuffle) 1 }}
-  <section class="section section-xl pt-9 pb-9 section-header text-white gradient-overly-right-color" style="background-image: url('images/home{{$rand}}.jpg')">
-      <div class="container">
-          <div class="row">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="16x16">
+    <!-- <title>Simirk Services: Simrik Security Gurkha Force</title> -->
+    <title>{{ if .IsHome }}Home - {{ else }}{{ if .Page.Title }}{{ .Page.Title }} - {{ end }}{{ end }}{{ .Site.Title }}</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-              <div class="owl-carousel owl-theme hero-content-slider custom-dot custom-dot-2">
-                {{ $pages := where site.RegularPages "Section" "homepagesliders" }}
-                {{ range ($pages.ByParam "order") }}
+    {{ $main := resources.Get "css/main.css" | postCSS | minify | fingerprint "md5" }}
+    <link rel="stylesheet" href="{{ $main.RelPermalink }}">
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
 
-                  <div class="item">
-                      <div class="col-md-8 col-lg-7 col-12">
-                          <div class="hero-content-wrap">
-                              <h1 class="display-2">{{ .Title }}</h1>
-                              <p class="lead">{{ .Params.subtext }}</p>
-                              <p class="mycontent">{{ .Content }}</p>
-                              {{ if eq .Params.order 3 }}
-                              <div class="action-btns pt-3">
-                                  <a href="/contact-us/" class="btn btn-secondary mr-3">Let's Get In Touch</a>
-                                  <a href="/nepal-team/" class="btn btn-outline-light">Management Teams</a>
-                              </div> 
-                              {{ end }}
-                          </div>
-                      </div>
-                  </div>
-                  {{ end }}
-                  
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <!--promo section start-->
-  <section class="section section-sm pb-0 z-3">
-    <div class="container mt-n8">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <div class="row text-white shadow-lg">
-                        <div class="col-12 col-md-4 px-md-0 mb-4 mb-lg-0">
-                          <a href="/contact-us">
-                          <div class="card-body text-center bg-default border-right border-variant-primary py-5">
-                              <h2 class="font-weight-bold"><span class="h4 mr-2">HongKong</span></h2>
-                              <p class="mb-0">{{ .Site.Data.settings.hkemail  }}<br/>{{.Site.Data.settings.hkphone | safeHTML}}</p>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-12 col-md-4 px-md-0 mb-4 mb-lg-0">
-                        <a href="/contact-us">
-                          <div class="card-body text-center bg-secondary border-right border-variant-primary py-5">
-                              <h2 class="font-weight-bold"><span class="h4 mr-2">Nepal</span></h2>
-                              <p class="mb-0">{{ .Site.Data.settings.nepalemail  }}<br/>{{.Site.Data.settings.nepalphone | safeHTML}}</p>
-                          </div>
-                        </a>
-                      </div>
-
-                      <div class="col-12 col-md-4 px-md-0">
-                        <a href="/contact-us">
-                          <div class="card-body text-center bg-primary py-5">
-                              <h2 class="font-weight-bold"><span class="h4 mr-2">United Kingdom</span></h2>
-                              <p class="mb-0">{{ .Site.Data.settings.ukemail  }}<br/>{{.Site.Data.settings.ukphone | safeHTML}}</p>
-                          </div>
-                        </a>
-                      </div>
-
-                    </a>
-
-                </div>
-            </div>
+<body>
+    <div id="preloader">
+        <div class="loader1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
-</section>
 
-{{ partial "about" . }}
+    <div class="main">
+    
+    
+    
+        <section class="section py-0 position-relative text-white" style="background: url('images/event-photo.jpg')no-repeat center center / cover">
+            <div class="section-lg bg-gradient-primary min-vh-100 d-flex align-items-center w-100">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <img src="/images/logo-color.png" alt="SSGF" style="opacity: 0.5;" />
+                                <h1 class="display-2">Welcome !</h1>
+                                <h2>你好 . नमस्ते . Hello</h2>
+                                <p class="lead">Simrik Security Gurkha Force(SSGF) & Simrik Construction Engineering Limited(SCEL) is a Hong Kong, Nepal & UK based company providing a quality and comprehensive security and specialized construction services
+                                with highly trained, motivated and discipline personnels.</p>
+                                <!-- <div class="mb-5">
+                                    <h5 class="mb-0 text-white"> <span class="ti-mobile mr-2 align-items-center"></span> (612) 255-461</h5>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-12"></div>
+                            <div class="action-btns pt-3">
+                                <a href="/ssgf/" class="btn btn-secondary mr-3">Security</a>
+                                <a href="/scel/" class="btn btn-success">Construction</a>
+                            </div>
 
-{{ partial "servicelisthome" . }}
-
-{{ partial "howitworks" .}}
-
-
-<section class="py-0 text-white" style="background: url('images/slider-img-5.jpg')no-repeat center center fixed">
-    <div class="section section-sm bg-gradient-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 col-md-6 col-lg-3 mb-4 mb-md-4 mb-lg-0">
-                    <div class="icon-box text-center">
-                        <div class="icon icon-md"><i class="fas fa-globe"></i></div>
-                        <span class="counter d-block display-3 my-2" data-count="{{.Site.Data.settings.countries}}">0</span>
-                        <h3 class="h6">Countries</h3>
+                            </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-6 col-lg-3 mb-4 mb-md-4 mb-lg-0">
-                    <div class="icon-box text-center">
-                        <div class="icon icon-md"><i class="fas fa-clock"></i></div>
-                        <span class="counter d-block display-3 my-2" data-count="{{.Site.Data.settings.since}}">0</span>
-                        <h3 class="h6">Since</h3>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-3 mb-4 mb-md-4 mb-lg-0">
-                    <div class="icon-box text-center">
-                        <div class="icon icon-md"><i class="fas fa-list"></i></div>
-                        <span class="counter d-block display-3 my-2" data-count="{{.Site.Data.settings.projectsno}}">0</span>
-                        <h3 class="h6">Services Scope</h3>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-3 mb-4 mb-md-4 mb-lg-0">
-                    <div class="icon-box text-center">
-                        <div class="icon icon-md"><i class="fas fa-smile"></i></div>
-                        <span class="counter d-block display-3 my-2" data-count="{{.Site.Data.settings.clientsno}}">0</span>
-                        <h3 class="h6">Happy Clients</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
+      
+        </section>
+        <!--customer logo section end-->
+    
     </div>
-</section>
 
+    <!--scroll bottom to top button end-->
+    <script src="/js/vendors/jquery-3.5.1.min.js"></script>
+    <script src="/js/vendors/popper.min.js"></script>
+    <script src="/js/vendors/bootstrap.min.js"></script>
+    <script src="/js/vendors/jquery.magnific-popup.min.js"></script>
+    <script src="/js/vendors/jquery.easing.min.js"></script>
+    <script src="/js/vendors/mixitup.min.js"></script>
+    <script src="/js/vendors/headroom.min.js"></script>
+    <script src="/js/vendors/smooth-scroll.min.js"></script>
+    <script src="/js/vendors/wow.min.js"></script>
+    <script src="/js/vendors/owl.carousel.min.js"></script>
+    <script src="/js/vendors/jquery.waypoints.min.js"></script>
+    <script src="/js/vendors/jquery.countdown.min.js"></script>
+    <script src="/js/vendors/validator.min.js"></script>
+    <script src="/js/app.js"></script>
 
-{{ partial "whatclientsay" . }}
+</body>
 
-
-{{ partial "blog" (dict "context" . "max" 3 "heading" .Site.Data.settings.newssubtext "thissection" "newsevents" ) }}
-
-<!--customer logo section start-->
-<div class="section section-sm ">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-12">
-                <div class="owl-carousel owl-theme clients-carousel">
-                    <div class="item single-client">
-                        <img src="images/client-logos/logo1.png" alt="client logo" class="img-fluid">
-                    </div>
-                    <div class="item single-client">
-                        <img src="images/client-logos/logo5.png" alt="client logo" class="img-fluid">
-                    </div>
-                    <div class="item single-client">
-                        <img src="images/client-logos/logo6.png" alt="client logo" class="img-fluid">
-                    </div>
-                    <div class="item single-client">
-                        <img src="images/client-logos/logo4.png" alt="client logo" class="img-fluid">
-                    </div>
-                    <div class="item single-client">
-                        <img src="images/client-logos/logo2.png" alt="client logo" class="img-fluid">
-                    </div>
-                    <div class="item single-client">
-                        <img src="images/client-logos/logo6.png" alt="client logo" class="img-fluid">
-                    </div>
-                    <div class="item single-client">
-                        <img src="images/client-logos/logo3.png" alt="client logo" class="img-fluid">
-                    </div>
-                    <div class="item single-client">
-                        <img src="images/client-logos/logo8.png" alt="client logo" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--customer logo section end-->
-
-</div>
-{{ end }}
+</html>
