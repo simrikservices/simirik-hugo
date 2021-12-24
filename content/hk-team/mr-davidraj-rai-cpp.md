@@ -1,8 +1,9 @@
 ---
 title: Mr Davidraj Rai CPP
 description: Operations/ Admin Director
+gist: A Gurkha Forces Veteran
 photo: /img/davidraj_rai_cpp.png
-order: 1
+order: 2
 draft: false
 type: team
 ---
