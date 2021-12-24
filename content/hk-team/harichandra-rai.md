@@ -1,8 +1,9 @@
 ---
 title: Mr. Harichandra Rai
 description: Managing Director
+gist: Experienced, Professional & a dynamic PRO
 photo: /img/hari.jpg
-order: 1
+order: 2
 draft: false
 type: team
 ---
