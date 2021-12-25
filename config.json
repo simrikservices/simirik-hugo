@@ -39,12 +39,20 @@
         "weight": -99
       },
       {
-        "identifier": "oc",
+        "identifier": "ocnp",
         "parent": "about",
-        "name": "Organization Chart",
+        "name": "Nepal Organization Chart",
         "title": "Organization Chart of Simrik Security Gurkha Force",
-        "url": "/about/organization-chart/",
+        "url": "/about/nepal-organization-chart/",
         "weight": -98
+      },
+      {
+        "identifier": "ochk",
+        "parent": "about",
+        "name": "Hong Kong Organization Chart",
+        "title": "Organization Chart of Simrik Security Gurkha Force",
+        "url": "/about/hong-kong-organization-chart/",
+        "weight": -97
       },
       {
         "identifier": "background",
@@ -52,7 +60,7 @@
         "name": "Company Background",
         "title": "Background of Simrik Security Gurkha Force",
         "url": "/about/company-background/",
-        "weight": -97
+        "weight": -96
       },
       {
         "identifier": "security",
@@ -60,7 +68,7 @@
         "name": "Security Personnel",
         "title": "Security Personnel",
         "url": "/about/security-personnel/",
-        "weight": -96
+        "weight": -95
       },
       {
         "identifier": "management",
@@ -68,7 +76,7 @@
         "name": "Management",
         "title": "Management",
         "url": "#",
-        "weight": -95
+        "weight": -94
       },
       {
         "identifier": "hk",
