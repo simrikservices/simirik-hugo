@@ -39,12 +39,20 @@
         "weight": -99
       },
       {
+        "identifier": "oc",
+        "parent": "about",
+        "name": "Organization Chart",
+        "title": "Organization Chart of Simrik Security Gurkha Force",
+        "url": "/about/organization-chart/",
+        "weight": -98
+      },
+      {
         "identifier": "background",
         "parent": "about",
         "name": "Company Background",
         "title": "Background of Simrik Security Gurkha Force",
         "url": "/about/company-background/",
-        "weight": -98
+        "weight": -97
       },
       {
         "identifier": "security",
@@ -52,7 +60,7 @@
         "name": "Security Personnel",
         "title": "Security Personnel",
         "url": "/about/security-personnel/",
-        "weight": -97
+        "weight": -96
       },
       {
         "identifier": "management",
@@ -60,7 +68,7 @@
         "name": "Management",
         "title": "Management",
         "url": "#",
-        "weight": -96
+        "weight": -95
       },
       {
         "identifier": "hk",

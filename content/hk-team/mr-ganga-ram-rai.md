@@ -1,8 +1,9 @@
 ---
 title: Mr. Ganga Ram Rai
 description: Operations Director
-photo: /img/ganga_ram_rai.png
-order: 2
+gist: Experience ranging from private security industry to logistical operations
+photo: /img/ganga_ram_rai1.png
+order: 3
 draft: false
 type: team
 ---

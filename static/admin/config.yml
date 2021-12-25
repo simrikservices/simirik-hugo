@@ -62,6 +62,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Position', name: 'description', widget: 'string' }
+      - { label: 'Short', name: 'gist', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Photo', name: photo, widget: image, required: false  } 
       - { label: 'Facebook', name: facebook, widget: string, required: false } 
@@ -80,6 +81,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Position', name: 'description', widget: 'string' }
+      - { label: 'Short', name: 'gist', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Photo', name: photo, widget: image, required: false  } 
       - { label: 'Facebook', name: facebook, widget: string, required: false } 
@@ -98,6 +100,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Position', name: 'description', widget: 'string' }
+      - { label: 'Short', name: 'gist', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Photo', name: photo, widget: image, required: false  } 
       - { label: 'Facebook', name: facebook, widget: string, required: false } 

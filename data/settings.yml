@@ -1,6 +1,6 @@
 title: Simrik Services
 hkemail: hk@simrikservices.com
-hkphone: +852 6993 7354, +852 90941246,<br>+852 9583 1027
+hkphone: +852 6993 7354, +852 90941246, <br>+852 9583 1027
 nepalemail: nepal@simrikservices.com
 nepalphone: + 977 9851035411, + 977 9841362202,<br>+9779869248093
 ukemail: uk@simrikservices.com
@@ -21,28 +21,26 @@ socialimage: /img/ktmairport.jpg
 subtext: We are committed to our values and work ethics “Honesty and Integrity”.
 countries: 2
 since: 2014
-clientsno: 101
-ukcontact: UK
-hkmap: '{"type":"Point","coordinates":[114.13543,22.363414]}'
-nepalmap: '{"type":"Point","coordinates":[85.3455355,27.6993877]}'
-ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
-projectsno: 20
 scopes: 20
+clientsno: 101
 hkcontact: |-
-  admin@simrikhk.com
+  [admin@simrikhk.com](email:admin@simrikhk.com)
 
-  +852 6993 7354
+  [+852 6993 7354](+85269937354)
 
   Unit C1 9/F Mai On Industrial Building\
   No. 17-21 Kung Yip Street\
   Kwai Chung NT, Hong Kong SAR, China
 nepalcontact: |-
-  ssgf2077@gmail.com
+  [ssgf2077@gmail.com](mailto:ssgf2077@gmail.com)
 
-  +977- 9869248093
-
-  +977- 9841362202
-
-  +977- 9851035411
+  [+977- 9869248093](tel:+9779869248093)\
+  [+977- 9841362202](tel:+9779841362202)\
+  [+977- 9851035411](tel:+9779851035411)
 
   Bhimsengola 09, Old Baneshwor, Kathmandu, Nepal
+ukcontact: UK
+hkmap: '{"type":"Point","coordinates":[114.13543,22.363414]}'
+nepalmap: '{"type":"Point","coordinates":[85.3455355,27.6993877]}'
+ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
+projectsno: 20
