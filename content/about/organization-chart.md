@@ -1,5 +1,5 @@
 ---
-title: NP Organization Chart
+title: Nepal Organization Chart
 subtext: Simrik Security Gurkha Force
 headingimage: /img/event-photo.jpg
 mainimage: /img/organisation-chart.jpg
