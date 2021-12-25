@@ -1,5 +1,5 @@
 ---
-title: HK Organisation Chart
+title: Hong Kong Organization Chart
 subtext: SSGF & SCEL
 headingimage: /img/hk-organisation-chart.png
 order: 6
