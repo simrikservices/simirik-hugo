@@ -129,30 +129,12 @@
             <div class="row align-items-center">
                 <div class="col-md-12">
                     <div class="owl-carousel owl-theme clients-carousel">
+                        {{ $tpages := where site.RegularPages "Section" "ourclients" }}
+                        {{ range ($tpages.ByParam "order") }}
                         <div class="item single-client">
-                            <img src="images/client-logos/logo1.png" alt="client logo" class="img-fluid">
+                            <img src="{{.Params.logoimage}}" alt="{{.Title}}" class="img-fluid">
                         </div>
-                        <div class="item single-client">
-                            <img src="images/client-logos/logo5.png" alt="client logo" class="img-fluid">
-                        </div>
-                        <div class="item single-client">
-                            <img src="images/client-logos/logo6.png" alt="client logo" class="img-fluid">
-                        </div>
-                        <div class="item single-client">
-                            <img src="images/client-logos/logo4.png" alt="client logo" class="img-fluid">
-                        </div>
-                        <div class="item single-client">
-                            <img src="images/client-logos/logo2.png" alt="client logo" class="img-fluid">
-                        </div>
-                        <div class="item single-client">
-                            <img src="images/client-logos/logo6.png" alt="client logo" class="img-fluid">
-                        </div>
-                        <div class="item single-client">
-                            <img src="images/client-logos/logo3.png" alt="client logo" class="img-fluid">
-                        </div>
-                        <div class="item single-client">
-                            <img src="images/client-logos/logo8.png" alt="client logo" class="img-fluid">
-                        </div>
+                        {{ end }}
                     </div>
                 </div>
             </div>

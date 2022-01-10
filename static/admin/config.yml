@@ -143,6 +143,20 @@ collections:
       - { label: 'Display Order', name: 'order', widget: number }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
       - { label: "Type", name: "type", widget: "hidden", default: "testimonials" }
+  - name: 'ourclients'
+    label: 'Our Clients'
+    label_singular: 'Our Client'
+    folder: 'content/ourclients'
+    create: true
+    slug: '{{slug}}'
+    summary: '{{order}}. {{title}}'
+    sortable_fields: ['order', 'title']
+    fields:
+      - { label: 'Name', name: 'title', widget: 'string' }
+      - { label: 'Logo Image (150x150px)', name: logoimage, widget: image, required: true }
+      - { label: 'Display Order', name: 'order', widget: number }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
+      - { label: "Type", name: "type", widget: "hidden", default: "ourclients" }
   - name: 'newsevents'
     label: 'News & Events'
     label_singular: 'News / Event'
