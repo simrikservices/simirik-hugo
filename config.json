@@ -134,11 +134,19 @@
       },
 
       {
+        "identifier": "career",
+        "name": "Career",
+        "title": "Career",
+        "url": "/career/",
+        "weight": -27
+      },
+
+      {
         "identifier": "app",
         "name": "Mobile App",
         "title": "Download Mobile App",
         "url": "/downloadapp",
-        "weight": -28
+        "weight": -26
       }
       
     ]

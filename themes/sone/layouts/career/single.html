@@ -1,0 +1,161 @@
+
+{{ define "main" }}
+<div class="main">
+    {{ partial "pageheader" (dict "cat" "" "catLink" "" "pageTitle" .Title "bg" .Params.headingimage) }}
+
+    <section class="section section-lg">
+        <div class="container contact">
+            <div class="col-12 pb-3 message-box d-none">
+                <div class="alert alert-danger"></div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-md-6">
+                    <div class="contact-us-form bg-soft rounded p-5">
+                        <h4>Online Application Form</h4>
+                        {{ partial "nepalform.html" . }}
+
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="contact-us-content">
+                        <h2>Where do you want to apply?</h2>
+                        <p class="lead">You can either fill the online form or download the PDF file below, print and submit to respective country office.</p>
+
+                          <div class="btn-group btn-group-toggle" id="selectCountry" data-toggle="buttons">
+                            <label class="btn btn-secondary" id="hk">
+                              <input type="radio" name="options" value="Hong Kong" checked> Hong Kong
+                            </label>
+                            <label class="btn btn-dark" id="np">
+                              <input type="radio" name="options" value="Nepal"> Nepal
+                            </label>
+                            <label class="btn btn-dark" id="uk">
+                              <input type="radio" name="options" value="United Kingdom"> United Kingdom
+                            </label>
+                          </div>
+
+                        <hr class="my-5">
+
+                        
+                        <address id="hkaddress">
+                            <a href="/pdf/SSGFApplicationFormHongKong.pdf" style="color: #880000; font-weight: bold;" target="_blank">Download PDF Form</a>
+                            <br/>
+                            &nbsp;<br/>
+                            <h5>Contact Info</h5>
+                            {{.Site.Data.settings.hkcontact | markdownify }}
+                        </address>
+
+                        <address id="npaddress">
+                            <a href="/pdf/SSGFApplicationFormNepal.pdf" style="color: #880000; font-weight: bold;" target="_blank">Download PDF Form</a>
+                            <br/>
+                            &nbsp;<br/>
+                            <h5>Contact Info</h5>
+                            {{.Site.Data.settings.nepalcontact | markdownify }}
+                        </address>
+
+                        <address id="ukaddress">
+                            {{.Site.Data.settings.ukcontact | markdownify }}
+                        </address>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact us section end-->
+
+    
+    <!--contact map section start-->
+
+
+</div>
+<script>
+    fetch('https://api.ipregistry.co/?key=ak6eddpkgifpki2x')
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (payload) {
+        console.log(payload.location.country.name + ', ' + payload.location.city);
+        const country = payload.location.country.name;
+        document.getElementById("country").value = country;
+        setAddressAndMap(country)
+        setButtonColors(country)
+        
+        
+    });
+
+    const selectCountry = document.getElementById("selectCountry");
+    selectCountry.addEventListener("click", function() {
+        
+        
+        document.getElementById("country").value = document.querySelector('input[name="options"]:checked').value;
+        setButtonColors(document.querySelector('input[name="options"]:checked').value)
+        setAddressAndMap(document.querySelector('input[name="options"]:checked').value)
+    })
+
+    function setAddressAndMap(country) {
+        // document.getElementById('nepalform').style.display = 'none'
+        // document.getElementById('hkform').style.display = 'none'
+        // document.getElementById('ukform').style.display = 'none'
+        document.getElementById('ukaddress').style.display = 'none'
+        document.getElementById('hkaddress').style.display = 'none'
+        document.getElementById('npaddress').style.display = 'none'
+
+        if (country === 'Hong Kong') {
+            document.getElementById('hkaddress').style.display = 'block'
+            // document.getElementById('nepalform').style.display = 'block'
+        } else if (country === 'Nepal') {
+            document.getElementById('npaddress').style.display = 'block'
+            // document.getElementById('nepalform').style.display = 'block'
+        } else {
+            document.getElementById('ukaddress').style.display = 'block'
+            // document.getElementById('nepalform').style.display = 'block'
+        }
+    }
+
+    function setButtonColors(country) {
+        document.getElementById('hk').classList.remove("btn-secondary")
+        document.getElementById('np').classList.remove("btn-secondary")
+        document.getElementById('uk').classList.remove("btn-secondary")
+        document.getElementById('hk').classList.remove("btn-dark")
+        document.getElementById('np').classList.remove("btn-dark")
+        document.getElementById('uk').classList.remove("btn-dark")
+
+        if (country === "Hong Kong") {
+            document.querySelector('#hk').classList.add("btn-secondary")
+            document.getElementById('np').classList.add("btn-dark")
+            document.getElementById('uk').classList.add("btn-dark")           
+        } else if (country === "Nepal") {
+            document.querySelector('#np').classList.add("btn-secondary")
+            document.getElementById('hk').classList.add("btn-dark")
+            document.getElementById('uk').classList.add("btn-dark")      
+        } else {
+            document.querySelector('#uk').classList.add("btn-secondary")
+            document.getElementById('np').classList.add("btn-dark")
+            document.getElementById('hk').classList.add("btn-dark")  
+        }
+    }
+
+
+    // var basemapsrc = "https://www.google.com/maps/embed/v1/view?key=AIzaSyAfHpaendzkB-S2wnp3nfQNtYgaX1f5e-A&zoom=18&center="
+    var basemapsrc = "https://maps.google.com/maps?z=15&output=embed&q="
+    var nepalmap = JSON.parse("{{.Site.Data.settings.nepalmap}}");
+    var nepalsrc = basemapsrc + nepalmap.coordinates[1] + "," + nepalmap.coordinates[0]
+    var npiframe = '<iframe height="500" frameborder="0" style="border:0" src="' + nepalsrc + '" allowfullscreen></iframe>'
+    document.getElementById('npmap').innerHTML = npiframe
+
+    var hkmap = JSON.parse("{{.Site.Data.settings.hkmap}}");
+    var hksrc = basemapsrc + hkmap.coordinates[1] + "," + hkmap.coordinates[0]
+    var hkiframe = '<iframe height="500" frameborder="0" style="border:0" src="' + hksrc + '" allowfullscreen></iframe>'
+    document.getElementById('hkmap').innerHTML = hkiframe
+
+    var ukmap = JSON.parse("{{.Site.Data.settings.ukmap}}");
+    var uksrc = basemapsrc + ukmap.coordinates[1] + "," + ukmap.coordinates[0]
+    var ukiframe = '<iframe height="500" frameborder="0" style="border:0" src="' + uksrc + '" allowfullscreen></iframe>'
+    document.getElementById('ukmap').innerHTML = ukiframe
+
+    
+</script>
+{{ end }}
+  
+
+
