@@ -1,6 +1,6 @@
 ---
 title: Mr Naresh Sunuwar
-description: Admin Deputy Director
+description: Admin/ Deputy Director
 gist: An experienced PRO keen to develop trust among clients and grow a
   sustainable platform, both for clients and the company.
 photo: /img/nartesh-sunuwar.jpg
