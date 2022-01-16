@@ -7,7 +7,7 @@ description: "The In-house security team led by Mr. Wilson Lam and team led by
   Mr. Steely Lam from Simrik Security Gurkha Force conducted pre- event site
   visits in order to minimise all security risks. "
 duration: 24 hours
-mainimage: /img/100-days.jpg
+mainimage: /img/hkca.png
 multipleimages:
   - photo: /img/tkw_photo_01.jpeg
     title: "Construction "
