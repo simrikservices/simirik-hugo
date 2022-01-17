@@ -1,8 +1,8 @@
 ---
 date: 2022-01-17 15:57
 title: VIP security & Unarmed Combat Training
-keyword: Aikido, Unarmed Combat, Self Defence
-description: SSGF held a 6 days VIP Security & Unarmed combat training to new
+keyword: VIP, Unarmed Combat, Self Defence Training
+description: SSGF held a 6 days VIP Security & Unarmed Combat training to new
   members of the company preparing them for their future deployment at a housing
   colony and also prepare them for VIP security on need.
 duration: 6 days
