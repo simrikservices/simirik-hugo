@@ -1,10 +1,10 @@
 ---
-title: Ramesh Gurung
-position: CEO, Himal Corporation
-description: Assertively procrastinate distributed relationships whereas equity
-  invested intellectual capital everything energistically underwhelm proactive.
-rating: 5
-order: 1
+title: "Dr. Dinesh "
+position: MD
+description: "A trusted company with professionals at Simrik Security Gurkha
+  Force promised a secure environment of my premises 24 x 7. "
+rating: 4
+order: 3
 draft: false
-type: "testimonials"
+type: testimonials
 ---
