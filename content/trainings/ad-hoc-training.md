@@ -2,6 +2,7 @@
 title: Ad- hoc Training
 subtext: Unplanned meetings and visits
 duration: 6 days
+headingimage: /img/3515eeab-d79b-4743-93dc-c4ec4fbfde94.jpg
 order: -2
 draft: false
 type: trainings
