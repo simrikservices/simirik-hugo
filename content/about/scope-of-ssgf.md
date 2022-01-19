@@ -68,12 +68,33 @@ more: >-
 headingimage: /img/event-photo.jpg
 mainimage: /img/about.jpg
 order: 3
-type: "about"
+type: about
 ---
-* Body Guards
-* In house and On site Security
-* Emergency, special event or ad-hoc situations
-* Housing & Apartments
-* Hotels & Resorts
-* Vital Installations like Banks and Corporate Offices
-* Others
+Body Guards
+
+In house and On site Security
+
+Emergency, special event or ad-hoc situations
+
+Housing & Apartments
+
+Hotels & Resorts
+
+Vital Installations like Banks and Corporate Offices
+
+Manned Guard
+
+* Residential Complex
+* Government Complex
+* Commercial Buildings
+* Schools & Colleges
+* Industrial Buildings
+* Shops
+* Guard Dog Services (HK Only)
+* Construction Site Security
+
+Event Security
+
+Executive Protection
+
+Others
