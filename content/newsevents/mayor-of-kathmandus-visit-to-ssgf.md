@@ -1,6 +1,6 @@
 ---
 date: 2022-02-23 13:45
-title: 01 Mayor of Kathmandu's visit to SSGF
+title: 001 Mayor of Kathmandu's visit to SSGF
 keyword: Mayor Bidhya Sundar Shakya at SSGF
 description: On Feb 2022, Mayor of Kathmandu Metropolitan City Mr. Bidhya Sundar
   Shakya paid a visit to Simrik Security Gurkha Force.
