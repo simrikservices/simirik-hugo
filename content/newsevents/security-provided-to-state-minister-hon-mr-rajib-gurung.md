@@ -1,6 +1,6 @@
 ---
 date: 2022-03-06 14:34
-title: Security provided to State minister Hon. Mr. Rajib Gurung
+title: 002 Security provided to State minister Hon. Mr. Rajib Gurung
 keyword: Security provided to Hon. Mr. Rajib Gurung, Youth & Sports Minister of
   Gandaki Province during his meeting with VIP guests.
 description: "On March 2022, SSGF security team provided VIP security and escort
