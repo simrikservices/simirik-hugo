@@ -1,10 +1,9 @@
 ---
 date: 2022-03-06 14:34
-title: 002 Security provided to State minister Hon. Mr. Rajib Gurung
-keyword: Security provided to Hon. State minister Mr. Rajib Gurung
-description: "On March 2022, SSGF security team provided VIP security and escort
-  during the meeting of Hon. State Minister Mr. Rajib Gurung with important VIP
-  team at Kathmandu. "
+title: 002 Security provided to VIPs
+keyword: Security provided during VIPs and state minister's visit
+description: On March 2022, SSGF security team provided VIP security and escort
+  to VIP's during their meeting with Hon. State Minister Mr. Rajib Gurung.
 duration: 3 hours
 mainimage: /img/index.jpg
 multipleimages:
