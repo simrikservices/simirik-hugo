@@ -3,65 +3,90 @@
   {{ partial "pageheader" (dict "cat" "" "catLink" "" "pageTitle" .Params.team "bg" .Params.headingimage) }}
   <section class="section">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="section-heading text-center mb-5">
-                    <h1>{{.Content}}</h1>
-                </div>
-            </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-heading text-center mb-5">
+            <h1>{{.Content}}</h1>
+          </div>
         </div>
-        <div class="row">
-            {{ $teampages := where site.RegularPages "Section" .Params.teamtype }}
-                    {{ range ($teampages.ByParam "order") }}
-            <div class="col-12 col-md-12 col-lg-6 mb-md-4 mb-4">
-                <a href="{{.URL}}">
-                <div class="profile-card">
-                    <div class="card bg-white shadow animate-hover border-variant-soft">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="bg-soft p-2 mb-4">
-                                    <img src="{{.Params.photo}}" class="card-img-top" alt="{{.Title}}">
-                                </div>
-                                <div class="card-body text-center px-4 pb-4 pt-0">
-                                    <h3 class="h6">{{.Title}}</h3>
-                                    <span class="font-small font-weight-normal text-secondary mb-3">{{.Params.description}}</span>
-                                    
-                                    <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
-                                        <li>
-                                            <a href="{{.Params.facebook}}" target="_blank" aria-label="facebook social link" class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="">
-                                                <span class="fab fa-facebook-f"></span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="{{.Params.twitter}}" target="_blank" aria-label="twitter social link" class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="" aria-describedby="tooltip927904">
-                                                <span class="fab fa-twitter"></span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="{{.Params.instagram}}" target="_blank" aria-label="intrgram social link" class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="">
-                                                <span class="fab fa-instagram"></span>
-                                            </a>
-                                        </li>
-        
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="font-small font-weight-normal text-gray" style="margin: 15px 15px 15px 0;">{{.Params.gist}} ...</div>
-                                <div><a href="#" style="color: #AB000B; font-weight: bold">Read more</a></div>
-
-                            </div>
-                        </div>
-                        
+      </div>
+      <div class="row">
+        {{ $teampages := where site.RegularPages "Section" .Params.teamtype }} {{ range ($teampages.ByParam "order") }}
+        <div class="col-12 col-md-12 col-lg-6 mb-md-4 mb-4">
+          <a href="{{.URL}}">
+            <div class="profile-card">
+              <div class="card bg-white shadow animate-hover border-variant-soft">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="bg-soft p-2 mb-4">
+                      <img src="{{.Params.photo}}" class="card-img-top" alt="{{.Title}}" />
                     </div>
-                </div>
-            </a>
-            </div>
-            {{ end }}
+                    <div class="card-body text-center px-4 pb-4 pt-0">
+                      <h3 class="h6">{{.Title}}</h3>
+                      <span class="font-small font-weight-normal text-secondary mb-3">{{.Params.description}}</span>
 
+                      <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
+                        <li>
+                          <a
+                            href="{{.Params.facebook}}"
+                            target="_blank"
+                            aria-label="facebook social link"
+                            class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title=""
+                            data-original-title=""
+                          >
+                            <span class="fab fa-facebook-f"></span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="{{.Params.twitter}}"
+                            target="_blank"
+                            aria-label="twitter social link"
+                            class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title=""
+                            data-original-title=""
+                            aria-describedby="tooltip927904"
+                          >
+                            <span class="fab fa-twitter"></span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="{{.Params.instagram}}"
+                            target="_blank"
+                            aria-label="intrgram social link"
+                            class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title=""
+                            data-original-title=""
+                          >
+                            <span class="fab fa-instagram"></span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="font-small font-weight-normal text-gray" style="margin: 15px 15px 15px 0">
+                      {{.Params.gist}} ...
+                    </div>
+                    <div><a href="{{.URL}}" style="color: #ab000b; font-weight: bold">Read more</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
+        {{ end }}
+      </div>
     </div>
-</section>
+  </section>
   {{ partial "whatclientsay" . }}
 </div>
 {{ end }}
