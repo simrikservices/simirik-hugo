@@ -1,8 +1,9 @@
 ---
-title: Training Setting (Do Not Delete)
-coll: "trainings"
+title: Trainings
+coll: trainings
+subtext: .
 headingimage: /img/event-photo.jpg
-pagetitle: "Trainings"
+pagetitle: Trainings
 order: -1
 ---
 Trainings
