@@ -1,54 +1,60 @@
-<section class="section section-lg ">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="section-heading text-center mb-5">
-                    {{ .heading | markdownify  }}
-                </div>
-            </div>
-        </div>
-        <div class="row">
-
-            {{ $tpages := where site.RegularPages "Section" .thissection }}
-            {{ range first .max ($tpages.ByParam "order") }}
-            {{ $writer := "SSGF" }}
-            {{ if and (isset .Params "writer") (ne .Params.writer "") }}
-            {{ $writer = .Params.writer }}
-            {{ end }}
-            <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 mb-lg-0 mb-4">
-                <a href="{{.URL}}">
-                <div class="card bg-white border-variant-soft shadow-soft">
-                    <div class="blog-img position-relative">
-                        {{ if isset .Params "vidid" }}
-                        <img src="https://img.youtube.com/vi/{{.Params.vidid}}/0.jpg" class="card-img-top rounded-top" alt="{{.Title}}">
-                        <a href="{{.URL}}" class="position-absolute" style="font-size: 80px; color: white;"><i class="fas fa-play-circle"></i></a>
-                        {{ else }}
-                        <img src="{{.Params.mainimage}}" class="card-img-top rounded-top" alt="{{.Title}}">
-                        <a href="#" class="position-absolute category-text small badge badge-secondary">{{.Params.keyword}}</a>
-                        {{ end }}
-                        
-                    </div>
-                    <div class="card-body">
-                    <div class="media d-flex align-items-center justify-content-between">
-                            <div class="post-group">
-                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
-                                    {{ $photo := "/images/logo-color.png" }}
-                                    {{ if isset .Params "writerphoto" }} {{ $photo = print "/img/" .Params.writerphoto }}{{ end }}
-                                    <img class="avatar avatar-xs mr-2 img-fluid rounded-circle border border-variant-primary p-1" src="{{$photo}}" alt="{{$writer}}"> <span class="small">{{ $writer }}</span>
-                                </a>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <span class="small"><span class="far fa-calendar-alt mr-2"></span>{{ .Params.date }}</span>
-                            </div>
-                        </div>
-                        <h3 class="h5 card-title mt-3"><a href="{{.URL}}">{{.Title}}</a></h3>
-                        <p class="card-text">{{.Params.description}}</p>
-                        <a href="{{.URL}}" class="link-with-icon text-default font-small font-weight-bold">Read more <span> <i class="fas fa-angle-right"></i></span></a>
-                    </div>
-                </div>
-            </a>
-            </div>
-            {{ end }}
-        </div>
+<section class="section section-lg">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-heading text-center mb-5">{{ .heading | markdownify }}</div>
+      </div>
     </div>
+    <div class="row">
+      {{ $tpages := where site.RegularPages "Section" .thissection }} {{ range first .max ($tpages.ByParam "date") }} {{
+      $writer := "SSGF" }} {{ if and (isset .Params "writer") (ne .Params.writer "") }} {{ $writer = .Params.writer }}
+      {{ end }}
+      <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 mb-lg-0 mb-4">
+        <a href="{{.URL}}">
+          <div class="card bg-white border-variant-soft shadow-soft">
+            <div class="blog-img position-relative">
+              {{ if isset .Params "vidid" }}
+              <img
+                src="https://img.youtube.com/vi/{{.Params.vidid}}/0.jpg"
+                class="card-img-top rounded-top"
+                alt="{{.Title}}"
+              />
+              <a href="{{.URL}}" class="position-absolute" style="font-size: 80px; color: white"
+                ><i class="fas fa-play-circle"></i
+              ></a>
+              {{ else }}
+              <img src="{{.Params.mainimage}}" class="card-img-top rounded-top" alt="{{.Title}}" />
+              <a href="#" class="position-absolute category-text small badge badge-secondary">{{.Params.keyword}}</a>
+              {{ end }}
+            </div>
+            <div class="card-body">
+              <div class="media d-flex align-items-center justify-content-between">
+                <div class="post-group">
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
+                    {{ $photo := "/images/logo-color.png" }} {{ if isset .Params "writerphoto" }} {{ $photo = print
+                    "/img/" .Params.writerphoto }}{{ end }}
+                    <img
+                      class="avatar avatar-xs mr-2 img-fluid rounded-circle border border-variant-primary p-1"
+                      src="{{$photo}}"
+                      alt="{{$writer}}"
+                    />
+                    <span class="small">{{ $writer }}</span>
+                  </a>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span class="small"><span class="far fa-calendar-alt mr-2"></span>{{ .Params.date }}</span>
+                </div>
+              </div>
+              <h3 class="h5 card-title mt-3"><a href="{{.URL}}">{{.Title}}</a></h3>
+              <p class="card-text">{{.Params.description}}</p>
+              <a href="{{.URL}}" class="link-with-icon text-default font-small font-weight-bold"
+                >Read more <span> <i class="fas fa-angle-right"></i></span
+              ></a>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
 </section>
