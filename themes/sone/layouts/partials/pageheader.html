@@ -1,23 +1,23 @@
 {{ $pbg := .bg }}
-<section class="" style="background: url('{{ $pbg }}')no-repeat center center / cover">
-    <div class="section-lg bg-gradient-primary text-white section-header">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-7">
-                    <div class="page-header-content text-center">
-                        <h1>{{.pageTitle}}</h1>
-                        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
-                            <ol class="breadcrumb breadcrumb-transparent breadcrumb-text-light">
-                                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                                {{ if ne .cat "" }}
-                                <li class="breadcrumb-item"><a href="{{.catLink}}">{{.cat}}</a></li>
-                                {{ end }}
-                                <li class="breadcrumb-item active" aria-current="page">{{.pageTitle}}</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+<section class="" style="background: url('{{ $pbg }}') no-repeat center center / cover">
+  <div class="section-lg bg-gradient-primary text-white section-header">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-7">
+          <div class="page-header-content text-center">
+            <h1>{{.pageTitle}}</h1>
+            <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+              <ol class="breadcrumb breadcrumb-transparent breadcrumb-text-light">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                {{ if ne .cat "" }}
+                <li class="breadcrumb-item"><a href="{{.catLink}}">{{.cat}}</a></li>
+                {{ end }}
+                <li class="breadcrumb-item active" aria-current="page">{{.pageTitle}}</li>
+              </ol>
+            </nav>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>

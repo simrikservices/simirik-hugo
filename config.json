@@ -12,7 +12,7 @@
         "identifier": "home",
         "name": "Home",
         "title": "Home Page",
-        "url": "/",
+        "url": "/ssgf/",
         "weight": -33
       },
       {
@@ -116,7 +116,6 @@
         "url": "/trainings/",
         "weight": -30
       },
-
       {
         "identifier": "blog",
         "name": "News & Events",
@@ -124,7 +123,6 @@
         "url": "/newsevents/",
         "weight": -29
       },
-
       {
         "identifier": "get in touch",
         "name": "Let's Get in Touch",
@@ -132,7 +130,6 @@
         "url": "/contact-us/",
         "weight": -28
       },
-
       {
         "identifier": "career",
         "name": "Career",
@@ -140,7 +137,6 @@
         "url": "/career/",
         "weight": -27
       },
-
       {
         "identifier": "app",
         "name": "Mobile App",
@@ -148,7 +144,6 @@
         "url": "/downloadapp",
         "weight": -26
       }
-      
     ]
   }
 }
