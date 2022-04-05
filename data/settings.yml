@@ -1,7 +1,7 @@
 title: Simrik Services
-hkemail: admin@simrikservices.com
+hkemail: admin@simrikhk.com, admin@simrikservices.com, hk@simrikservices.com
 hkphone: +(852) 39973676
-nepalemail: np@simrikservices.com
+nepalemail: np@simrikservices.com, ssgf2077@gmail.com
 nepalphone: (+977) 01- 4496838, (+977) 9851035411
 ukemail: uk@simrikservices.com
 ukphone: (+44) 1234567891
@@ -21,8 +21,13 @@ socialimage: /img/ktmairport.jpg
 subtext: We are committed to our values and work ethics “Honesty and Integrity”.
 countries: 2
 since: 2014
-scopes: 20
 clientsno: 101
+ukcontact: UK
+hkmap: '{"type":"Point","coordinates":[114.13543,22.363414]}'
+nepalmap: '{"type":"Point","coordinates":[85.3455355,27.6993877]}'
+ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
+projectsno: 20
+scopes: 20
 hkcontact: >-
   [admin@simrikhk.com](email:admin@simrikhk.com), hk@simrik-gurkha-security.com,
   admin@simrik-gurkha-security.com
@@ -70,8 +75,3 @@ nepalcontact: |-
   Bhimsengola 09, Old Baneshwor, Kathmandu, Nepal
 
   Regd. No. 2068795
-ukcontact: UK
-hkmap: '{"type":"Point","coordinates":[114.13543,22.363414]}'
-nepalmap: '{"type":"Point","coordinates":[85.3455355,27.6993877]}'
-ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
-projectsno: 20
