@@ -9,31 +9,31 @@ collections:
     label_singular: Home Page Slider
     folder: content/homepagesliders/
     create: true
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     summary: '{{order}}. {{title}}'
     sortable_fields: ['order', 'title']
-    fields: 
-      - {label: Title, name: title, widget: string}
-      - {label: "Sub Text", name: subtext, widget: string}
-      - {label: Body, name: body, widget: markdown}
-      - { label: 'Display Order', name: 'order', widget: number } 
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: 'Sub Text', name: subtext, widget: string }
+      - { label: Body, name: body, widget: markdown }
+      - { label: 'Display Order', name: 'order', widget: number }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
   - name: about
     label: About
     folder: content/about/
     create: true
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     summary: '{{order}}. {{title}}'
     sortable_fields: ['order', 'title']
-    fields: 
-      - {label: Title, name: title, widget: string}
-      - {label: "Sub Text", name: subtext, widget: markdown}
-      - {label: Body, name: body, widget: markdown}
-      - {label: 'Heading Image', name: headingimage, widget: image} 
-      - {label: 'Main Image', name: mainimage, widget: image, required: false}
-      - { label: 'Display Order', name: 'order', widget: number } 
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: 'Sub Text', name: subtext, widget: markdown }
+      - { label: Body, name: body, widget: markdown }
+      - { label: 'Heading Image', name: headingimage, widget: image }
+      - { label: 'Main Image', name: mainimage, widget: image, required: false }
+      - { label: 'Display Order', name: 'order', widget: number }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
-      - { label: "Type", name: "type", widget: "hidden", default: "about" }
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'about' }
   - name: 'services'
     label: 'Services'
     label_singular: 'Service'
@@ -47,11 +47,11 @@ collections:
       - { label: 'Description', name: 'description', widget: 'markdown' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Icon Name', name: 'iconname', widget: 'string' }
-      - { label: 'Heading Image', name: headingimage, widget: image, required: false } 
+      - { label: 'Heading Image', name: headingimage, widget: image, required: false }
       - { label: 'Main Image', name: mainimage, widget: image, required: false }
-      - { label: 'Display Order', name: 'order', widget: number } 
+      - { label: 'Display Order', name: 'order', widget: number }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
-      - { label: "Type", name: "type", widget: "hidden", default: "services" }
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'services' }
   - name: 'teamnepal'
     label: 'Team Nepal'
     folder: 'content/nepal-team'
@@ -64,13 +64,13 @@ collections:
       - { label: 'Position', name: 'description', widget: 'string' }
       - { label: 'Short', name: 'gist', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Photo', name: photo, widget: image, required: false  } 
-      - { label: 'Facebook', name: facebook, widget: string, required: false } 
-      - { label: 'Twitter', name: twitter, widget: string, required: false } 
+      - { label: 'Photo', name: photo, widget: image, required: false }
+      - { label: 'Facebook', name: facebook, widget: string, required: false }
+      - { label: 'Twitter', name: twitter, widget: string, required: false }
       - { label: 'Instagram', name: instagram, widget: string, required: false }
       - { label: 'Display Order', name: 'order', widget: number }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
-      - { label: "Type", name: "type", widget: "hidden", default: "team" }
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'team' }
   - name: 'teamhk'
     label: 'Team HK'
     folder: 'content/hk-team'
@@ -83,13 +83,13 @@ collections:
       - { label: 'Position', name: 'description', widget: 'string' }
       - { label: 'Short', name: 'gist', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Photo', name: photo, widget: image, required: false  } 
-      - { label: 'Facebook', name: facebook, widget: string, required: false } 
-      - { label: 'Twitter', name: twitter, widget: string, required: false } 
+      - { label: 'Photo', name: photo, widget: image, required: false }
+      - { label: 'Facebook', name: facebook, widget: string, required: false }
+      - { label: 'Twitter', name: twitter, widget: string, required: false }
       - { label: 'Instagram', name: instagram, widget: string, required: false }
       - { label: 'Display Order', name: 'order', widget: number }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
-      - { label: "Type", name: "type", widget: "hidden", default: "team" }
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'team' }
   - name: 'teamuk'
     label: 'Team UK'
     folder: 'content/uk-team'
@@ -102,31 +102,31 @@ collections:
       - { label: 'Position', name: 'description', widget: 'string' }
       - { label: 'Short', name: 'gist', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Photo', name: photo, widget: image, required: false  } 
-      - { label: 'Facebook', name: facebook, widget: string, required: false } 
-      - { label: 'Twitter', name: twitter, widget: string, required: false } 
+      - { label: 'Photo', name: photo, widget: image, required: false }
+      - { label: 'Facebook', name: facebook, widget: string, required: false }
+      - { label: 'Twitter', name: twitter, widget: string, required: false }
       - { label: 'Instagram', name: instagram, widget: string, required: false }
       - { label: 'Display Order', name: 'order', widget: number }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
-      - { label: "Type", name: "type", widget: "hidden", default: "team" }
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'team' }
   - name: trainings
     label: Trainings
     folder: content/trainings/
     create: true
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     summary: '{{order}}. {{title}}'
     sortable_fields: ['order', 'title']
-    fields: 
-      - {label: Title, name: title, widget: string}
-      - {label: "Sub Text", name: subtext, widget: markdown}
-      - {label: Body, name: body, widget: markdown}
-      - {label: Video ID, name: vidid, widget: string, required: false }
-      - {label: Duration, name: duration, widget: string, required: false }
-      - {label: 'Heading Image', name: headingimage, widget: image, required: false} 
-      - {label: 'Main Image', name: mainimage, widget: image, required: false} 
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: 'Sub Text', name: subtext, widget: markdown }
+      - { label: Body, name: body, widget: markdown }
+      - { label: Video ID, name: vidid, widget: string, required: false }
+      - { label: Duration, name: duration, widget: string, required: false }
+      - { label: 'Heading Image', name: headingimage, widget: image, required: false }
+      - { label: 'Main Image', name: mainimage, widget: image, required: false }
       - { label: 'Display Order', name: 'order', widget: number }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
-      - { label: "Type", name: "type", widget: "hidden", default: "trainings" }
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'trainings' }
   - name: 'testimonials'
     label: 'Testimonials'
     label_singular: 'Testimonial'
@@ -142,7 +142,7 @@ collections:
       - { label: 'Rating', name: 'rating', widget: 'number' }
       - { label: 'Display Order', name: 'order', widget: number }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
-      - { label: "Type", name: "type", widget: "hidden", default: "testimonials" }
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'testimonials' }
   - name: 'ourclients'
     label: 'Our Clients'
     label_singular: 'Our Client'
@@ -156,7 +156,7 @@ collections:
       - { label: 'Logo Image (150x150px)', name: logoimage, widget: image, required: true }
       - { label: 'Display Order', name: 'order', widget: number }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
-      - { label: "Type", name: "type", widget: "hidden", default: "ourclients" }
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'ourclients' }
   - name: 'newsevents'
     label: 'News & Events'
     label_singular: 'News / Event'
@@ -164,7 +164,7 @@ collections:
     create: true
     slug: '{{slug}}'
     summary: '{{date}} {{title}} - ({{writer}})'
-    sortable_fields: ['order', 'title', 'writer']
+    sortable_fields: ['date', 'title', 'writer']
     fields:
       - {
           label: 'Publish Date',
@@ -178,49 +178,49 @@ collections:
       - { label: 'Keyword', name: 'keyword', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - {label: Video ID, name: vidid, widget: string, required: false }
-      - {label: Duration, name: duration, widget: string}
+      - { label: Video ID, name: vidid, widget: string, required: false }
+      - { label: Duration, name: duration, widget: string }
       - { label: 'Main Image', name: mainimage, widget: image, required: false }
       - label: 'Multiple Images'
         name: 'multipleimages'
         widget: list
         required: false
         fields:
-          - {label: Caption, name: title, widget: string}
-          - {label: Photo, name: photo, widget: image}
+          - { label: Caption, name: title, widget: string }
+          - { label: Photo, name: photo, widget: image }
       - { label: 'Writer Name', name: 'writer', widget: 'string', default: 'SSGF' }
       - { label: 'Writer Photo', name: writerphoto, widget: image, allow_multiple: false, required: false }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: false, required: false }
-      - { label: "Type", name: "type", widget: "hidden", default: "newsevents" }
+      - { label: 'Type', name: 'type', widget: 'hidden', default: 'newsevents' }
 
   - name: 'settings'
     label: 'Settings'
     editor:
       preview: false
     files:
-      - label: "Settings"
-        name: "settings"
-        file: "data/settings.yml"
+      - label: 'Settings'
+        name: 'settings'
+        file: 'data/settings.yml'
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Hong Kong Email, name: hkemail, widget: string}
-          - {label: Hong Kong Phone, name: hkphone, widget: string}
-          - {label: Nepal Email, name: nepalemail, widget: string}
-          - {label: Nepal Phone, name: nepalphone, widget: string}
-          - {label: UK Email, name: ukemail, widget: string}
-          - {label: UK Phone, name: ukphone, widget: string}
-          - {label: Service Subtext, name: servicesubtext, widget: markdown}
-          - {label: Testimonial subtext, name: testimonialsubtext, widget: markdown }
-          - {label: News Subtext, name: newssubtext, widget: markdown}
-          - {label: 'Social Image', name: socialimage, widget: image}
-          - {label: "Footer Slogan", name: subtext, widget: string}
-          - {label: "Countries", name: countries, widget: number}
-          - {label: "Since", name: since, widget: number}
-          - {label: "Service Scope", name: scopes, widget: number}
-          - {label: "No of Clients", name: clientsno, widget: number}
-          - {label: Hongkong Contact, name: hkcontact, widget: markdown}
-          - {label: Nepal Contact, name: nepalcontact, widget: markdown}
-          - {label: UK Contact, name: ukcontact, widget: markdown}
-          - {label: Hongkong Location, name: hkmap, widget: map}
-          - {label: Nepal Location, name: nepalmap, widget: map}
-          - {label: UK Location, name: ukmap, widget: map}
+          - { label: Title, name: title, widget: string }
+          - { label: Hong Kong Email, name: hkemail, widget: string }
+          - { label: Hong Kong Phone, name: hkphone, widget: string }
+          - { label: Nepal Email, name: nepalemail, widget: string }
+          - { label: Nepal Phone, name: nepalphone, widget: string }
+          - { label: UK Email, name: ukemail, widget: string }
+          - { label: UK Phone, name: ukphone, widget: string }
+          - { label: Service Subtext, name: servicesubtext, widget: markdown }
+          - { label: Testimonial subtext, name: testimonialsubtext, widget: markdown }
+          - { label: News Subtext, name: newssubtext, widget: markdown }
+          - { label: 'Social Image', name: socialimage, widget: image }
+          - { label: 'Footer Slogan', name: subtext, widget: string }
+          - { label: 'Countries', name: countries, widget: number }
+          - { label: 'Since', name: since, widget: number }
+          - { label: 'Service Scope', name: scopes, widget: number }
+          - { label: 'No of Clients', name: clientsno, widget: number }
+          - { label: Hongkong Contact, name: hkcontact, widget: markdown }
+          - { label: Nepal Contact, name: nepalcontact, widget: markdown }
+          - { label: UK Contact, name: ukcontact, widget: markdown }
+          - { label: Hongkong Location, name: hkmap, widget: map }
+          - { label: Nepal Location, name: nepalmap, widget: map }
+          - { label: UK Location, name: ukmap, widget: map }

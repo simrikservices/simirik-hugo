@@ -6,9 +6,8 @@
       </div>
     </div>
     <div class="row">
-      {{ $tpages := where site.RegularPages "Section" .thissection }} {{ range first .max ($tpages.ByParam "date") }} {{
-      $writer := "SSGF" }} {{ if and (isset .Params "writer") (ne .Params.writer "") }} {{ $writer = .Params.writer }}
-      {{ end }}
+      {{ $tpages := where site.RegularPages "Section" .thissection }} {{ range first .max ($tpages.ByDate) }} {{ $writer
+      := "SSGF" }} {{ if and (isset .Params "writer") (ne .Params.writer "") }} {{ $writer = .Params.writer }} {{ end }}
       <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 mb-lg-0 mb-4">
         <a href="{{.URL}}">
           <div class="card bg-white border-variant-soft shadow-soft">
