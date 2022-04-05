@@ -1,9 +1,11 @@
 ---
-title: Team Setting (Do Not Delete)
-type: "team"
-headingimage: /img/event-photo.jpg
-team: "Honk Kong Team"
-teamtype: "hk-team"
+gist: " "
 order: -1
+teamtype: hk-team
+title: Team Hongkong
+headingimage: /img/event-photo.jpg
+description: " "
+type: team
+team: Honk Kong Team
 ---
 Our Hong Kong Team
