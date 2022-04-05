@@ -8,4 +8,6 @@ order: 32
 draft: false
 type: team
 ---
+Mr. Gurung has a wide range of knowledge in the field of protection and assessment.
+
 He has served in national security agency for years. The experience and knowledge will be incoporated to SSGF & its personnels before their task execution.
