@@ -1,6 +1,6 @@
 ---
 date: 2022-02-13 14:28
-title: 005 DECAN & SSGF meet
+title: DECAN & SSGF meet
 keyword: DECAN & SSGF meet for mutual relations
 description: On Feb 2022, MD of Simrik Security Gurkha Force paid a visit to DECAN Office.
 duration: 60 minutes
