@@ -5,7 +5,7 @@ subtext: >-
 
   * Simrik Security Gurkha Force & Simrik Construction Engineering Ltd- SSGF & SCEL
 headingimage: /img/event-photo.jpg
-mainimage: /img/about.jpg
+mainimage: /img/dabangg-the-tour-reloaded.jpg
 order: 1
 type: about
 ---
