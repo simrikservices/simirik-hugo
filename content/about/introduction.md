@@ -5,7 +5,7 @@ subtext: >-
 
   * Simrik Security Gurkha Force & Simrik Construction Engineering Ltd- SSGF & SCEL
 headingimage: /img/event-photo.jpg
-mainimage: /img/gen-rajendra.jpg
+mainimage: /img/index1.jpg
 order: 1
 type: about
 ---
