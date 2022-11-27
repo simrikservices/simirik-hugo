@@ -3,8 +3,8 @@ hkemail: admin@simrikhk.com, admin@simrikservices.com, hk@simrikservices.com
 hkphone: +(852) 39973676
 nepalemail: np@simrikservices.com, ssgf2077@gmail.com
 nepalphone: (+977) 01- 4496838,<br>
-ukemail: uk@simrikservices.com
-ukphone: "(+44) 1234567891<br> <br> "
+ukemail: admin@simrikservices.com
+ukphone: "(+44) 7534964939<br> <br> "
 servicesubtext: |-
   ## Security Services
 
@@ -19,10 +19,13 @@ newssubtext: |-
   News and Blogs to inform you about our events and activities.
 socialimage: /img/ktmairport.jpg
 subtext: We are committed to our values and work ethics “Honesty and Integrity”.
-countries: 2
-since: 2014
+countries: 3
+since: 2019
 clientsno: 101
-ukcontact: UK
+ukcontact: |-
+  admin@simrikservices.com 
+
+  [+44 7534 964939](<+44 7534 964939>)
 hkmap: '{"type":"Point","coordinates":[114.13543,22.363414]}'
 nepalmap: '{"type":"Point","coordinates":[85.3455355,27.6993877]}'
 ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
