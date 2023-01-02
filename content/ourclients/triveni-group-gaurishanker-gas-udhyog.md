@@ -1,5 +1,5 @@
 ---
-title: Triveni Group (Gaurishanker Gas Udhyog)
+title: Triveni Group
 logoimage: /img/triveni.png
 order: 6
 draft: false
