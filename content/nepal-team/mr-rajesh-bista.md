@@ -1,6 +1,6 @@
 ---
 title: Mr Rajesh Bista
-description: "  "
+description: "Business Development Director  "
 gist: Rajesh Bista, Sensei paramount, also serves as the Chief Instructor in
   Aikido in Nepal as well as unarmed combat specialist.
 photo: /img/rajesh.jpg
