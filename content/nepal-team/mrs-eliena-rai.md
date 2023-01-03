@@ -1,6 +1,6 @@
 ---
 title: Mrs Emi Rai
-description: "  "
+description: "Chairperson  "
 gist: A results driven, self-motivated and resourceful project coordinator with
   an in depth understanding of all aspects of project coordination and
   implementation.
