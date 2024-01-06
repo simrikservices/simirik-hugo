@@ -1,7 +1,7 @@
 title: Simrik Services
-hkemail: admin@simrikhk.com, admin@simrikservices.com, hk@simrikservices.com
+hkemail: admin@simrikservices.com, office.hk@simrikservices.com
 hkphone: +(852) 39973676
-nepalemail: np@simrikservices.com, ssgf2077@gmail.com
+nepalemail: admin@simrikservices.com, ssgf2077@gmail.com
 nepalphone: (+977) 01- 4496838,<br> +977- 9765428455
 ukemail: admin@simrikservices.com
 ukphone: "(+44) 7534964939<br> <br> "
@@ -21,19 +21,10 @@ socialimage: /img/ktmairport.jpg
 subtext: We are committed to our values and work ethics “Honesty and Integrity”.
 countries: 3
 since: 2019
-clientsno: 101
-ukcontact: |-
-  admin@simrikservices.com 
-
-  [+44 7534 964939](<+44 7534 964939>)
-hkmap: '{"type":"Point","coordinates":[114.13543,22.363414]}'
-nepalmap: '{"type":"Point","coordinates":[85.3455355,27.6993877]}'
-ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
-projectsno: 20
 scopes: 20
+clientsno: 101
 hkcontact: |-
-  [admin@simrikhk.com](<mailto: admin@simrikhk.com>)\
-  [hk@simrikservices.com](<mailto: hk@simrikservices.com>)\
+  o﻿ffice.[hk@simrikservices.com](<mailto: hk@simrikservices.com>)\
   [admin@simrikservices.com](mailto:admin@simrikservices.com)
 
   Office: [(+852) 3997 3676](tel:+85239973676)
@@ -46,9 +37,7 @@ hkcontact: |-
 
   Joe: ([+852) ](<(+852) 9665 9261>)[9665 9261](<(+852) 9665 9261>)
 
-  Steely: ([+852) ](<(+852) 9667 9367>)[9667 9367](<(+852) 9667 9367>)
-
-  ([+852](<(+852) 37052753>)) [37052753](<(+852) 37052753>) (Fax) 
+   FAX: ([+852](<(+852) 37052753>)) [37052753](<(+852) 37052753>) 
 
   Unit C1 9/F Mai On Industrial Building\
   No. 17-21 Kung Yip Street\
@@ -58,10 +47,19 @@ hkcontact: |-
 
   License No. 1926
 nepalcontact: |-
-  [np@simrikservices.com](np@simrikservices.com)
+  ﻿admin[@simrikservices.com](<﻿admin@simrikservices.com>)\
+  ssgf2077@gmail.com
 
   (+977) [01-4496838](01-4496838) (0900h- 1700h)
 
   Bhimsengola 09, Old Baneshwor, Kathmandu, Nepal
 
   Regd. No. 2068795
+ukcontact: |-
+  admin@simrikservices.com 
+
+  [+44 7534 964939](<+44 7534 964939>)
+hkmap: '{"type":"Point","coordinates":[114.13543,22.363414]}'
+nepalmap: '{"type":"Point","coordinates":[85.3455355,27.6993877]}'
+ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
+projectsno: 20
