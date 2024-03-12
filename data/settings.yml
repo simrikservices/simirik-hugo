@@ -29,15 +29,16 @@ hkcontact: |-
 
   Office: [(+852) 3997 3676](tel:+85239973676)
 
-  Hari: [(+852) 6993 7354](<(+852) 6993 7354>)
+  Hari: [(+852) 6993 7354](tel: +85269937354)
 
-  Ganga: ([+852) ](<(+852) 9583 1027>)[9583 1027](<(+852) 9583 1027>)
 
-  Naresh: ([+852) ](+85269937354)[90941246](90941246)
+  Ganga: ([+852) 9583 1027](tel: +85295831027)
 
-  Joe: ([+852) ](<(+852) 9665 9261>)[9665 9261](<(+852) 9665 9261>)
+  Naresh: ([+852) 9094 1246](tel: +85290941246)
 
-   FAX: ([+852](<(+852) 37052753>)) [37052753](<(+852) 37052753>) 
+  Joe: ([+852) 9665 9261](tel: +85296659261)
+
+   FAX: [+852] [37052753]
 
   Unit C1 9/F Mai On Industrial Building\
   No. 17-21 Kung Yip Street\
@@ -50,17 +51,14 @@ nepalcontact: |-
   \[admin@simrikservices.com](mailto<﻿admin@simrikservices.com>)
   ssgf2077@gmail.com
 
-  (+977) [01-4496838](01-4496838) (0900h - 1700h)
+  [+977 01 4496838](tel:+97714496838) (0900h - 1700h)
 
-  (﻿+977) 9765428455
+  [﻿+977 9765428455] (tel:+97719765428455)
 
   Bhimsengola 09, Old Baneshwor, Kathmandu, Nepal
 
   Regd. No. 2068795
-ukcontact: |-
-  admin@simrikservices.com 
 
-  [+44 7534 964939](<+44 7534 964939>)
 hkmap: '{"type":"Point","coordinates":[114.13543,22.363414]}'
 nepalmap: '{"type":"Point","coordinates":[85.3455355,27.6993877]}'
 ukmap: '{"type":"Point","coordinates":[-1.4843757,53.0208252]}'
