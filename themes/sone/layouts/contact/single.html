@@ -137,10 +137,10 @@
     })
 
     function setAddressAndMap(country) {
-        document.getElementById('ukaddress').style.display = 'none'
+        // document.getElementById('ukaddress').style.display = 'none'
         document.getElementById('hkaddress').style.display = 'none'
         document.getElementById('npaddress').style.display = 'none'
-        document.getElementById('ukmap').style.display = 'none'
+        // document.getElementById('ukmap').style.display = 'none'
         document.getElementById('hkmap').style.display = 'none'
         document.getElementById('npmap').style.display = 'none'
         if (country === 'Hong Kong') {
@@ -150,29 +150,29 @@
             document.getElementById('npaddress').style.display = 'block'
             document.getElementById('npmap').style.display = 'block'
         } else {
-            document.getElementById('ukaddress').style.display = 'block'
-            document.getElementById('ukmap').style.display = 'block'
+            // document.getElementById('ukaddress').style.display = 'block'
+            // document.getElementById('ukmap').style.display = 'block'
         }
     }
 
     function setButtonColors(country) {
         document.getElementById('hk').classList.remove("btn-secondary")
         document.getElementById('np').classList.remove("btn-secondary")
-        document.getElementById('uk').classList.remove("btn-secondary")
+        // document.getElementById('uk').classList.remove("btn-secondary")
         document.getElementById('hk').classList.remove("btn-dark")
         document.getElementById('np').classList.remove("btn-dark")
-        document.getElementById('uk').classList.remove("btn-dark")
+        // document.getElementById('uk').classList.remove("btn-dark")
 
         if (country === "Hong Kong") {
             document.querySelector('#hk').classList.add("btn-secondary")
             document.getElementById('np').classList.add("btn-dark")
-            document.getElementById('uk').classList.add("btn-dark")           
+            // document.getElementById('uk').classList.add("btn-dark")           
         } else if (country === "Nepal") {
             document.querySelector('#np').classList.add("btn-secondary")
             document.getElementById('hk').classList.add("btn-dark")
-            document.getElementById('uk').classList.add("btn-dark")      
+            // document.getElementById('uk').classList.add("btn-dark")      
         } else {
-            document.querySelector('#uk').classList.add("btn-secondary")
+            // document.querySelector('#uk').classList.add("btn-secondary")
             document.getElementById('np').classList.add("btn-dark")
             document.getElementById('hk').classList.add("btn-dark")  
         }
@@ -191,10 +191,10 @@
     var hkiframe = '<iframe height="500" frameborder="0" style="border:0" src="' + hksrc + '" allowfullscreen></iframe>'
     document.getElementById('hkmap').innerHTML = hkiframe
 
-    var ukmap = JSON.parse("{{.Site.Data.settings.ukmap}}");
-    var uksrc = basemapsrc + ukmap.coordinates[1] + "," + ukmap.coordinates[0]
-    var ukiframe = '<iframe height="500" frameborder="0" style="border:0" src="' + uksrc + '" allowfullscreen></iframe>'
-    document.getElementById('ukmap').innerHTML = ukiframe
+    // var ukmap = JSON.parse("{{.Site.Data.settings.ukmap}}");
+    // var uksrc = basemapsrc + ukmap.coordinates[1] + "," + ukmap.coordinates[0]
+    // var ukiframe = '<iframe height="500" frameborder="0" style="border:0" src="' + uksrc + '" allowfullscreen></iframe>'
+    // document.getElementById('ukmap').innerHTML = ukiframe
 
     
 </script>
